@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D rb;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
     private Animator animator;
 
+    public LayerMask solidObjectsLayer;
+    
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -38,18 +38,23 @@ public class Player : MonoBehaviour
         targetPos.x = position.x + moveSpeed * input.x * Time.deltaTime;
         targetPos.y = position.y + moveSpeed * input.y * Time.deltaTime;
 
-    //    if(isWalkable(targetPos))
- //       {
-         position.x = targetPos.x;
-         position.y = targetPos.y;
-         transform.position = position;
- //       }
+        if(isWalkable(targetPos))
+        {
+            position.x = targetPos.x;
+            position.y = targetPos.y;
+            transform.position = position;
+        }
 
         animator.SetBool("isMoving", isMoving);
-        /*
-        if(Input.GetKeyDown(KeyCode.E))
+    }
+
+    private bool isWalkable(Vector2 targetPos)
+    {
+        if(Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer) != null)
         {
-            Interact();
-        } */
+            return false;
+        }
+        
+        return true;
     }
 }
