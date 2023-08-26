@@ -44,14 +44,38 @@ public class Player : MonoBehaviour
             position.y = targetPos.y;
             transform.position = position;
         }
+        else
+        {
+            
+        }
 
         animator.SetBool("isMoving", isMoving);
     }
 
     private bool isWalkable(Vector2 targetPos)
     {
+        Vector2 position = transform.position;
+
         if(Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer) != null)
         {
+            // Check if the collision is happening on the x-axis or y-axis
+            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+            {
+                // Try moving only on the y-axis
+                targetPos.x = position.x;
+            }
+            else
+            {
+                // Try moving only on the x-axis
+                targetPos.y = position.y;
+            }
+
+            // Check if the new target position is walkable
+            if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer) == null)
+            {
+                return true;
+            }
+            
             return false;
         }
         
