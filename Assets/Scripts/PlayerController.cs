@@ -38,45 +38,66 @@ public class Player : MonoBehaviour
         targetPos.x = position.x + moveSpeed * input.x * Time.deltaTime;
         targetPos.y = position.y + moveSpeed * input.y * Time.deltaTime;
 
-        if(isWalkable(targetPos))
+        if(isWalkable(ref targetPos))
         {
             position.x = targetPos.x;
+            Debug.Log(targetPos.y);
             position.y = targetPos.y;
             transform.position = position;
-        }
-        else
-        {
-            
         }
 
         animator.SetBool("isMoving", isMoving);
     }
 
-    private bool isWalkable(Vector2 targetPos)
+    private bool isWalkable(ref Vector2 targetPos)
     {
         Vector2 position = transform.position;
+        Collider2D collider = Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer);
 
-        if(Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer) != null)
-        {
-            // Check if the collision is happening on the x-axis or y-axis
-            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+        //Checks if the player is colliding with something.
+        if(collider != null)
+        {   
+            Vector3 newPos = transform.position;
+            newPos.y = newPos.y+0.1f;
+
+            //Checks if collision is north of player, cancels vertical player movement if so.
+            if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
             {
-                // Try moving only on the y-axis
-                targetPos.x = position.x;
-            }
-            else
-            {
-                // Try moving only on the x-axis
-                targetPos.y = position.y;
+                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
+                targetPos.y = transform.position.y;
             }
 
-            // Check if the new target position is walkable
-            if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer) == null)
+            newPos = transform.position;
+            newPos.y = newPos.y-0.1f;
+
+            //Checks if collision is south of player, cancels vertical player movement if so.
+            if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
             {
-                return true;
+                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
+                targetPos.y = transform.position.y;
             }
+
+            newPos = transform.position;
+            newPos.x = newPos.x+0.1f;
             
-            return false;
+            //Checks if collision is east of player, cancels horizontal player movement if so.
+            if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
+            {
+                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
+                targetPos.x = transform.position.x;
+            }
+
+            newPos = transform.position;
+            newPos.x = newPos.x-0.1f;
+            
+            //Checks if collision is west of player, cancels horizontal player movement if so.
+            if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
+            {
+                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
+                targetPos.x = transform.position.x;
+            }
+
+            return true;
         }
         
         return true;
