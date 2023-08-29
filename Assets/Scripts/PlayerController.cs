@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
         if(isWalkable(ref targetPos))
         {
             position.x = targetPos.x;
-            Debug.Log(targetPos.y);
             position.y = targetPos.y;
             transform.position = position;
         }
