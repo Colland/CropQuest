@@ -139112,7 +139112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8194469acccb26f4a837e1bd782f8f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plant: {fileID: 1514166266}
+  parentObj: {fileID: 2057209275}
+  plantObj: {fileID: 1514166266}
   playerObj: {fileID: 865947664}
   SpawnPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &2057209277
