@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     public LayerMask solidObjectsLayer;
+    public LayerMask interactablesLayer;
     
     private void Awake()
     {
@@ -46,6 +47,11 @@ public class Player : MonoBehaviour
         }
 
         animator.SetBool("isMoving", isMoving);
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Interact();
+        }
     }
 
     private bool isWalkable(ref Vector2 targetPos)
@@ -62,7 +68,6 @@ public class Player : MonoBehaviour
             //Checks if collision is north of player, cancels vertical player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
             {
-                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
                 targetPos.y = transform.position.y;
             }
 
@@ -72,7 +77,6 @@ public class Player : MonoBehaviour
             //Checks if collision is south of player, cancels vertical player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
             {
-                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
                 targetPos.y = transform.position.y;
             }
 
@@ -82,7 +86,6 @@ public class Player : MonoBehaviour
             //Checks if collision is east of player, cancels horizontal player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
             {
-                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
                 targetPos.x = transform.position.x;
             }
 
@@ -92,7 +95,6 @@ public class Player : MonoBehaviour
             //Checks if collision is west of player, cancels horizontal player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.2f, solidObjectsLayer) != null)
             {
-                Debug.DrawLine(transform.position, newPos, Color.red, 1f);
                 targetPos.x = transform.position.x;
             }
 
@@ -100,5 +102,19 @@ public class Player : MonoBehaviour
         }
         
         return true;
+    }
+
+    public void Interact()
+    {
+        var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var interactPos = transform.position + facingDir;
+
+        Debug.DrawLine(transform.position, interactPos, Color.red, 5f);
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.2f, interactablesLayer);
+        if(collider != null)
+        {
+            collider.GetComponent<Interactable>()?.Interact();
+        }
     }
 }
