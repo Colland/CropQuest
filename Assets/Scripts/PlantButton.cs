@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class PlantButton : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PlantButton : MonoBehaviour
     void SpawnPlant()
     {
         //spawn same location player is
-        SpawnPoint = new Vector3(playerObj.transform.position.x, playerObj.transform.position.y, playerObj.transform.position.z);
+        SpawnPoint = new Vector3((int)MathF.Round(playerObj.transform.position.x), (int)MathF.Round(playerObj.transform.position.y), (int)MathF.Round(playerObj.transform.position.z));
 
         //creating object and setting parent
         var pObj = Instantiate(plantObj, SpawnPoint, Quaternion.identity);
@@ -31,6 +32,6 @@ public class PlantButton : MonoBehaviour
         nextScript.Grow(SpawnPoint, grownObj);
 
         // destroy once grown spawns
-        // Destroy(pObj);
+        Destroy(pObj);
     }
 }
