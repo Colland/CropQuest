@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - SolidObjects
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -46,6 +46,12 @@ TagManager:
     locked: 0
   - name: ground details
     uniqueID: 386593605
+    locked: 0
+  - name: Doors
+    uniqueID: 1696901637
+    locked: 0
+  - name: NPCs
+    uniqueID: 3998913625
     locked: 0
   - name: Player
     uniqueID: 790456481
