@@ -8,7 +8,7 @@ public class GrowPlant : MonoBehaviour
     public void Grow(Vector3 loc, GameObject grownObj)
     {
 
-        SpawnPoint = new Vector3(loc.x, loc.y, loc.z);
+        SpawnPoint = new(loc.x, loc.y, loc.z);
         var newObj = Instantiate(grownObj, SpawnPoint, Quaternion.identity);
 
         // setting parent is causing an issue for some reason
