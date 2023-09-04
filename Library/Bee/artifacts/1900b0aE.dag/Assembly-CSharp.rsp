@@ -395,6 +395,7 @@
 "Assets/Scripts/NpcController.cs"
 "Assets/Scripts/PlantButton.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/SettingsMenu.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
