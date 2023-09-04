@@ -12,6 +12,7 @@ public class PlantButton : MonoBehaviour
     public Vector3 SpawnPoint;
     public GrowPlant nextScript;
     public LayerMask plantsCollisionLayer;
+    public LayerMask solidObjectsLayer;
 
 
     void Update()
@@ -27,9 +28,10 @@ public class PlantButton : MonoBehaviour
         //spawn location of plant
         SpawnPoint = new Vector3((int)MathF.Round(playerObj.transform.position.x + 1), (int)MathF.Round(playerObj.transform.position.y), (int)MathF.Round(playerObj.transform.position.z));
         //collision layer
-        Collider2D collider = Physics2D.OverlapCircle(SpawnPoint, 0.2f, plantsCollisionLayer);
+        Collider2D collider1 = Physics2D.OverlapCircle(SpawnPoint, 0.2f, plantsCollisionLayer);
+        Collider2D collider2 = Physics2D.OverlapCircle(SpawnPoint, 0.2f, solidObjectsLayer);
 
-        if (collider == null)
+        if (collider1 == null && collider2 == null)
         {
             //creating object and setting parent
             var pObj = Instantiate(plantObj, SpawnPoint, Quaternion.identity);
