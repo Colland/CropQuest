@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32673 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16237 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Joachim Terepo/Documents/GitHub/CropQuest
+C:/Users/Lahndrick Hendricks/Desktop/CropQuest
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55737
-Successfully changed project path to: C:/Users/Joachim Terepo/Documents/GitHub/CropQuest
-C:/Users/Joachim Terepo/Documents/GitHub/CropQuest
+58570
+Successfully changed project path to: C:/Users/Lahndrick Hendricks/Desktop/CropQuest
+C:/Users/Lahndrick Hendricks/Desktop/CropQuest
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,67 +49,67 @@ C:/Users/Joachim Terepo/Documents/GitHub/CropQuest
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [71400] Host "[IP] 192.168.1.242 [Port] 0 [Flags] 2 [Guid] 2564380133 [EditorId] 2564380133 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RMH17HB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25080] Host "[IP] 192.168.1.248 [Port] 0 [Flags] 2 [Guid] 1232124333 [EditorId] 1232124333 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FUID31L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [71400] Host "[IP] 192.168.1.242 [Port] 0 [Flags] 2 [Guid] 2564380133 [EditorId] 2564380133 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RMH17HB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25080] Host "[IP] 192.168.1.248 [Port] 0 [Flags] 2 [Guid] 1232124333 [EditorId] 1232124333 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FUID31L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 12.62 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 21.21 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Joachim Terepo/Documents/GitHub/CropQuest/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Lahndrick Hendricks/Desktop/CropQuest/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   NVIDIA
-    VRAM:     8032 MB
-    Driver:   31.0.15.3713
+    VRAM:     5980 MB
+    Driver:   31.0.15.3640
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006201 seconds.
-- Loaded All Assemblies, in  0.293 seconds
+Registered in 0.023538 seconds.
+- Loaded All Assemblies, in  0.775 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 249 ms
+Android Extension - Scanning For ADB Devices 554 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.506 seconds
-Domain Reload Profiling: 797ms
-	BeginReloadAssembly (88ms)
+- Finished resetting the current domain, in  1.144 seconds
+Domain Reload Profiling: 1916ms
+	BeginReloadAssembly (268ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (121ms)
-		LoadAssemblies (87ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (131ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (264ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (119ms)
-			TypeCache.Refresh (118ms)
-				TypeCache.ScanAssembly (107ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (506ms)
+		AnalyzeDomain (265ms)
+			TypeCache.Refresh (262ms)
+				TypeCache.ScanAssembly (226ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1145ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (461ms)
+		SetupLoadedEditorAssemblies (1027ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (347ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (764ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (71ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,10 +117,10 @@ Domain Reload Profiling: 797ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Joachim Terepo\Documents\GitHub\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Joachim Terepo\Documents\GitHub\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.510 seconds
-Refreshing native plugins compatible for Editor in 6.33 ms, found 4 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\Lahndrick Hendricks\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Lahndrick Hendricks\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.204 seconds
+Refreshing native plugins compatible for Editor in 20.56 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
@@ -131,47 +131,47 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.450 seconds
-Domain Reload Profiling: 956ms
-	BeginReloadAssembly (117ms)
+- Finished resetting the current domain, in  1.090 seconds
+Domain Reload Profiling: 2286ms
+	BeginReloadAssembly (246ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (326ms)
-		LoadAssemblies (264ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (781ms)
+		LoadAssemblies (584ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (135ms)
-			TypeCache.Refresh (113ms)
-				TypeCache.ScanAssembly (99ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (450ms)
+		AnalyzeDomain (335ms)
+			TypeCache.Refresh (270ms)
+				TypeCache.ScanAssembly (238ms)
+			ScanForSourceGeneratedMonoScriptInfo (53ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1091ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (313ms)
+		SetupLoadedEditorAssemblies (729ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (50ms)
+			SetLoadedEditorAssemblies (15ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (66ms)
-			ProcessInitializeOnLoadAttributes (190ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (436ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (15ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 7.29 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 11.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4274 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 78 unused Assets / (68.5 KB). Loaded Objects now: 4726.
-Memory consumption went from 151.0 MB to 150.9 MB.
-Total: 2.963000 ms (FindLiveObjects: 0.239400 ms CreateObjectMapping: 0.098500 ms MarkObjects: 2.505700 ms  DeleteObjects: 0.118100 ms)
+Unloading 4275 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (68.3 KB). Loaded Objects now: 4727.
+Memory consumption went from 150.9 MB to 150.8 MB.
+Total: 3.884100 ms (FindLiveObjects: 0.499800 ms CreateObjectMapping: 0.376000 ms MarkObjects: 2.871500 ms  DeleteObjects: 0.135600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,51 +180,18 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 1538712.895644 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(ce7293424bbf7e846b83914c2d4d89d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(ce7293424bbf7e846b83914c2d4d89d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628d4251ddfd476b21227deb7ceaa8de') in 0.002298 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053fb830d1b2861b1f58a5cb9161d4de') in 0.000282 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 20.003694 seconds.
-  path: Assets/GUI Assets/base.png
-  artifactKey: Guid(7db00fb71008dc545a9c667faa1359be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Assets/base.png using Guid(7db00fb71008dc545a9c667faa1359be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5abcc544f07f5dedf95db6c13ee6bb9c') in 0.095070 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/GUI Assets/CropQuest.jpg
-  artifactKey: Guid(cdd228fa63d931b47a4893056465e2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Assets/CropQuest.jpg using Guid(cdd228fa63d931b47a4893056465e2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518bdf9ebf4f5908c4c794ffcd95c885') in 0.095497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 7.01 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 12.64 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 4734.
-Memory consumption went from 78.8 MB to 78.8 MB.
-Total: 3.190100 ms (FindLiveObjects: 0.263900 ms CreateObjectMapping: 0.098400 ms MarkObjects: 2.810400 ms  DeleteObjects: 0.016400 ms)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.0 KB). Loaded Objects now: 4727.
+Memory consumption went from 79.0 MB to 78.9 MB.
+Total: 3.680100 ms (FindLiveObjects: 0.360700 ms CreateObjectMapping: 0.369200 ms MarkObjects: 2.927100 ms  DeleteObjects: 0.022300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -241,447 +208,138 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 259.422734 seconds.
-  path: Assets/Tilemaps/Farm Objects.prefab
-  artifactKey: Guid(5f16719d59a07934e82fe0a9bda96115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Farm Objects.prefab using Guid(5f16719d59a07934e82fe0a9bda96115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602f0c441c64716a8e9bbfa4445b473c') in 0.038039 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Lahndrick Hendricks\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Lahndrick Hendricks\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.811 seconds
+Refreshing native plugins compatible for Editor in 13.90 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.032 seconds
+Domain Reload Profiling: 2836ms
+	BeginReloadAssembly (209ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (480ms)
+		LoadAssemblies (565ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2034ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (837ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (52ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (145ms)
+			ProcessInitializeOnLoadAttributes (534ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (66ms)
+Refreshing native plugins compatible for Editor in 13.11 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4732.
+Memory consumption went from 144.2 MB to 144.1 MB.
+Total: 6.132700 ms (FindLiveObjects: 0.531200 ms CreateObjectMapping: 0.589000 ms MarkObjects: 4.885300 ms  DeleteObjects: 0.125800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_48.asset
-  artifactKey: Guid(36b0933c291b2294fa942e180df17ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_48.asset using Guid(36b0933c291b2294fa942e180df17ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050f5d8c9ac76954fb5a59e046d30167') in 0.012494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_32.asset
-  artifactKey: Guid(f4249484e2427e044a778e0a971f230c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_32.asset using Guid(f4249484e2427e044a778e0a971f230c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c68a272bbac3bb612afb9ca811268894') in 0.011828 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_92.asset
-  artifactKey: Guid(6641c511f194fb14790e7134c83806d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_92.asset using Guid(6641c511f194fb14790e7134c83806d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b24ffc25ee22558878cc2d185d8423a') in 0.011192 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_51.asset
-  artifactKey: Guid(75a0ab3bbb411044081a19c58923cf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_51.asset using Guid(75a0ab3bbb411044081a19c58923cf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca9f390fea2acd96d1c30e716f0346b') in 0.009567 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_87.asset
-  artifactKey: Guid(50974d2a63897514e82e16007a2d0f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_87.asset using Guid(50974d2a63897514e82e16007a2d0f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9babf38233e5caa77052c03d5c4e92e6') in 0.016844 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_74.asset
-  artifactKey: Guid(5ca82dfa4d5c1b04c9cb8e610452fd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_74.asset using Guid(5ca82dfa4d5c1b04c9cb8e610452fd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d015720a24a29c621322d6b90cc1d4') in 0.011787 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_44.asset
-  artifactKey: Guid(ea241350d69dd8a4793671a87401bf03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_44.asset using Guid(ea241350d69dd8a4793671a87401bf03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed796683b891f24358ef16638257663') in 0.008760 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_67.asset
-  artifactKey: Guid(40c9fc7cc71ce514ea7189414b5457a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_67.asset using Guid(40c9fc7cc71ce514ea7189414b5457a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ed16c467a168823efb9838ab615d01') in 0.010492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_93.asset
-  artifactKey: Guid(f92bed12a30e2834f98091a6aebf5591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_93.asset using Guid(f92bed12a30e2834f98091a6aebf5591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a71cf34d5d33a75ea8171c04bd78ba3') in 0.012091 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_49.asset
-  artifactKey: Guid(1533c1f76f5549049a160d4e98cdfb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_49.asset using Guid(1533c1f76f5549049a160d4e98cdfb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8671b10553f88937db33c041bc2eb125') in 0.009735 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_12.asset
-  artifactKey: Guid(0e014e0d558412d47b792cf52762838d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_12.asset using Guid(0e014e0d558412d47b792cf52762838d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8327d3fc56eb9606dee0b8bfbdbd4b7e') in 0.007499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_59.asset
-  artifactKey: Guid(5b116874cada96d4fb3cc765b57ad14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_59.asset using Guid(5b116874cada96d4fb3cc765b57ad14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa571a6e527693e6265ba7e224b88a5b') in 0.008814 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_30.asset
-  artifactKey: Guid(5feed00de9a7e554da7087f43f54b63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_30.asset using Guid(5feed00de9a7e554da7087f43f54b63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4454d6d43d23e846efd848f0e6c9f1') in 0.012597 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_20.asset
-  artifactKey: Guid(ce8f28912735b6c41910f13acb1a15e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_20.asset using Guid(ce8f28912735b6c41910f13acb1a15e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40ede6d73db4465ed1948d6b1c82c14') in 0.009868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_66.asset
-  artifactKey: Guid(85cf9ea2053b0e94a893d19d69cca20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_66.asset using Guid(85cf9ea2053b0e94a893d19d69cca20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2ef516a839b0d9d0fd3ff386be0fdf') in 0.017645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_55.asset
-  artifactKey: Guid(aa1c2edafb9b0a241b7a4270e091fc0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_55.asset using Guid(aa1c2edafb9b0a241b7a4270e091fc0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7141cbfea53e23662224fdf6c52f0980') in 0.013136 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_13.asset
-  artifactKey: Guid(81c4dcabc8655fa4c9e57cfca174755e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_13.asset using Guid(81c4dcabc8655fa4c9e57cfca174755e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5150cc79c8055e6a7cf9427a931c056d') in 0.009122 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_82.asset
-  artifactKey: Guid(4f6d49c5e0cb0d740a0c61e5792d8633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_82.asset using Guid(4f6d49c5e0cb0d740a0c61e5792d8633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '773927e985ccdf519c4b634b16ebd7c6') in 0.012994 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_97.asset
-  artifactKey: Guid(74335990ef228314cb9784b89691b833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_97.asset using Guid(74335990ef228314cb9784b89691b833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044e9c2174bc8d49be7d7b8f0435ee6b') in 0.009776 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_33.asset
-  artifactKey: Guid(63e30f434025d974997b5cd48f260c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_33.asset using Guid(63e30f434025d974997b5cd48f260c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0116f4bef2f94246fadfcc0857ad94') in 0.015913 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_70.asset
-  artifactKey: Guid(fbec88b4be3881748888cf5ef05de227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_70.asset using Guid(fbec88b4be3881748888cf5ef05de227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78fd18b9d6d96079106270a11ce9ef5f') in 0.010052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_90.asset
-  artifactKey: Guid(ac7a3a696bca55c4890322413b1bf6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_90.asset using Guid(ac7a3a696bca55c4890322413b1bf6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc0ddb971377c8f306feea2dacf4c56') in 0.011812 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_81.asset
-  artifactKey: Guid(4da438618af14b2449a1810c0b451aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_81.asset using Guid(4da438618af14b2449a1810c0b451aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09f4f05aa9e35bf886c13e65d83e08a') in 0.011980 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_99.asset
-  artifactKey: Guid(a609685f88067e94fb4fbfaa0303e59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_99.asset using Guid(a609685f88067e94fb4fbfaa0303e59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c9848f97fbc0adc0857cacb20c9335') in 0.011513 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_38.asset
-  artifactKey: Guid(e208abb0f6dd59f42bfe46daa28c636c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_38.asset using Guid(e208abb0f6dd59f42bfe46daa28c636c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad639e61ef9fcaa5be179a4d7196c29') in 0.009949 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_91.asset
-  artifactKey: Guid(bb5ace02ae48080439ceba07c2932387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_91.asset using Guid(bb5ace02ae48080439ceba07c2932387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd838a128bc71ced76f3ca5a6b0efda5a') in 0.010117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_95.asset
-  artifactKey: Guid(b94f68b48a0de5849b4262d89115d41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_95.asset using Guid(b94f68b48a0de5849b4262d89115d41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b3faa876a136b3129e8a92c715169f') in 0.010718 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_17.asset
-  artifactKey: Guid(b56fbeb292c4b7240b02a2ff82255e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_17.asset using Guid(b56fbeb292c4b7240b02a2ff82255e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcaad8b2f47b280733d3fa0734cf807') in 0.020984 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_11.asset
-  artifactKey: Guid(d1deaa2ca3d528849a5ae74f1f476ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_11.asset using Guid(d1deaa2ca3d528849a5ae74f1f476ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33393b4cb3c4422ca6a9d76e341edec6') in 0.010779 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_19.asset
-  artifactKey: Guid(809ea060fceb5c440816aca5abb8feea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_19.asset using Guid(809ea060fceb5c440816aca5abb8feea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8b81188153665c1767d5a3bd625433') in 0.010472 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_101.asset
-  artifactKey: Guid(93c46ac989a78c84abe141e3080bab55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_101.asset using Guid(93c46ac989a78c84abe141e3080bab55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae0ec5a82cece4d2aace47ccc7d3b12') in 0.013052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_6.asset
-  artifactKey: Guid(e63a2f2d7a3fced4a8f74cb3e99f0ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_6.asset using Guid(e63a2f2d7a3fced4a8f74cb3e99f0ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a158f260e9abf780ee34f1ff28a1e71') in 0.008974 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_21.asset
-  artifactKey: Guid(707f3115e248def4f9d3c3b53c67df05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_21.asset using Guid(707f3115e248def4f9d3c3b53c67df05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c67abe59e0257bbb21ab87d4a1d0bf') in 0.009899 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_7.asset
-  artifactKey: Guid(5f2da7d4908042443bfc63f938625012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_7.asset using Guid(5f2da7d4908042443bfc63f938625012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31173845a764c89614f9958fe100810a') in 0.010399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_8.asset
-  artifactKey: Guid(47f0d1b8d1a1f9c47a838e9d50e9f86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_8.asset using Guid(47f0d1b8d1a1f9c47a838e9d50e9f86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42520a8d2754a68746aabcfd2e6c02c6') in 0.010164 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_53.asset
-  artifactKey: Guid(f7c12c405eb1697498c54ea314aef8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_53.asset using Guid(f7c12c405eb1697498c54ea314aef8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561b54cb54ca6d118f28de4d745154e5') in 0.010084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_71.asset
-  artifactKey: Guid(44b6ed608d5db8249aa6e8622707cb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_71.asset using Guid(44b6ed608d5db8249aa6e8622707cb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1297cdb81f434a8fe5c19ed624eaa1') in 0.010144 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_45.asset
-  artifactKey: Guid(0364d1525aafbc7459f34df89eeff556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_45.asset using Guid(0364d1525aafbc7459f34df89eeff556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a01a7c545fc7c7378fb6c01db88e4f2') in 0.009613 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_61.asset
-  artifactKey: Guid(575af34d45e23314ab81020fbf842f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_61.asset using Guid(575af34d45e23314ab81020fbf842f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250dcecf3b6409a72f8829bcbcbec55c') in 0.009159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_50.asset
-  artifactKey: Guid(411eccdd12c381948aa83e926c9c19cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_50.asset using Guid(411eccdd12c381948aa83e926c9c19cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b133157e5def703b13870f41b9ed5a') in 0.009511 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_76.asset
-  artifactKey: Guid(e3c98b33cd53a244eb3b5bb680869b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_76.asset using Guid(e3c98b33cd53a244eb3b5bb680869b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c40b779777b10fdbbc8843dbb5231eb') in 0.010210 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_68.asset
-  artifactKey: Guid(c9b2d1f535aefb644aeea4c2113b4d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_68.asset using Guid(c9b2d1f535aefb644aeea4c2113b4d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ad41942f04e3645b45ec46442229f1') in 0.009496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_72.asset
-  artifactKey: Guid(49da301f733c6fe4dbc84377fe8523aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_72.asset using Guid(49da301f733c6fe4dbc84377fe8523aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68e33f995703e8070045388092b8f61') in 0.010188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_85.asset
-  artifactKey: Guid(62344793b28ab7f44bb9aaa7ce7b6972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_85.asset using Guid(62344793b28ab7f44bb9aaa7ce7b6972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b828d0f18946d53cb7983317b56ef00') in 0.010084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_64.asset
-  artifactKey: Guid(26ae08208944010499cf5ae822dd9c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_64.asset using Guid(26ae08208944010499cf5ae822dd9c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a23c20d52cae9567774d869346dd2ce8') in 0.009344 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_103.asset
-  artifactKey: Guid(01a4dc384a6e8ef4eb57dfe87a14a0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_103.asset using Guid(01a4dc384a6e8ef4eb57dfe87a14a0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bba2a57a41eab645312d229a5609280') in 0.010912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_47.asset
-  artifactKey: Guid(49baa133ee25f2844a4c0782511327a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_47.asset using Guid(49baa133ee25f2844a4c0782511327a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e83c73e03b3fad41d37b25c7c40e32') in 0.009243 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_57.asset
-  artifactKey: Guid(42cc9cea703a2ee47addead4d29d8f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_57.asset using Guid(42cc9cea703a2ee47addead4d29d8f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf13e4fd65440c9185994ceb2380e124') in 0.009573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_88.asset
-  artifactKey: Guid(8e08d7698c5aa5640a9d02389d397c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_88.asset using Guid(8e08d7698c5aa5640a9d02389d397c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1926a76fb9df5519b6715daa5350631f') in 0.009673 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_40.asset
-  artifactKey: Guid(51758dcb13c94924fa70c6e86f613cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_40.asset using Guid(51758dcb13c94924fa70c6e86f613cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255fa1b3780c79489aedee1b7f4c55c9') in 0.009795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_80.asset
-  artifactKey: Guid(be91986b9be7c4a449788353708315d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_80.asset using Guid(be91986b9be7c4a449788353708315d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ae6628617f359519bbf8979418da08') in 0.009938 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_60.asset
-  artifactKey: Guid(d845c5647b9f6e54d8117e0903304c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_60.asset using Guid(d845c5647b9f6e54d8117e0903304c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5c5a026e861f9a6a4771f3f07944c4') in 0.009883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_23.asset
-  artifactKey: Guid(38d7ac4a560d2794d82f8c3ae78117b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_23.asset using Guid(38d7ac4a560d2794d82f8c3ae78117b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79f533ac3ff463e520a1969326a2c91') in 0.010337 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_29.asset
-  artifactKey: Guid(f46245d63ba32a5428c58158d6fdd983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_29.asset using Guid(f46245d63ba32a5428c58158d6fdd983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd195bb9a10bebb62bd6e08cbfaf21aa') in 0.009803 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Lahndrick Hendricks\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Lahndrick Hendricks\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.752 seconds
+Refreshing native plugins compatible for Editor in 10.78 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.786 seconds
+Domain Reload Profiling: 2532ms
+	BeginReloadAssembly (247ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (373ms)
+		LoadAssemblies (486ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1787ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (805ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (62ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (191ms)
+			ProcessInitializeOnLoadAttributes (479ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 17.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4736.
+Memory consumption went from 144.2 MB to 144.2 MB.
+Total: 6.874300 ms (FindLiveObjects: 0.822800 ms CreateObjectMapping: 0.861200 ms MarkObjects: 5.019400 ms  DeleteObjects: 0.169700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
