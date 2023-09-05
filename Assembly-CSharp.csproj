@@ -42,10 +42,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\NpcController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\PlantButton.cs" />
+     <Compile Include="Assets\Scripts\Planting.cs" />
      <Compile Include="Assets\Scripts\MainMenuScript.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
-     <Compile Include="Assets\Scripts\GrowPlant.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SettingsMenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
