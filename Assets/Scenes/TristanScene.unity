@@ -124836,15 +124836,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603902620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8194469acccb26f4a837e1bd782f8f3b, type: 3}
+  m_Script: {fileID: 11500000, guid: b2a608f6c1a48e74cb4f11108c700079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentObj: {fileID: 1603902620}
-  plantObj: {fileID: 1993506584}
-  grownObj: {fileID: 1581154743}
   playerObj: {fileID: 1535454221}
-  SpawnPoint: {x: 0, y: 0, z: 0}
-  nextScript: {fileID: 0}
+  plantObj: {fileID: 1993506584}
+  growObj: {fileID: 1581154743}
+  plantsCollisionLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  growDelay: 10
 --- !u!4 &1603902622
 Transform:
   m_ObjectHideFlags: 0
@@ -139440,8 +139444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709e7ed1a5815b640abf3270cca36ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPoint: {x: 0, y: 0, z: 0}
-  parentObj: {fileID: 1603902620}
 --- !u!212 &1993506586
 SpriteRenderer:
   m_ObjectHideFlags: 0
