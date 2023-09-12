@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 C:\Users\Lahndrick Hendricks\Desktop\CropQuest
+=======
+C:\Users\catbe\Documents\GitHub\CropQuest
+>>>>>>> Stashed changes

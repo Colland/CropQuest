@@ -10,6 +10,14 @@ public class Player : MonoBehaviour
     private bool isMoving;
     private Animator animator;
 
+<<<<<<< Updated upstream
+=======
+    public LayerMask solidObjectsLayer;
+    public LayerMask interactablesLayer;
+    
+    private int spawnCounter = 0;
+    //public TMP_Text spawnText;
+>>>>>>> Stashed changes
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -51,5 +59,13 @@ public class Player : MonoBehaviour
         {
             Interact();
         } */
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Spawn")) {
+            collision.gameObject.SetActive(false);
+            spawnCounter += 1;
+            //spawnText.text = " " + spawnCounter;
+        }
     }
 }
