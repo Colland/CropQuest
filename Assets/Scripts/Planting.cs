@@ -7,8 +7,7 @@ public class Planting : MonoBehaviour
     public GameObject playerObj;
     public GameObject plantObj;
     public GameObject growObj;
-    public LayerMask plantsCollisionLayer;
-    public LayerMask solidObjectsLayer;
+    public LayerMask collisionLayers;
     public int growDelay;
 
     // Update is called once per frame
@@ -18,7 +17,7 @@ public class Planting : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Physics2D.OverlapCircle(location, 0.2f, plantsCollisionLayer) == null && Physics2D.OverlapCircle(location, 0.2f, solidObjectsLayer) == null)
+            if (Physics2D.OverlapCircle(location, 0.2f, collisionLayers) == null)
             {
                 SpawnPlant(location);
             }
