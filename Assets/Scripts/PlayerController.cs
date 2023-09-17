@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
+    public LayerMask animalLayer;
     
     private void Awake()
     {
@@ -57,7 +58,7 @@ public class Player : MonoBehaviour
     private bool isWalkable(ref Vector2 targetPos)
     {
         Vector2 position = transform.position;
-        Collider2D collider = Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactablesLayer);
+        Collider2D collider = Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactablesLayer | animalLayer);
 
         //Checks if the player is colliding with something.
         if(collider != null)
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
             newPos.y = newPos.y+0.1f;
 
             //Checks if collision is north of player, cancels vertical player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer) != null)
+            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
                 targetPos.y = transform.position.y;
                 Debug.Log("North");
@@ -76,7 +77,7 @@ public class Player : MonoBehaviour
             newPos.y = newPos.y-0.1f;
 
             //Checks if collision is south of player, cancels vertical player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer) != null)
+            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
                 targetPos.y = transform.position.y;
                 Debug.Log("South");
@@ -86,7 +87,7 @@ public class Player : MonoBehaviour
             newPos.x = newPos.x+0.1f;
             
             //Checks if collision is east of player, cancels horizontal player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer) != null)
+            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
                 targetPos.x = transform.position.x;
             }
@@ -95,7 +96,7 @@ public class Player : MonoBehaviour
             newPos.x = newPos.x-0.1f;
             
             //Checks if collision is west of player, cancels horizontal player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer) != null)
+            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
                 targetPos.x = transform.position.x;
             }

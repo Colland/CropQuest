@@ -14,6 +14,9 @@ public class CowBehavior : MonoBehaviour
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
 
+    public float stopDistance = 1.5f;
+    public Transform playerPos;
+
 
     Vector2 wayPoint;
 
@@ -30,7 +33,7 @@ public class CowBehavior : MonoBehaviour
     void Update()
     {
         Vector2 targetPos = Vector2.MoveTowards(transform.position, wayPoint, speed* Time.deltaTime);
-        Collider2D collider = Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactablesLayer);
+        Collider2D collider = Physics2D.OverlapCircle(targetPos, 1f, solidObjectsLayer | interactablesLayer);
 
         if(collider == null)
         {
@@ -44,12 +47,20 @@ public class CowBehavior : MonoBehaviour
             }
             animator.SetFloat("Direction", currentDirection);
 
-            transform.position = Vector2.MoveTowards(transform.position, wayPoint, speed* Time.deltaTime);
-            animator.SetBool("isMoving", true);
-
-            if(Vector2.Distance(transform.position, wayPoint) < range)
+            float distanceToPlayer = Vector2.Distance(transform.position, playerPos.position);
+            if(distanceToPlayer <= stopDistance)
             {
-                setNewDestination();
+                animator.SetBool("isMoving", false); 
+            }
+            else
+            {
+                transform.position = Vector2.MoveTowards(transform.position, wayPoint, speed* Time.deltaTime);
+                animator.SetBool("isMoving", true);
+
+                if(Vector2.Distance(transform.position, wayPoint) < range)
+                {
+                    setNewDestination();
+                }
             }
         }
         else
