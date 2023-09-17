@@ -15,7 +15,7 @@ C:/Users/Tristan/Desktop/CropQuest
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51645
+61602
 Successfully changed project path to: C:/Users/Tristan/Desktop/CropQuest
 C:/Users/Tristan/Desktop/CropQuest
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/Tristan/Desktop/CropQuest
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19692] Host "[IP] 192.168.1.73 [Port] 0 [Flags] 2 [Guid] 3456168904 [EditorId] 3456168904 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DQJ1GM7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12932] Host "[IP] 192.168.1.73 [Port] 0 [Flags] 2 [Guid] 390017816 [EditorId] 390017816 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DQJ1GM7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19692] Host "[IP] 192.168.1.73 [Port] 0 [Flags] 2 [Guid] 3456168904 [EditorId] 3456168904 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DQJ1GM7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12932] Host "[IP] 192.168.1.73 [Port] 0 [Flags] 2 [Guid] 390017816 [EditorId] 390017816 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DQJ1GM7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 12.95 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 9.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -63,50 +63,50 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: AMD Radeon RX 6600 (ID=0x73ff)
     Vendor:   ATI
-    VRAM:     8147 MB
-    Driver:   31.0.14057.5006
+    VRAM:     8146 MB
+    Driver:   31.0.21018.6011
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003986 seconds.
-- Loaded All Assemblies, in  0.254 seconds
+Registered in 0.005056 seconds.
+- Loaded All Assemblies, in  0.261 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.186 seconds
-Domain Reload Profiling: 439ms
-	BeginReloadAssembly (80ms)
+- Finished resetting the current domain, in  0.206 seconds
+Domain Reload Profiling: 466ms
+	BeginReloadAssembly (82ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (101ms)
-		LoadAssemblies (79ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (99ms)
+		LoadAssemblies (81ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (100ms)
-			TypeCache.Refresh (99ms)
-				TypeCache.ScanAssembly (89ms)
+		AnalyzeDomain (97ms)
+			TypeCache.Refresh (96ms)
+				TypeCache.ScanAssembly (86ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (187ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (206ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (145ms)
+		SetupLoadedEditorAssemblies (157ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (95ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
+			ProcessInitializeOnLoadAttributes (101ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,8 +116,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.649 seconds
-Refreshing native plugins compatible for Editor in 4.55 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.479 seconds
+Refreshing native plugins compatible for Editor in 4.47 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
@@ -127,142 +127,212 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.577 seconds
-Domain Reload Profiling: 1223ms
-	BeginReloadAssembly (154ms)
+- Finished resetting the current domain, in  0.456 seconds
+Domain Reload Profiling: 932ms
+	BeginReloadAssembly (110ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (419ms)
-		LoadAssemblies (329ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (238ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (144ms)
-				TypeCache.ScanAssembly (128ms)
-			ScanForSourceGeneratedMonoScriptInfo (27ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (94ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (577ms)
+	FinalizeReload (456ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (412ms)
+		SetupLoadedEditorAssemblies (318ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (281ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 5.45 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 5.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4273 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 78 unused Assets / (68.3 KB). Loaded Objects now: 4722.
-Memory consumption went from 145.4 MB to 145.3 MB.
-Total: 3.429100 ms (FindLiveObjects: 0.265700 ms CreateObjectMapping: 0.144700 ms MarkObjects: 2.860200 ms  DeleteObjects: 0.157500 ms)
+Unloading 4274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (68.6 KB). Loaded Objects now: 4723.
+Memory consumption went from 145.5 MB to 145.4 MB.
+Total: 2.652900 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.105200 ms MarkObjects: 2.229300 ms  DeleteObjects: 0.116900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 55392.286100 seconds.
-  path: Assets/Readme.asset
-  artifactKey: Guid(7f2c382dc2c22446db59030979f6e495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(7f2c382dc2c22446db59030979f6e495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f729846334eed406d806e9e99c9ac8f') in 0.011886 seconds
+  Time since last request: 25426.772867 seconds.
+  path: Assets/Animation/cowIdleLeft.anim
+  artifactKey: Guid(26b725ff1b5048247918bfa429b3637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/cowIdleLeft.anim using Guid(26b725ff1b5048247918bfa429b3637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72109abe6e3733437b751f1ea2205ef4') in 0.008225 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.03 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 4723.
-Memory consumption went from 73.7 MB to 73.7 MB.
-Total: 2.987400 ms (FindLiveObjects: 0.208000 ms CreateObjectMapping: 0.120000 ms MarkObjects: 2.639800 ms  DeleteObjects: 0.018600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 14.704891 seconds.
+  path: Assets/Animation/Idle_left.anim
+  artifactKey: Guid(2e55cc54d66d79343b1641891430fffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Idle_left.anim using Guid(2e55cc54d66d79343b1641891430fffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf87a6c1fdf3e0ce44b96e078c0d70d') in 0.000762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 49.668383 seconds.
+  path: Assets/Characters/npc1_idle.png
+  artifactKey: Guid(a767727f1e8c5e9468f683d2b7ed61e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/npc1_idle.png using Guid(a767727f1e8c5e9468f683d2b7ed61e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711efdccdf4173f22a4790766b61e11e') in 0.069603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.341 seconds
-Refreshing native plugins compatible for Editor in 4.48 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.370 seconds
+Refreshing native plugins compatible for Editor in 4.60 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.637 seconds
-Domain Reload Profiling: 975ms
-	BeginReloadAssembly (120ms)
+- Finished resetting the current domain, in  0.707 seconds
+Domain Reload Profiling: 1074ms
+	BeginReloadAssembly (127ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (167ms)
-		LoadAssemblies (217ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (227ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (6ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (637ms)
+	FinalizeReload (707ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (284ms)
+		SetupLoadedEditorAssemblies (302ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (183ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (194ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.49 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 6.00 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4728.
-Memory consumption went from 139.5 MB to 139.5 MB.
-Total: 3.335500 ms (FindLiveObjects: 0.250500 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.751000 ms  DeleteObjects: 0.190600 ms)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4735.
+Memory consumption went from 143.8 MB to 143.7 MB.
+Total: 3.134700 ms (FindLiveObjects: 0.261700 ms CreateObjectMapping: 0.127600 ms MarkObjects: 2.683600 ms  DeleteObjects: 0.061000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 673.339476 seconds.
+  path: Assets/Animation/Cow.controller
+  artifactKey: Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Cow.controller using Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8488d51fa7bc0336d68f266f47995c') in 0.008519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.374 seconds
+Refreshing native plugins compatible for Editor in 5.30 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.724 seconds
+Domain Reload Profiling: 1096ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (194ms)
+		LoadAssemblies (247ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (725ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (330ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (219ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 5.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4739.
+Memory consumption went from 143.8 MB to 143.7 MB.
+Total: 3.153900 ms (FindLiveObjects: 0.201300 ms CreateObjectMapping: 0.264300 ms MarkObjects: 2.630900 ms  DeleteObjects: 0.056400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -283,53 +353,254 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.361 seconds
-Refreshing native plugins compatible for Editor in 4.61 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.381 seconds
+Refreshing native plugins compatible for Editor in 4.72 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.736 seconds
-Domain Reload Profiling: 1095ms
-	BeginReloadAssembly (126ms)
+- Finished resetting the current domain, in  0.675 seconds
+Domain Reload Profiling: 1053ms
+	BeginReloadAssembly (128ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (22ms)
 	LoadAllAssembliesAndSetupDomain (180ms)
-		LoadAssemblies (232ms)
+		LoadAssemblies (227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (675ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (268ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4743.
+Memory consumption went from 144.0 MB to 144.0 MB.
+Total: 2.502500 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.103400 ms MarkObjects: 2.152900 ms  DeleteObjects: 0.054700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.357 seconds
+Refreshing native plugins compatible for Editor in 4.53 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.648 seconds
+Domain Reload Profiling: 1003ms
+	BeginReloadAssembly (123ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (215ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (649ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (272ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4747.
+Memory consumption went from 144.0 MB to 144.0 MB.
+Total: 2.855400 ms (FindLiveObjects: 0.229500 ms CreateObjectMapping: 0.146400 ms MarkObjects: 2.417600 ms  DeleteObjects: 0.061100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.350 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.691 seconds
+Domain Reload Profiling: 1039ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (167ms)
+		LoadAssemblies (222ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (10ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (737ms)
+	FinalizeReload (692ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (341ms)
+		SetupLoadedEditorAssemblies (296ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (237ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (189ms)
 			ProcessInitializeOnLoadMethodAttributes (33ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 5.64 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.47 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4732.
-Memory consumption went from 139.5 MB to 139.5 MB.
-Total: 3.065400 ms (FindLiveObjects: 0.314900 ms CreateObjectMapping: 0.165900 ms MarkObjects: 2.520300 ms  DeleteObjects: 0.063300 ms)
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4751.
+Memory consumption went from 144.0 MB to 144.0 MB.
+Total: 2.543000 ms (FindLiveObjects: 0.197700 ms CreateObjectMapping: 0.110900 ms MarkObjects: 2.178200 ms  DeleteObjects: 0.055600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.374 seconds
+Refreshing native plugins compatible for Editor in 6.62 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.635 seconds
+Domain Reload Profiling: 1006ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (194ms)
+		LoadAssemblies (232ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (635ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (273ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4755.
+Memory consumption went from 144.0 MB to 144.0 MB.
+Total: 2.488900 ms (FindLiveObjects: 0.202500 ms CreateObjectMapping: 0.104500 ms MarkObjects: 2.120100 ms  DeleteObjects: 0.060700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -351,24 +622,375 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.353 seconds
-Refreshing native plugins compatible for Editor in 4.84 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.75 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.741 seconds
-Domain Reload Profiling: 1091ms
+- Finished resetting the current domain, in  0.690 seconds
+Domain Reload Profiling: 1040ms
 	BeginReloadAssembly (125ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
+		CreateAndSetChildDomain (26ms)
 	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (173ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (690ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (294ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (189ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 5.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4759.
+Memory consumption went from 144.0 MB to 144.0 MB.
+Total: 3.452000 ms (FindLiveObjects: 0.206300 ms CreateObjectMapping: 0.199800 ms MarkObjects: 2.983000 ms  DeleteObjects: 0.062000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.357 seconds
+Refreshing native plugins compatible for Editor in 4.67 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.714 seconds
+Domain Reload Profiling: 1061ms
+	BeginReloadAssembly (122ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (224ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (714ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (311ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (207ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 6.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.5 KB). Loaded Objects now: 4763.
+Memory consumption went from 144.0 MB to 144.0 MB.
+Total: 3.096700 ms (FindLiveObjects: 0.270000 ms CreateObjectMapping: 0.157000 ms MarkObjects: 2.587000 ms  DeleteObjects: 0.070300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 700.778032 seconds.
+  path: Assets/Animation/Cow.controller
+  artifactKey: Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Cow.controller using Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3b9a9e6fc0699ef13f7b8d7601d594') in 0.009293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.348 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.761 seconds
+Domain Reload Profiling: 1107ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (221ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (762ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (351ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 6.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.5 KB). Loaded Objects now: 4767.
+Memory consumption went from 143.8 MB to 143.8 MB.
+Total: 3.050700 ms (FindLiveObjects: 0.229300 ms CreateObjectMapping: 0.131700 ms MarkObjects: 2.630000 ms  DeleteObjects: 0.058700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 111.807395 seconds.
+  path: Assets/Animation/Cow.controller
+  artifactKey: Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Cow.controller using Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d35b9453c82c185d7c60c71b7ad4dba') in 0.009529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.361 seconds
+Refreshing native plugins compatible for Editor in 5.11 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.799 seconds
+Domain Reload Profiling: 1158ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (222ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (391ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (270ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 4.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.5 KB). Loaded Objects now: 4771.
+Memory consumption went from 143.8 MB to 143.8 MB.
+Total: 2.585200 ms (FindLiveObjects: 0.231700 ms CreateObjectMapping: 0.121000 ms MarkObjects: 2.173500 ms  DeleteObjects: 0.057800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.342 seconds
+Refreshing native plugins compatible for Editor in 4.80 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.727 seconds
+Domain Reload Profiling: 1066ms
+	BeginReloadAssembly (121ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (165ms)
+		LoadAssemblies (217ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (727ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (312ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (206ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 6.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.6 KB). Loaded Objects now: 4775.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 3.060700 ms (FindLiveObjects: 0.304900 ms CreateObjectMapping: 0.140800 ms MarkObjects: 2.557400 ms  DeleteObjects: 0.056900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.358 seconds
+Refreshing native plugins compatible for Editor in 4.76 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.675 seconds
+Domain Reload Profiling: 1030ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
 		LoadAssemblies (225ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (10ms)
@@ -376,27 +998,161 @@ Domain Reload Profiling: 1091ms
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (741ms)
+	FinalizeReload (676ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (348ms)
+		SetupLoadedEditorAssemblies (306ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (245ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (182ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 6.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.50 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4736.
-Memory consumption went from 139.5 MB to 139.5 MB.
-Total: 3.015400 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.124200 ms MarkObjects: 2.606000 ms  DeleteObjects: 0.066900 ms)
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.5 KB). Loaded Objects now: 4779.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 3.043600 ms (FindLiveObjects: 0.210700 ms CreateObjectMapping: 0.126500 ms MarkObjects: 2.593600 ms  DeleteObjects: 0.111900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.369 seconds
+Refreshing native plugins compatible for Editor in 5.88 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.639 seconds
+Domain Reload Profiling: 1006ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (184ms)
+		LoadAssemblies (227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (280ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (189ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.7 KB). Loaded Objects now: 4783.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 2.542800 ms (FindLiveObjects: 0.209100 ms CreateObjectMapping: 0.100500 ms MarkObjects: 2.180200 ms  DeleteObjects: 0.051900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.359 seconds
+Refreshing native plugins compatible for Editor in 4.68 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.639 seconds
+Domain Reload Profiling: 995ms
+	BeginReloadAssembly (123ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (181ms)
+		LoadAssemblies (225ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (278ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (179ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 4.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.6 KB). Loaded Objects now: 4787.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 2.547900 ms (FindLiveObjects: 0.199600 ms CreateObjectMapping: 0.099400 ms MarkObjects: 2.194900 ms  DeleteObjects: 0.053100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -418,52 +1174,210 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.363 seconds
-Refreshing native plugins compatible for Editor in 4.81 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.72 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.699 seconds
-Domain Reload Profiling: 1059ms
-	BeginReloadAssembly (125ms)
+- Finished resetting the current domain, in  0.735 seconds
+Domain Reload Profiling: 1096ms
+	BeginReloadAssembly (126ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
+		CreateAndSetChildDomain (27ms)
 	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (176ms)
-		LoadAssemblies (227ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (175ms)
+		LoadAssemblies (229ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (10ms)
-			TypeCache.Refresh (6ms)
+			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (699ms)
+	FinalizeReload (736ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (295ms)
+		SetupLoadedEditorAssemblies (345ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (229ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 7.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.6 KB). Loaded Objects now: 4791.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 3.316400 ms (FindLiveObjects: 0.200600 ms CreateObjectMapping: 0.210800 ms MarkObjects: 2.840500 ms  DeleteObjects: 0.063600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 408.980551 seconds.
+  path: Assets/Tilemaps/cowWalkLeft.anim
+  artifactKey: Guid(abe44f9dee3b01449b5712e05550f676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/cowWalkLeft.anim using Guid(abe44f9dee3b01449b5712e05550f676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd518ffc6200e9d51e30c35f88c890b') in 0.007767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.368412 seconds.
+  path: Assets/Tilemaps/cowWalkRight.anim
+  artifactKey: Guid(6a252f3fcf835334abea9d2cc36857e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/cowWalkRight.anim using Guid(6a252f3fcf835334abea9d2cc36857e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7124c96970b6d2678cf490144c3bb8') in 0.000858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.343 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.753 seconds
+Domain Reload Profiling: 1094ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (209ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (754ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (344ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (196ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (236ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 4.05 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 7.25 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4740.
-Memory consumption went from 139.5 MB to 139.5 MB.
-Total: 3.485000 ms (FindLiveObjects: 0.279000 ms CreateObjectMapping: 0.391600 ms MarkObjects: 2.753900 ms  DeleteObjects: 0.059800 ms)
+Unloading 50 unused Assets / (42.6 KB). Loaded Objects now: 4795.
+Memory consumption went from 143.8 MB to 143.8 MB.
+Total: 3.118200 ms (FindLiveObjects: 0.264200 ms CreateObjectMapping: 0.227500 ms MarkObjects: 2.562400 ms  DeleteObjects: 0.063100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 52.853555 seconds.
+  path: Assets/Animation/Cow.controller
+  artifactKey: Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Cow.controller using Guid(34860bd767e24144cb2b289affd8f42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529feb3cd5952a945e3da632166c1e28') in 0.009048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.347 seconds
+Refreshing native plugins compatible for Editor in 4.72 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.831 seconds
+Domain Reload Profiling: 1176ms
+	BeginReloadAssembly (122ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (167ms)
+		LoadAssemblies (220ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (832ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (397ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 6.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.6 KB). Loaded Objects now: 4799.
+Memory consumption went from 143.8 MB to 143.8 MB.
+Total: 2.805800 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.114400 ms MarkObjects: 2.415700 ms  DeleteObjects: 0.057900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -484,53 +1398,53 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.356 seconds
-Refreshing native plugins compatible for Editor in 5.66 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.332 seconds
+Refreshing native plugins compatible for Editor in 4.50 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.656 seconds
-Domain Reload Profiling: 1010ms
-	BeginReloadAssembly (124ms)
+- Finished resetting the current domain, in  0.766 seconds
+Domain Reload Profiling: 1096ms
+	BeginReloadAssembly (116ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
+		CreateAndSetChildDomain (23ms)
 	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (177ms)
-		LoadAssemblies (225ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (209ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (7ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (657ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (767ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (274ms)
+		SetupLoadedEditorAssemblies (374ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (178ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (265ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 3.93 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4249 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (42.4 KB). Loaded Objects now: 4744.
-Memory consumption went from 139.5 MB to 139.5 MB.
-Total: 2.954700 ms (FindLiveObjects: 0.259700 ms CreateObjectMapping: 0.202600 ms MarkObjects: 2.430200 ms  DeleteObjects: 0.060800 ms)
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.5 KB). Loaded Objects now: 4803.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 3.066600 ms (FindLiveObjects: 0.325600 ms CreateObjectMapping: 0.147200 ms MarkObjects: 2.531200 ms  DeleteObjects: 0.061500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -547,1023 +1461,69 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 713.064438 seconds.
-  path: Packages/com.unity.2d.tilemap/Editor/Unity.2D.Tilemap.Editor.asmdef
-  artifactKey: Guid(3a9781db4804a9945b9883f3a7c46d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.tilemap/Editor/Unity.2D.Tilemap.Editor.asmdef using Guid(3a9781db4804a9945b9883f3a7c46d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e904b3b6b58d22c52fc05c18ab0dafd') in 0.002349 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.384576 seconds.
-  path: Packages/com.unity.2d.tilemap/package.json
-  artifactKey: Guid(51797d68d3132bb419217a229e09fc47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.tilemap/package.json using Guid(51797d68d3132bb419217a229e09fc47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ff338c4bf866204a405a700557a0c6') in 0.007860 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 16.906455 seconds.
-  path: Assets/Tilemaps/BackgroundGrass.prefab
-  artifactKey: Guid(8aee98fddb99c6843a02babe6a08d425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/BackgroundGrass.prefab using Guid(8aee98fddb99c6843a02babe6a08d425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216781441e51601f4e97b6322365e552') in 0.150485 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 323
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_11.asset
-  artifactKey: Guid(d1deaa2ca3d528849a5ae74f1f476ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_11.asset using Guid(d1deaa2ca3d528849a5ae74f1f476ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0c93e717badd5f6d9a4c6663eddc1b') in 0.025638 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_51.asset
-  artifactKey: Guid(75a0ab3bbb411044081a19c58923cf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_51.asset using Guid(75a0ab3bbb411044081a19c58923cf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c553960be5535ef29114846363a5e29') in 0.011160 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_5.asset
-  artifactKey: Guid(2b2d4f094a99fc74aa797bda7e01dbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_5.asset using Guid(2b2d4f094a99fc74aa797bda7e01dbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4bc5b9a31de1d2cb94deefff67fb8c') in 0.009563 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_21.asset
-  artifactKey: Guid(707f3115e248def4f9d3c3b53c67df05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_21.asset using Guid(707f3115e248def4f9d3c3b53c67df05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5201e9c8ae42509160019a414faed5fa') in 0.009142 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_7.asset
-  artifactKey: Guid(5f2da7d4908042443bfc63f938625012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_7.asset using Guid(5f2da7d4908042443bfc63f938625012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b8752a3d998745b58f15b4e325db4ad') in 0.009309 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_58.asset
-  artifactKey: Guid(99b1698c334ae4a48897948beee2d7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_58.asset using Guid(99b1698c334ae4a48897948beee2d7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c277b72b805e2d4e3ac4a0c885728ba6') in 0.008904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_54.asset
-  artifactKey: Guid(652d4851946a6f94e89942156da5180c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_54.asset using Guid(652d4851946a6f94e89942156da5180c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0b1ae43b05fa698d5ddf3731b451a3') in 0.008678 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_46.asset
-  artifactKey: Guid(7b3743370c0d0ac4ca0f473d6b3c7e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_46.asset using Guid(7b3743370c0d0ac4ca0f473d6b3c7e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0b0e5e8c49ce4e31a262d657210a05') in 0.011128 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_49.asset
-  artifactKey: Guid(1533c1f76f5549049a160d4e98cdfb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_49.asset using Guid(1533c1f76f5549049a160d4e98cdfb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf41a52198e20a47330ae66b47a12b22') in 0.007723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_41.asset
-  artifactKey: Guid(6c33e47548d8218498037ed087fb5594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_41.asset using Guid(6c33e47548d8218498037ed087fb5594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fd7c0d89c6457edd6eacc944ccefc4') in 0.009292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_12.asset
-  artifactKey: Guid(0e014e0d558412d47b792cf52762838d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_12.asset using Guid(0e014e0d558412d47b792cf52762838d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba83f92060683c8082a7fddfe1e84179') in 0.009109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_18.asset
-  artifactKey: Guid(dadbf63921637ca47be2ad9cf3ac9d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_18.asset using Guid(dadbf63921637ca47be2ad9cf3ac9d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac958a9b3d3e6c38db586bf47704f625') in 0.009226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_27.asset
-  artifactKey: Guid(35a078194b167854999f7f11766bfdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_27.asset using Guid(35a078194b167854999f7f11766bfdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ecc46098fa92a45bbea846e0bce3e68') in 0.009704 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_20.asset
-  artifactKey: Guid(ce8f28912735b6c41910f13acb1a15e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_20.asset using Guid(ce8f28912735b6c41910f13acb1a15e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8a8691d35f4a91336904be65b1d595') in 0.009394 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_43.asset
-  artifactKey: Guid(828627460e6dfa34bbe1306f684724ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_43.asset using Guid(828627460e6dfa34bbe1306f684724ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c1960050693c5b6e6e61a4dcc2f6a3') in 0.009667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_56.asset
-  artifactKey: Guid(601417c450f2a4b4c9915e910d97a714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_56.asset using Guid(601417c450f2a4b4c9915e910d97a714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93ba72d6efce4908d5fe36fb7e6ea96') in 0.009881 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_47.asset
-  artifactKey: Guid(49baa133ee25f2844a4c0782511327a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_47.asset using Guid(49baa133ee25f2844a4c0782511327a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8650410239d5d9995cc4e7189334cbdb') in 0.008981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_34.asset
-  artifactKey: Guid(dfe79d1bfdc189443b8822d8e20347db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_34.asset using Guid(dfe79d1bfdc189443b8822d8e20347db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8951701f495529703c41fe310fea69a0') in 0.009185 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_22.asset
-  artifactKey: Guid(858491f4fcc13284ca0bb0ca75f4d76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_22.asset using Guid(858491f4fcc13284ca0bb0ca75f4d76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc9b82dd342eeb79e0336b03bff2138') in 0.010131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_4.asset
-  artifactKey: Guid(d14c9566891b71046b07ef41980d13ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_4.asset using Guid(d14c9566891b71046b07ef41980d13ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49418648c7a41dc7bbda3259898901a8') in 0.009717 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_33.asset
-  artifactKey: Guid(63e30f434025d974997b5cd48f260c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_33.asset using Guid(63e30f434025d974997b5cd48f260c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f824195a8b489a1c9e9529a3cbc95d83') in 0.009594 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_42.asset
-  artifactKey: Guid(18c4da98740a77b429bf287b64715b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_42.asset using Guid(18c4da98740a77b429bf287b64715b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec88acf1bf0b25fd5e42fb8f755eef2') in 0.008967 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_15.asset
-  artifactKey: Guid(6637a614794002c4db1b3703778f30af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_15.asset using Guid(6637a614794002c4db1b3703778f30af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5b6b4d4924296c2e56a3c631bf5211') in 0.009562 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_16.asset
-  artifactKey: Guid(1cc60009604fa624e8cfdbbb39c16265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_16.asset using Guid(1cc60009604fa624e8cfdbbb39c16265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '501c76775b1756561401565e1d1e686b') in 0.008665 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_35.asset
-  artifactKey: Guid(efc0d73fbcf97d94ea0dadd5f5291346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_35.asset using Guid(efc0d73fbcf97d94ea0dadd5f5291346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6ae3d95378ba9d224f0813be59527e') in 0.009428 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_36.asset
-  artifactKey: Guid(adede2cb402d0924c926490909e05f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_36.asset using Guid(adede2cb402d0924c926490909e05f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dfa505d6a6bb9804888ab99031f3d23') in 0.009327 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_26.asset
-  artifactKey: Guid(b55530911bcb9d74eaf0b0f199d301fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_26.asset using Guid(b55530911bcb9d74eaf0b0f199d301fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f2bb1de8f4697a62fcffffe9829cec') in 0.009320 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_17.asset
-  artifactKey: Guid(b56fbeb292c4b7240b02a2ff82255e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_17.asset using Guid(b56fbeb292c4b7240b02a2ff82255e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f598a03fd08bcab0794b618c60581b4') in 0.008996 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 23.220448 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_60.asset
-  artifactKey: Guid(d845c5647b9f6e54d8117e0903304c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_60.asset using Guid(d845c5647b9f6e54d8117e0903304c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899bdb94287cd47ef89d3a8f98ce7755') in 0.009256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_73.asset
-  artifactKey: Guid(65a228ff8eca42945a2cefb6391ca479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_73.asset using Guid(65a228ff8eca42945a2cefb6391ca479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab4100429b0b06257754321aebfcb77') in 0.009225 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_71.asset
-  artifactKey: Guid(44b6ed608d5db8249aa6e8622707cb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_71.asset using Guid(44b6ed608d5db8249aa6e8622707cb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a2001241b6bb8cfba9e39341346ece') in 0.008788 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_62.asset
-  artifactKey: Guid(63431bd4823b0624ca9c1dd6cc00ab10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_62.asset using Guid(63431bd4823b0624ca9c1dd6cc00ab10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1781badbf4000d46a0d0d442399e0999') in 0.009484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_76.asset
-  artifactKey: Guid(e3c98b33cd53a244eb3b5bb680869b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_76.asset using Guid(e3c98b33cd53a244eb3b5bb680869b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c02755f3d4132448f8f20fa61997f33') in 0.008728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_87.asset
-  artifactKey: Guid(50974d2a63897514e82e16007a2d0f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_87.asset using Guid(50974d2a63897514e82e16007a2d0f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e30ed49eddbc842be1379fec5cbcbc') in 0.009190 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_86.asset
-  artifactKey: Guid(8e590217474fcd64aa72b65a87857653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_86.asset using Guid(8e590217474fcd64aa72b65a87857653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793ca88466ab2f7e25fa51a763a92bdf') in 0.008676 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_66.asset
-  artifactKey: Guid(85cf9ea2053b0e94a893d19d69cca20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_66.asset using Guid(85cf9ea2053b0e94a893d19d69cca20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f1d9295dda3d8780119fa8c2e15882') in 0.009017 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_64.asset
-  artifactKey: Guid(26ae08208944010499cf5ae822dd9c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_64.asset using Guid(26ae08208944010499cf5ae822dd9c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909cb9268ff851b74fae46f0774d915c') in 0.009117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_88.asset
-  artifactKey: Guid(8e08d7698c5aa5640a9d02389d397c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_88.asset using Guid(8e08d7698c5aa5640a9d02389d397c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640ee39681f47641931a87c18aee7f54') in 0.008916 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_101.asset
-  artifactKey: Guid(93c46ac989a78c84abe141e3080bab55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_101.asset using Guid(93c46ac989a78c84abe141e3080bab55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d26677091ca547bbc93b7c43f3eb050') in 0.009254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_70.asset
-  artifactKey: Guid(fbec88b4be3881748888cf5ef05de227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_70.asset using Guid(fbec88b4be3881748888cf5ef05de227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34664f93ced05b4c1d216448cd13092') in 0.009197 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_81.asset
-  artifactKey: Guid(4da438618af14b2449a1810c0b451aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_81.asset using Guid(4da438618af14b2449a1810c0b451aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d1b018880c4e2fba0d7bc19699681b') in 0.009128 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_102.asset
-  artifactKey: Guid(2223d7c19bbfc924ba31b496e4056245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_102.asset using Guid(2223d7c19bbfc924ba31b496e4056245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8269fc193c7fc608c3aa5b218be13577') in 0.009085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_80.asset
-  artifactKey: Guid(be91986b9be7c4a449788353708315d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_80.asset using Guid(be91986b9be7c4a449788353708315d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7b1a334a5d11c0e01c850698cfe767') in 0.009245 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_103.asset
-  artifactKey: Guid(01a4dc384a6e8ef4eb57dfe87a14a0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_103.asset using Guid(01a4dc384a6e8ef4eb57dfe87a14a0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b26e7ffba167c65b1c6110645f6331d') in 0.009690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_94.asset
-  artifactKey: Guid(202528dbb6defe74995176045eea359d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_94.asset using Guid(202528dbb6defe74995176045eea359d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97b9b26dd55376b20eb7cc7f10c0486') in 0.010372 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.512265 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_105.asset
-  artifactKey: Guid(ae2f6ded5c673e948b223d1fee389beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_105.asset using Guid(ae2f6ded5c673e948b223d1fee389beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd4792301c2098a232acbd4a4c29a66') in 0.008734 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_114.asset
-  artifactKey: Guid(e817db40965f6f94f8ef79ccf23de704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_114.asset using Guid(e817db40965f6f94f8ef79ccf23de704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16824d185ba411a482b984c8e134e22d') in 0.009131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_107.asset
-  artifactKey: Guid(f586a37efb97a594388b36cef3d8cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_107.asset using Guid(f586a37efb97a594388b36cef3d8cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2379b793f564b9a348fc9cf34f89bf8') in 0.009202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_108.asset
-  artifactKey: Guid(8d6e70a5b8ba92740bffe10c2d68fc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_108.asset using Guid(8d6e70a5b8ba92740bffe10c2d68fc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9394df10ae5f7f89bc5fbe7325893bb5') in 0.009069 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_117.asset
-  artifactKey: Guid(2caa0c77674e2a14eb0a3bb7320c734e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_117.asset using Guid(2caa0c77674e2a14eb0a3bb7320c734e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a6faa893631cb9a383d94d113a0e98') in 0.009498 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.001363 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_120.asset
-  artifactKey: Guid(ef6b3748fe1efa1459182d8ea39f23aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_120.asset using Guid(ef6b3748fe1efa1459182d8ea39f23aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9b56b692ab7faea893d5a44305b551') in 0.008830 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_131.asset
-  artifactKey: Guid(2b889f88e8c61604a96a8004f5aae237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_131.asset using Guid(2b889f88e8c61604a96a8004f5aae237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc2e1cb759bf5b18e45817d0397b772') in 0.009046 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_124.asset
-  artifactKey: Guid(1933502e070c4b542b2513f709c1b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_124.asset using Guid(1933502e070c4b542b2513f709c1b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2cab72a04724a15b93bdeb6cb2f230') in 0.008667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_126.asset
-  artifactKey: Guid(27acccfbc3d129a4e859e8b008d5b5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_126.asset using Guid(27acccfbc3d129a4e859e8b008d5b5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1478a44113c2fa59c980515f12187ff') in 0.009364 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_129.asset
-  artifactKey: Guid(ac168687d59d20440b24cd3948243bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_129.asset using Guid(ac168687d59d20440b24cd3948243bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6a84d0bc8b50ef39edf8a1728de9e7') in 0.008927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_136.asset
-  artifactKey: Guid(19a44b66c072239469bf269a05a896f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_136.asset using Guid(19a44b66c072239469bf269a05a896f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58e0f08aaf70d94526d88d1e4084670e') in 0.008927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_141.asset
-  artifactKey: Guid(c817096d47285114aa2029e55498900e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_141.asset using Guid(c817096d47285114aa2029e55498900e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bda533e4c676f3f68c6f6ac1aafa15') in 0.009080 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_138.asset
-  artifactKey: Guid(da6d7e0169f16824b862acc9c0dce5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_138.asset using Guid(da6d7e0169f16824b862acc9c0dce5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182812d603a5dae7f33db32894d7f9a0') in 0.010105 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_139.asset
-  artifactKey: Guid(75bc97e76b01a894fa688f0d73b55250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_139.asset using Guid(75bc97e76b01a894fa688f0d73b55250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5823c8e6d12cd214019febe82cb6b1') in 0.009394 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_148.asset
-  artifactKey: Guid(2585cbc72ded0204abc33f16dc3a355b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_148.asset using Guid(2585cbc72ded0204abc33f16dc3a355b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98cca31a2ff4e644b49711ac2d5db2c1') in 0.009028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.204583 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_150.asset
-  artifactKey: Guid(c9c29cbab69abd34a92b94abb3b26f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_150.asset using Guid(c9c29cbab69abd34a92b94abb3b26f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa70a5fac7dfb695608b5e576bee76b') in 0.010071 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemaps/spring farm tilemap_155.asset
-  artifactKey: Guid(1b74b2f32a1377b42a3e6fa35b3ed17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/spring farm tilemap_155.asset using Guid(1b74b2f32a1377b42a3e6fa35b3ed17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b9c08141a9a8b8aec729152d3c2c38') in 0.009955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 95.122315 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free.asset
-  artifactKey: Guid(21d28f643cbbfc040befa38c9a0ce400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free.asset using Guid(21d28f643cbbfc040befa38c9a0ce400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21151a7232f1f42e64efeca17fe9567d') in 0.003703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.002657 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_1.asset
-  artifactKey: Guid(2849cc14df45a5f458afc73011c9617b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_1.asset using Guid(2849cc14df45a5f458afc73011c9617b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a53bd4f9cd577929a3056719e775bc') in 0.013078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_8.asset
-  artifactKey: Guid(a1e653f944af1f442b2d05ef23c97727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_8.asset using Guid(a1e653f944af1f442b2d05ef23c97727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84e9a6b69f18a0e2f271ba501879ae4') in 0.011838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_53.asset
-  artifactKey: Guid(acb8353a184cd00479068782ede999f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_53.asset using Guid(acb8353a184cd00479068782ede999f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc63de1fe2126d5a66ea5e6108d059fb') in 0.010632 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_7.asset
-  artifactKey: Guid(50d3676c9b8bc5e45b413d5a8a567205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_7.asset using Guid(50d3676c9b8bc5e45b413d5a8a567205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2810b9da27f57c887764e8d38a86c8a') in 0.008585 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_45.asset
-  artifactKey: Guid(3a5d16af61e722e48befacdaef90b115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_45.asset using Guid(3a5d16af61e722e48befacdaef90b115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee5ff561599d11252626993a72db88a') in 0.008821 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_43.asset
-  artifactKey: Guid(f06188248b30b1a44827a6d8d87055b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_43.asset using Guid(f06188248b30b1a44827a6d8d87055b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea804291c0a0a564249145f0cfa34e4e') in 0.008947 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_17.asset
-  artifactKey: Guid(b0d540f39fc0b1446870b5a198d75b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_17.asset using Guid(b0d540f39fc0b1446870b5a198d75b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da44d3be6602529b244e3cd1ba82585b') in 0.008876 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_30.asset
-  artifactKey: Guid(be0fc7e7c78f8344c970d4d09c4320e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_30.asset using Guid(be0fc7e7c78f8344c970d4d09c4320e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51298b8d32851a167bc79885f09d5dec') in 0.008495 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_49.asset
-  artifactKey: Guid(fb59e545c3f314b43a20f807a5e54696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_49.asset using Guid(fb59e545c3f314b43a20f807a5e54696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d4de37d96cb63c7544a537fe2a3e63') in 0.008320 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_0.asset
-  artifactKey: Guid(829925c628f1e694e9acfa18bbe35ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_0.asset using Guid(829925c628f1e694e9acfa18bbe35ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca5af1f968715a862217def1aaddf01') in 0.009413 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_14.asset
-  artifactKey: Guid(4c01308c99f8e8242a7cfad7f4c369dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_14.asset using Guid(4c01308c99f8e8242a7cfad7f4c369dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f961de684cf6465c1e973af699171df') in 0.004416 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_3.asset
-  artifactKey: Guid(1a5b89761cee9aa4bba8c4e23e8fbcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_3.asset using Guid(1a5b89761cee9aa4bba8c4e23e8fbcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a632ff353b08671bb99f288ad1c3c3') in 0.009232 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_39.asset
-  artifactKey: Guid(2488308a6e6f97a43bdd270f39164d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_39.asset using Guid(2488308a6e6f97a43bdd270f39164d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8192053e10f53fbe7cee8e5b1150e0a') in 0.008308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_12.asset
-  artifactKey: Guid(866560f188fcaf54599458b5f1237f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_12.asset using Guid(866560f188fcaf54599458b5f1237f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dfa219489c15ac2503f8465ce4a317e') in 0.004461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_18.asset
-  artifactKey: Guid(ced461b3367fc2c40bf297dadb296353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_18.asset using Guid(ced461b3367fc2c40bf297dadb296353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dde51c8010dd04b241b7808857704a8') in 0.008016 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_51.asset
-  artifactKey: Guid(bb48d2f60f5aa294781fadd68e326b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_51.asset using Guid(bb48d2f60f5aa294781fadd68e326b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01463a40590cd6b5b8ddc4cbb90530e') in 0.008736 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_40.asset
-  artifactKey: Guid(f504a95081f844d4c8ae98c9656e4351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_40.asset using Guid(f504a95081f844d4c8ae98c9656e4351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee22b0e9473ffd1b797fcb5a5b1ea22') in 0.008698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_29.asset
-  artifactKey: Guid(5f1e3c6ca01a0cf40bacc93806f18fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_29.asset using Guid(5f1e3c6ca01a0cf40bacc93806f18fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603b841a21d0720311c9d8ca769faec6') in 0.009669 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_6.asset
-  artifactKey: Guid(2b8fd2dd60b30674e9d20c4b139c1035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_6.asset using Guid(2b8fd2dd60b30674e9d20c4b139c1035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19eb554ac2312a5fbeabaf754c2dd46a') in 0.008490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_11.asset
-  artifactKey: Guid(b85a3770ace437d40b8c73cdcac8f72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_11.asset using Guid(b85a3770ace437d40b8c73cdcac8f72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa3e9d056068530979bd2bb77813a11') in 0.008243 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_50.asset
-  artifactKey: Guid(53cdaf6889f15ad4f8e4a0393d1d66cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_50.asset using Guid(53cdaf6889f15ad4f8e4a0393d1d66cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e16a00123eee5e0b5299ce3e44919120') in 0.008463 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_22.asset
-  artifactKey: Guid(41a6889f612371e489c5658b73885d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_22.asset using Guid(41a6889f612371e489c5658b73885d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74521761f23432e89d23dac5fd83bc9') in 0.008677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_15.asset
-  artifactKey: Guid(82272680d79ab204f9f49c5680cbbdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_15.asset using Guid(82272680d79ab204f9f49c5680cbbdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e19b2be504811d45907fcf1c955663') in 0.004432 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_44.asset
-  artifactKey: Guid(f8b7dc8e33d7e074fb6a71cab7c02940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_44.asset using Guid(f8b7dc8e33d7e074fb6a71cab7c02940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40b38341050ea5037bc031e3da598e7') in 0.009315 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_20.asset
-  artifactKey: Guid(83a347f0fa027174382fd6346ec0dfa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_20.asset using Guid(83a347f0fa027174382fd6346ec0dfa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aeac661e1b71640e64bc085452d1e8e') in 0.008888 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_4.asset
-  artifactKey: Guid(7c4929d9e48e1a44986b04c0c85c85de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_4.asset using Guid(7c4929d9e48e1a44986b04c0c85c85de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa23092e14ff404876cf07ffe77fbe65') in 0.009001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_16.asset
-  artifactKey: Guid(28bbb82a10d98b548aa54b02be480b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_16.asset using Guid(28bbb82a10d98b548aa54b02be480b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757646c26a3524d585600db82ee05b29') in 0.004496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_28.asset
-  artifactKey: Guid(e00fdf7bb33899a4c808eb859e3e7975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_28.asset using Guid(e00fdf7bb33899a4c808eb859e3e7975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711b1cfac67acd924dcef5b8ef9ea85d') in 0.009103 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_2.asset
-  artifactKey: Guid(416b19ee8d032a74988f72c83b2b08ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_2.asset using Guid(416b19ee8d032a74988f72c83b2b08ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70892e0b6be55b475789cae3dd9870b') in 0.010884 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_34.asset
-  artifactKey: Guid(763029aed64f19246af259ea1be023b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_34.asset using Guid(763029aed64f19246af259ea1be023b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afd64a73a8b0d7a486d4b7e75848292') in 0.004479 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_35.asset
-  artifactKey: Guid(41a1c21d4329e3f4e9e966aef23457e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_35.asset using Guid(41a1c21d4329e3f4e9e966aef23457e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88eadcca602abf3c9bd5a04a11ba61a4') in 0.005054 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.465887 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_59.asset
-  artifactKey: Guid(ffb7029eb0faac54485ca709921cbe8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_59.asset using Guid(ffb7029eb0faac54485ca709921cbe8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53df7384156ee455a28a4c0b54dd997') in 0.004647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_71.asset
-  artifactKey: Guid(25c70fc1ee61afc40975076d5e2702cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_71.asset using Guid(25c70fc1ee61afc40975076d5e2702cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9178d9b91e97ed5265dc1b528345336') in 0.004547 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_63.asset
-  artifactKey: Guid(a636f2d07d038094eb8999fa0cf930b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_63.asset using Guid(a636f2d07d038094eb8999fa0cf930b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2558f6fd9b78d563c919696324b73e7b') in 0.004174 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_62.asset
-  artifactKey: Guid(6ac13897b08bee94aab00dcb859b45fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_62.asset using Guid(6ac13897b08bee94aab00dcb859b45fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82482516c08c7b88c2f7bf140b586a3d') in 0.009096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_69.asset
-  artifactKey: Guid(0bb3f5948d0b4ff458ebf7c8684ce841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_69.asset using Guid(0bb3f5948d0b4ff458ebf7c8684ce841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1445f32cda358585a235567652e7c119') in 0.009132 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_67.asset
-  artifactKey: Guid(f8946c319c427004389299dca14b9659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_67.asset using Guid(f8946c319c427004389299dca14b9659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70823f83d819dc5526235b49c7575416') in 0.008871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_70.asset
-  artifactKey: Guid(93b69a1f76d34dc4b950524bc1c10117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_70.asset using Guid(93b69a1f76d34dc4b950524bc1c10117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da33a846ec5da163ba54d8bb506e25a') in 0.008842 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.005073 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_74.asset
-  artifactKey: Guid(55b7f22063a195b45939ed4607bcb2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_74.asset using Guid(55b7f22063a195b45939ed4607bcb2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde1e7898435a77d25d96e2e785f47e6') in 0.004076 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_84.asset
-  artifactKey: Guid(2808a3790e3a99e468b2d620b28bcd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_84.asset using Guid(2808a3790e3a99e468b2d620b28bcd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155e6051979cd4857d05930940061ec8') in 0.008880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_78.asset
-  artifactKey: Guid(80da5e5b3185a2e45a463b053cadf191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_78.asset using Guid(80da5e5b3185a2e45a463b053cadf191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4305a379b280f7f5e0aac0853bc0194') in 0.008970 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_82.asset
-  artifactKey: Guid(8a709a6ad2080f446b580e025c7cf944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_82.asset using Guid(8a709a6ad2080f446b580e025c7cf944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba295d052cd9b55988373d457f717d71') in 0.008959 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_76.asset
-  artifactKey: Guid(05bbbfb857dd0a94092ad1d4c76a3ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_76.asset using Guid(05bbbfb857dd0a94092ad1d4c76a3ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74770f53c5c602c3d2e65dc9e598a443') in 0.004528 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.019507 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_89.asset
-  artifactKey: Guid(bce72244f0ee6474c9df0a100a389878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_89.asset using Guid(bce72244f0ee6474c9df0a100a389878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ea81426a7a515efa6bd9bded3aca33') in 0.004417 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_91.asset
-  artifactKey: Guid(1acff9a6d4fac364eaa16043a3c29040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_91.asset using Guid(1acff9a6d4fac364eaa16043a3c29040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c2765086ba568bd13b410147f503cc') in 0.008728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiny Wonder Farm Free/tilemaps/farm inside free.png
-  artifactKey: Guid(cdf41e9cd72fae046903361d0a02ebdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm inside free.png using Guid(cdf41e9cd72fae046903361d0a02ebdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c22b39f7ee036cfc4b05ec795035648') in 0.034252 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 24.201835 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free 1.png
-  artifactKey: Guid(78fcb7ec79d59a74980c547ef0a05719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free 1.png using Guid(78fcb7ec79d59a74980c547ef0a05719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f7a4a3c2816cc76d8ca692ee6a70e6') in 0.109112 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 82
-========================================================================
-Received Import Request.
-  Time since last request: 1.940565 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_0 1.asset
-  artifactKey: Guid(11ff1b7a1ac75664898e14cc7b066a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_0 1.asset using Guid(11ff1b7a1ac75664898e14cc7b066a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b2780ba0cc4d59c438da188a221679c') in 0.008740 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_2.asset
-  artifactKey: Guid(1c58e9f339ba27c41a0bf37663a3f17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_2.asset using Guid(1c58e9f339ba27c41a0bf37663a3f17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8996f9a7e5a1365dfea1a50f03da1bd4') in 0.009757 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_20.asset
-  artifactKey: Guid(e479b3ee48ce1f2458926a67b547e42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_20.asset using Guid(e479b3ee48ce1f2458926a67b547e42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4f4bea128095a6b545421f69e9c412') in 0.009634 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_11.asset
-  artifactKey: Guid(3801afa429fd9224dad5784ec0b86684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_11.asset using Guid(3801afa429fd9224dad5784ec0b86684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8158e15711d7a855043f009e1ead969') in 0.009831 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/Rectangular Palette.prefab
-  artifactKey: Guid(f3843c38c325b0e4ba59e628d081a5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/Rectangular Palette.prefab using Guid(f3843c38c325b0e4ba59e628d081a5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a289c29c581e8d1366a002e26ed1338') in 0.019363 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_26.asset
-  artifactKey: Guid(a61210f8076d58d4cb97515ca71265be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_26.asset using Guid(a61210f8076d58d4cb97515ca71265be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cba8b064af3d745d8b3bcd2107a25da') in 0.010715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_17.asset
-  artifactKey: Guid(80856077143feae4daca1edbf0a93f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_17.asset using Guid(80856077143feae4daca1edbf0a93f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7765bebb00e136e9b88fa69aac135287') in 0.009103 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_9.asset
-  artifactKey: Guid(5b1005c1dd987554fb2049e08908d62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_9.asset using Guid(5b1005c1dd987554fb2049e08908d62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3f68965d1883ec4cdce6d971c1d576') in 0.009116 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_21.asset
-  artifactKey: Guid(7cd159b6388d27947ae1e7037e3ae6af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_21.asset using Guid(7cd159b6388d27947ae1e7037e3ae6af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a4daba1acaf79ff292c4aee698bb4f') in 0.008551 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_9.asset
-  artifactKey: Guid(7b40853a1c3f6234085e7b52c71c3276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_9.asset using Guid(7b40853a1c3f6234085e7b52c71c3276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e15656b4e25b265da07cd2936e06ba') in 0.009690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3.asset
-  artifactKey: Guid(5b1fe3cd68695174f88953b83710697b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3.asset using Guid(5b1fe3cd68695174f88953b83710697b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4ac52429e01da9527e842d85ed097d') in 0.004550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/furniture free.png
-  artifactKey: Guid(af68862f510af074eb75155971bdfe79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/furniture free.png using Guid(af68862f510af074eb75155971bdfe79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b029dedf3c6bb24f11e3b4379154e3') in 0.014580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_25.asset
-  artifactKey: Guid(02588e522b44132499ce7e43d31d37b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_25.asset using Guid(02588e522b44132499ce7e43d31d37b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f898747bbfdabf3e175fe153cb15bb') in 0.008036 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Wonder Farm Free/objects&items/plants free.png
-  artifactKey: Guid(58d9696ba1c1cc34aadcfd1b93391bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free.png using Guid(58d9696ba1c1cc34aadcfd1b93391bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cf50b2fb70fa534705257a97f537433') in 0.060583 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.342 seconds
+Refreshing native plugins compatible for Editor in 5.15 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.882 seconds
+Domain Reload Profiling: 1222ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (213ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (883ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (433ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (305ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 6.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.6 KB). Loaded Objects now: 4807.
+Memory consumption went from 144.1 MB to 144.0 MB.
+Total: 3.197900 ms (FindLiveObjects: 0.301900 ms CreateObjectMapping: 0.172500 ms MarkObjects: 2.667800 ms  DeleteObjects: 0.054800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
