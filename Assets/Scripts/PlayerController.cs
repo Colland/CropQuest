@@ -69,7 +69,10 @@ public class Player : MonoBehaviour
             //Checks if collision is north of player, cancels vertical player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                targetPos.y = transform.position.y;
+                if(targetPos.y > transform.position.y)
+                {
+                    targetPos.y = transform.position.y;
+                }
                 Debug.Log("North");
             }
 
@@ -79,7 +82,10 @@ public class Player : MonoBehaviour
             //Checks if collision is south of player, cancels vertical player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                targetPos.y = transform.position.y;
+                if(targetPos.y < transform.position.y)
+                {
+                    targetPos.y = transform.position.y;
+                }
                 Debug.Log("South");
             }
 
@@ -89,7 +95,10 @@ public class Player : MonoBehaviour
             //Checks if collision is east of player, cancels horizontal player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                targetPos.x = transform.position.x;
+                if(targetPos.x > transform.position.x)
+                {
+                    targetPos.x = transform.position.x;
+                }
             }
 
             newPos = transform.position;
@@ -98,7 +107,10 @@ public class Player : MonoBehaviour
             //Checks if collision is west of player, cancels horizontal player movement if so.
             if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                targetPos.x = transform.position.x;
+                if(targetPos.x < transform.position.x)
+                {
+                    targetPos.x = transform.position.x;
+                }
             }
 
             return true;

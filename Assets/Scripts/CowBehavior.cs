@@ -14,7 +14,7 @@ public class CowBehavior : MonoBehaviour
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
 
-    public float stopDistance = 1.5f;
+    public float stopDistance = 0.1f;
     public Transform playerPos;
 
 
