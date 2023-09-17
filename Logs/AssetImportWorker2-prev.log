@@ -1,0 +1,1085 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16197 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Tristan/Desktop/CropQuest
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51645
+Successfully changed project path to: C:/Users/Tristan/Desktop/CropQuest
+C:/Users/Tristan/Desktop/CropQuest
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1588] Host "[IP] 192.168.1.73 [Port] 0 [Flags] 2 [Guid] 2545203589 [EditorId] 2545203589 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DQJ1GM7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1588] Host "[IP] 192.168.1.73 [Port] 0 [Flags] 2 [Guid] 2545203589 [EditorId] 2545203589 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DQJ1GM7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 11.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Tristan/Desktop/CropQuest/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6600 (ID=0x73ff)
+    Vendor:   ATI
+    VRAM:     8147 MB
+    Driver:   31.0.14057.5006
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004334 seconds.
+- Loaded All Assemblies, in  0.286 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.226 seconds
+Domain Reload Profiling: 512ms
+	BeginReloadAssembly (89ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (88ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (110ms)
+				TypeCache.ScanAssembly (99ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (227ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (176ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (116ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Tristan\Desktop\CropQuest\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.578 seconds
+Refreshing native plugins compatible for Editor in 5.08 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.512 seconds
+Domain Reload Profiling: 1088ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (367ms)
+		LoadAssemblies (280ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (123ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (513ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (366ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (257ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 5.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4273 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (68.3 KB). Loaded Objects now: 4722.
+Memory consumption went from 145.5 MB to 145.4 MB.
+Total: 3.011600 ms (FindLiveObjects: 0.214200 ms CreateObjectMapping: 0.204600 ms MarkObjects: 2.469800 ms  DeleteObjects: 0.122200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 56150.344268 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_59.asset
+  artifactKey: Guid(5b116874cada96d4fb3cc765b57ad14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_59.asset using Guid(5b116874cada96d4fb3cc765b57ad14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0a0d06fcbb84d2f9077f7c05c702d9') in 0.068196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_85.asset
+  artifactKey: Guid(62344793b28ab7f44bb9aaa7ce7b6972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_85.asset using Guid(62344793b28ab7f44bb9aaa7ce7b6972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fad0c2260111e2d8d71c56c1e94551e') in 0.007497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_84.asset
+  artifactKey: Guid(11ffef04271d40f4daeda5235216a6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_84.asset using Guid(11ffef04271d40f4daeda5235216a6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4f697697076309348de669ad28fb68') in 0.008954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_79.asset
+  artifactKey: Guid(deb9b82bbf65623439f821f6bf3312b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_79.asset using Guid(deb9b82bbf65623439f821f6bf3312b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e85131b9362cc37aa245610df268b4') in 0.008701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_92.asset
+  artifactKey: Guid(6641c511f194fb14790e7134c83806d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_92.asset using Guid(6641c511f194fb14790e7134c83806d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9aa77c5ff92ecd0f717652d41ab466') in 0.009277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_98.asset
+  artifactKey: Guid(02dd705208b21de4e8fe4289322b9975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_98.asset using Guid(02dd705208b21de4e8fe4289322b9975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2100eb653491671c34ab78545e84d742') in 0.009099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_90.asset
+  artifactKey: Guid(ac7a3a696bca55c4890322413b1bf6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_90.asset using Guid(ac7a3a696bca55c4890322413b1bf6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cc5303ec5161da7b1eb8d1a39378ed') in 0.009324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_99.asset
+  artifactKey: Guid(a609685f88067e94fb4fbfaa0303e59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_99.asset using Guid(a609685f88067e94fb4fbfaa0303e59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cb890efe75fabe0d173c2157b2bf76') in 0.009219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_69.asset
+  artifactKey: Guid(f9dd738aa53b3324aa5a1997d628d72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_69.asset using Guid(f9dd738aa53b3324aa5a1997d628d72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43808647abc40efb289b450563959f1') in 0.009220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_95.asset
+  artifactKey: Guid(b94f68b48a0de5849b4262d89115d41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_95.asset using Guid(b94f68b48a0de5849b4262d89115d41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0da1474874683dac60a67be4010ac2') in 0.009586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_63.asset
+  artifactKey: Guid(669c281ac01bdd44cbe689d9ac51277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_63.asset using Guid(669c281ac01bdd44cbe689d9ac51277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d1fd128b7eafbd5701271f51ac96fa') in 0.010312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.512222 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_104.asset
+  artifactKey: Guid(9cc2b45a642aeb24881e76450f96424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_104.asset using Guid(9cc2b45a642aeb24881e76450f96424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a1b0aefdfd3f56d6c8324111f185bcc') in 0.008879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_110.asset
+  artifactKey: Guid(c58328a498ee1a0499251cbb3bdd693f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_110.asset using Guid(c58328a498ee1a0499251cbb3bdd693f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b434e3dd6d7d1147bfdd5f0982655642') in 0.009395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_112.asset
+  artifactKey: Guid(9c1cd066c25fa37428757b8a17071495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_112.asset using Guid(9c1cd066c25fa37428757b8a17071495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a15d2ed801a77882c2e7419e1efb847') in 0.008661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_115.asset
+  artifactKey: Guid(76ea2917a8aa36c4583db2a45b7490d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_115.asset using Guid(76ea2917a8aa36c4583db2a45b7490d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044c4d29b3caa9b6a57057da16bc65ba') in 0.009460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_113.asset
+  artifactKey: Guid(dd9fbb8a6985997418163d39de043646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_113.asset using Guid(dd9fbb8a6985997418163d39de043646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c58722d1fa795a482a0f61e4ed8eeda') in 0.009453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000827 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_119.asset
+  artifactKey: Guid(fe212c98cbc988e429b467d71697b547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_119.asset using Guid(fe212c98cbc988e429b467d71697b547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167740741223824b4a79e0a0d2910872') in 0.009034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_123.asset
+  artifactKey: Guid(c9706101ec1ca3648895f36ca2b047a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_123.asset using Guid(c9706101ec1ca3648895f36ca2b047a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248e8108c8a6d09ef2a403ec01b45c7d') in 0.009015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_122.asset
+  artifactKey: Guid(d079350b36ec5534cb6a48f7e9070046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_122.asset using Guid(d079350b36ec5534cb6a48f7e9070046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf640c6404f68977a4bfdffcfeb1334e') in 0.009037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_125.asset
+  artifactKey: Guid(d64ceee0cd1ebb94bac920c068d91ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_125.asset using Guid(d64ceee0cd1ebb94bac920c068d91ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de72de0ef9e0d2d8c1eb760c6a91a10') in 0.008999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_133.asset
+  artifactKey: Guid(db5193251dfcac647a4f8039fa84dd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_133.asset using Guid(db5193251dfcac647a4f8039fa84dd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96fdb1691640725386ff72b47439d4f4') in 0.008916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_135.asset
+  artifactKey: Guid(539955732f296df4cb3967f95d9c7e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_135.asset using Guid(539955732f296df4cb3967f95d9c7e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21bc462614bcfaf7e2d1895394b926a2') in 0.009295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_140.asset
+  artifactKey: Guid(43fcb4e13b9504e44b4bdcd5932c9620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_140.asset using Guid(43fcb4e13b9504e44b4bdcd5932c9620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d9cf66c5846ce90c76795e3685432a') in 0.009241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_143.asset
+  artifactKey: Guid(c510a3370603183469d9c6b98665dbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_143.asset using Guid(c510a3370603183469d9c6b98665dbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab5dfb095d46ee24ebf099ac72eaeb5') in 0.009788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_147.asset
+  artifactKey: Guid(5ccec4ef63b6d7940b8af3730ff396e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_147.asset using Guid(5ccec4ef63b6d7940b8af3730ff396e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3828546f209f798f072c797bdad3765') in 0.009736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_146.asset
+  artifactKey: Guid(07544cae789476d4e85b57f697867492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_146.asset using Guid(07544cae789476d4e85b57f697867492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bd52382b21a91568b41d635ce1a645') in 0.008908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.204047 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_149.asset
+  artifactKey: Guid(d3bc87adc22ecfe4584aadd8703e55a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_149.asset using Guid(d3bc87adc22ecfe4584aadd8703e55a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60a36ac3904db916142d4cb79adf3de') in 0.009302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_153.asset
+  artifactKey: Guid(f5c262a71b95ec446bec828bf7096b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_153.asset using Guid(f5c262a71b95ec446bec828bf7096b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105477603931d65eb73850afbdf371a2') in 0.009532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tilemaps/spring farm tilemap_154.asset
+  artifactKey: Guid(cbabb3e3a2a10be4cbbe788f9ea5ec11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/spring farm tilemap_154.asset using Guid(cbabb3e3a2a10be4cbbe788f9ea5ec11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab455c9eec28488a5a6efa532d6c80ff') in 0.008464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 93.665629 seconds.
+  path: Assets/Tiny Wonder Farm Free
+  artifactKey: Guid(2f163928cadf07146a2bb3a3561ba71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free using Guid(2f163928cadf07146a2bb3a3561ba71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f080b65247a14246ce69e702cbbb09') in 0.000414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.382888 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps
+  artifactKey: Guid(9f4f23f1d07c4764bbcb73099a000105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps using Guid(9f4f23f1d07c4764bbcb73099a000105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3e50fc36c05a76fdb36388a45c4b79') in 0.000357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.064056 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/Bridges.prefab
+  artifactKey: Guid(471bc386f605a074491451c60b524efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/Bridges.prefab using Guid(471bc386f605a074491451c60b524efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c014badebbd9ffdef4faa808c6458aa') in 0.063334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 199
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_36.asset
+  artifactKey: Guid(3a93f44c8c4cb944d8b3a3c1965a5bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_36.asset using Guid(3a93f44c8c4cb944d8b3a3c1965a5bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad7bd3e16302ed97580db8148b0a0f7') in 0.009683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_55.asset
+  artifactKey: Guid(f95caea4e4a16ca4abe6aa8a4d0313d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_55.asset using Guid(f95caea4e4a16ca4abe6aa8a4d0313d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801b04fc0e416d4a08530f39205775a1') in 0.007850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_9.asset
+  artifactKey: Guid(89c2b7e7a52628842980bba88097820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_9.asset using Guid(89c2b7e7a52628842980bba88097820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9d5903aa251a1be7aba380430a2a02') in 0.007350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_38.asset
+  artifactKey: Guid(5e824eae6dc23574c8a76ec7aa8e81ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_38.asset using Guid(5e824eae6dc23574c8a76ec7aa8e81ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64de2ffec392a52ac99f320f149f80b6') in 0.008098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_19.asset
+  artifactKey: Guid(9737c7595a594564599597a008e30814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_19.asset using Guid(9737c7595a594564599597a008e30814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d84303ab686b37554acb3241a6d1e15') in 0.004898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_10.asset
+  artifactKey: Guid(8b1bcb67a01640346882aedcc0d1b0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_10.asset using Guid(8b1bcb67a01640346882aedcc0d1b0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e527d2c8d99790d1e933d65343045b65') in 0.003861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_25.asset
+  artifactKey: Guid(659f70f631268cf4eb824ece8a340592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_25.asset using Guid(659f70f631268cf4eb824ece8a340592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c40f9474a8c3b9a645114d91f1936cd') in 0.008959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_31.asset
+  artifactKey: Guid(740423c61d1ecbb4fa70b97e74a91132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_31.asset using Guid(740423c61d1ecbb4fa70b97e74a91132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4cbf0c05a5b0a5b5817d29421dd7402') in 0.004845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_52.asset
+  artifactKey: Guid(082f55678ee19af4789f7e25015c32eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_52.asset using Guid(082f55678ee19af4789f7e25015c32eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6d8c46967796aede65ae8a8389ccab') in 0.008173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_21.asset
+  artifactKey: Guid(e27e7699de27dd3408393da8af8e0495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_21.asset using Guid(e27e7699de27dd3408393da8af8e0495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f896c3d995bd1db2087ec5e23e3a76') in 0.004430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_41.asset
+  artifactKey: Guid(c0691fc87e9e59a4ea26ed46f2f681f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_41.asset using Guid(c0691fc87e9e59a4ea26ed46f2f681f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72642516e76bd42013e8365527d3f57') in 0.007848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_47.asset
+  artifactKey: Guid(fa8e003cf613b77409e8505c5945c397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_47.asset using Guid(fa8e003cf613b77409e8505c5945c397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4c07b101621d834a3d372180b470e6') in 0.004718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_24.asset
+  artifactKey: Guid(1e454b60b61360144b7253a70faff9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_24.asset using Guid(1e454b60b61360144b7253a70faff9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b41dd9200cbe7beeca36d63f90f6eb') in 0.004133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_56.asset
+  artifactKey: Guid(8c2ccc71ff4e45b49b476138a4569687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_56.asset using Guid(8c2ccc71ff4e45b49b476138a4569687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8c7a20505cdad12dbc4949d8febcfb') in 0.007923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_37.asset
+  artifactKey: Guid(9b9b098eb26258c4ab31ec9f158adaf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_37.asset using Guid(9b9b098eb26258c4ab31ec9f158adaf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4c5e92383e945f189b03d474ca7508') in 0.004140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_46.asset
+  artifactKey: Guid(30376c0628e768f47950be1e69e76586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_46.asset using Guid(30376c0628e768f47950be1e69e76586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad4e2e96f48100cee53729cab8c33ef') in 0.008329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_33.asset
+  artifactKey: Guid(db775ec2302cf824898f9b4c7064ab79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_33.asset using Guid(db775ec2302cf824898f9b4c7064ab79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee8cd9fa276b15a4eeec3d9e279bc10') in 0.003778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_57.asset
+  artifactKey: Guid(3f94e956bcab8fa4582de8e87481e9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_57.asset using Guid(3f94e956bcab8fa4582de8e87481e9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f880606c444cbbdad8dde36060b20d58') in 0.009756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_54.asset
+  artifactKey: Guid(6c218fd0aa6238c45bac505cf5e190d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_54.asset using Guid(6c218fd0aa6238c45bac505cf5e190d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4c1df5b653c3ce3b53d63a972b93c9') in 0.008644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_23.asset
+  artifactKey: Guid(1f3c5b288a932f54db35d43e24ca1b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_23.asset using Guid(1f3c5b288a932f54db35d43e24ca1b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd23c734a04b1bd07c12f911daa3aa20') in 0.008675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_48.asset
+  artifactKey: Guid(5896c48105690f74ea718091bc7ace20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_48.asset using Guid(5896c48105690f74ea718091bc7ace20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab57b6f1992ee8bf31bcc5826615751') in 0.004245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_26.asset
+  artifactKey: Guid(d1b1b776610b60c48ac29d81d64048f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_26.asset using Guid(d1b1b776610b60c48ac29d81d64048f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5f581baa338e0951d84dcab9c95037') in 0.004323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_27.asset
+  artifactKey: Guid(1e797ac2031be494690897462e72d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_27.asset using Guid(1e797ac2031be494690897462e72d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfea615801ddc1dc0ade3c6a976a8a2f') in 0.008271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_32.asset
+  artifactKey: Guid(c14c7987fcae3e84cad40e94e839c1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_32.asset using Guid(c14c7987fcae3e84cad40e94e839c1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65eb622670c5f348d8af61662fa4385') in 0.004246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_13.asset
+  artifactKey: Guid(13689d71e026f28459b1b4510e600cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_13.asset using Guid(13689d71e026f28459b1b4510e600cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40f47bfa7857411653f627530d26acc') in 0.004474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_42.asset
+  artifactKey: Guid(abcd97bdaa59c4244b07511de445b113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_42.asset using Guid(abcd97bdaa59c4244b07511de445b113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e5f9fb5c41c6ad377894db5a71ada2') in 0.009444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_5.asset
+  artifactKey: Guid(2ad5143101ada2744bb5b8ead0ed1ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_5.asset using Guid(2ad5143101ada2744bb5b8ead0ed1ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff4cd46be1bcf941535d6a9421bb3c4') in 0.009098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free.png
+  artifactKey: Guid(f3abcb911e96413459cb5fee6f0c74d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free.png using Guid(f3abcb911e96413459cb5fee6f0c74d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6eaa0a6def7bb186352655ec908df8b') in 0.154890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 96
+========================================================================
+Received Import Request.
+  Time since last request: 4.332337 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_58.asset
+  artifactKey: Guid(c80c6d6809521ba459c8150676d7e83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_58.asset using Guid(c80c6d6809521ba459c8150676d7e83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5642258177aefa0042d80964f8ad823b') in 0.009994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_66.asset
+  artifactKey: Guid(7f03cf76e65fae14091f7754f0419ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_66.asset using Guid(7f03cf76e65fae14091f7754f0419ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22039657510088ae99431afd11b94dae') in 0.005125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_65.asset
+  artifactKey: Guid(70499e97a7d5fda43a6e6ec2ac3e5824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_65.asset using Guid(70499e97a7d5fda43a6e6ec2ac3e5824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ac504c60acfed0d9bc9b2dc0c5a3ef') in 0.008176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_72.asset
+  artifactKey: Guid(2706a28134f28f041823155cfe83ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_72.asset using Guid(2706a28134f28f041823155cfe83ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a793b3eda9bc5bc28712fe74010c114') in 0.004311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_61.asset
+  artifactKey: Guid(8350338449433d648ae9775e86cbf1ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_61.asset using Guid(8350338449433d648ae9775e86cbf1ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c29b6829dfc2f31e1687a81f62266fd6') in 0.004175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_64.asset
+  artifactKey: Guid(d7acc8919e564684b8dbe95107e6b675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_64.asset using Guid(d7acc8919e564684b8dbe95107e6b675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae96029bfa5f0eae10e3b3bdae3177c4') in 0.009027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_68.asset
+  artifactKey: Guid(f4f23e2ec1ac53143901182b7a5f7317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_68.asset using Guid(f4f23e2ec1ac53143901182b7a5f7317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ca4b27eb508654fcb670e8cc92ae62') in 0.008694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004766 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_73.asset
+  artifactKey: Guid(cdb7645566729e24c86d74f307e6a583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_73.asset using Guid(cdb7645566729e24c86d74f307e6a583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1140b9dfe7b0a296793e0ace39fb2327') in 0.004155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_80.asset
+  artifactKey: Guid(94dbea7cd2ce6094589d0703817d73ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_80.asset using Guid(94dbea7cd2ce6094589d0703817d73ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a09b06b9f1f6959e71ae6b773c1ecda') in 0.009147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_77.asset
+  artifactKey: Guid(4faf6ff29f591434ba6ca732bf50992d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_77.asset using Guid(4faf6ff29f591434ba6ca732bf50992d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6386217e7b405ce6e9446311966951') in 0.004134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_79.asset
+  artifactKey: Guid(870132c3629444146b98c8b35ae84045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_79.asset using Guid(870132c3629444146b98c8b35ae84045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef4ca1e398b5425a3d69e5139a28d4d') in 0.004513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_85.asset
+  artifactKey: Guid(b53eb7d4d36cf9f439f1a3de42609f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_85.asset using Guid(b53eb7d4d36cf9f439f1a3de42609f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3271581ffcb2a01244f73cd4da257c6') in 0.008809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_75.asset
+  artifactKey: Guid(d8851f7495766da4cacc114aa7bcf822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_75.asset using Guid(d8851f7495766da4cacc114aa7bcf822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350b91c84b48597731c1e0090202d3cc') in 0.004492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.019008 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_88.asset
+  artifactKey: Guid(e524f1018f1222b45b9190ebd5d01ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_88.asset using Guid(e524f1018f1222b45b9190ebd5d01ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53b9ad10bd9228f165618980418fda7') in 0.004502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_93.asset
+  artifactKey: Guid(64bea98674d9f074aba1b122ce4e16ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/farm bridges free_93.asset using Guid(64bea98674d9f074aba1b122ce4e16ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a0788b237d65d9efc953d1a63667e6') in 0.004336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/tilemaps/spring farm tilemap.png
+  artifactKey: Guid(7624b56e7fcb9ee4f92816f7498dfe62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/tilemaps/spring farm tilemap.png using Guid(7624b56e7fcb9ee4f92816f7498dfe62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a4be2301345f4effec03ee55025c3a') in 0.201773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 158
+========================================================================
+Received Import Request.
+  Time since last request: 23.039956 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items
+  artifactKey: Guid(455c0c63a1481f24a875535d19108eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items using Guid(455c0c63a1481f24a875535d19108eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29bcf120cd65cad051e00879e570c52c') in 0.000398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.997786 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free.png
+  artifactKey: Guid(1e2cedcda98731548823265d4e79fdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free.png using Guid(1e2cedcda98731548823265d4e79fdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d79f7d44e32ac3ca4582ce0238ab38f') in 0.026396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 2.023229 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_0.asset
+  artifactKey: Guid(a521f053951ee1145bebcceae86abfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_0.asset using Guid(a521f053951ee1145bebcceae86abfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b795aa5354a6eee8c3645fba59115e04') in 0.009060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_8.asset
+  artifactKey: Guid(f6a157ac295c42a4b9c4cf520f0d9996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_8.asset using Guid(f6a157ac295c42a4b9c4cf520f0d9996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87eacff9fa33a6c36f57a8a4d16ceaf7') in 0.009870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3 1.asset
+  artifactKey: Guid(d9ebb52c8ed408146aa3c990d65b7e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3 1.asset using Guid(d9ebb52c8ed408146aa3c990d65b7e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1216b0afc623e817e0dad7f4e02282') in 0.009442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3 2.asset
+  artifactKey: Guid(3b223c29cdbf256448ddc2c5172026b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3 2.asset using Guid(3b223c29cdbf256448ddc2c5172026b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d3c97933c41e92ff0dcd6ca4b4b2bd') in 0.005055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_27.asset
+  artifactKey: Guid(24c478fe11b75204197c0e39d386b82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_27.asset using Guid(24c478fe11b75204197c0e39d386b82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f6f85fb5125a1a2e9950a7b1f2423e') in 0.009079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_6.asset
+  artifactKey: Guid(ec8ee7dc6d4cd2849a14089650a17347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_6.asset using Guid(ec8ee7dc6d4cd2849a14089650a17347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2abff31b69a9f65c58e86656efde66') in 0.006155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_1.asset
+  artifactKey: Guid(ebde6dc5482e4f74e8e96dc3a747d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_1.asset using Guid(ebde6dc5482e4f74e8e96dc3a747d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68cb7b6f63215dfc077aad9d4603659d') in 0.009841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_2.asset
+  artifactKey: Guid(50ca43320122a2744ab07ee7b93125d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_2.asset using Guid(50ca43320122a2744ab07ee7b93125d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14461d85264232e426beeea9a918f9b') in 0.005027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_10.asset
+  artifactKey: Guid(4c4b95796786dae48a56fc684ea1e056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_10.asset using Guid(4c4b95796786dae48a56fc684ea1e056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321b34fb0c4837642b81c2279cdfc3d6') in 0.009362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_5 1.asset
+  artifactKey: Guid(0ecbd85e2d3a7b04fbb434ddbae2cf7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_5 1.asset using Guid(0ecbd85e2d3a7b04fbb434ddbae2cf7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b31a0e1600a96e424f4be6ed9151c31') in 0.012894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1.asset
+  artifactKey: Guid(2e12c217a72167046a8d5730aca26b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1.asset using Guid(2e12c217a72167046a8d5730aca26b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c2e0b8c19d92e72e4e4964323513ce') in 0.008587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_4.asset
+  artifactKey: Guid(191177b3567df104e90a428d9e289c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_4.asset using Guid(191177b3567df104e90a428d9e289c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88442fdf7dbe6a3a22590b8efceaa9f3') in 0.009189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_24.asset
+  artifactKey: Guid(80b7bd792d9c4e64c9e14b4e40e99450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_24.asset using Guid(80b7bd792d9c4e64c9e14b4e40e99450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bcb145f9b2dd9d0c327634c7d8bc13') in 0.008989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_12.asset
+  artifactKey: Guid(d55e93bf414470f4e9b0f7fbec182675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_12.asset using Guid(d55e93bf414470f4e9b0f7fbec182675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4366f271ba305ca11c17e85292e9ea9') in 0.009035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_3.asset
+  artifactKey: Guid(69842b181d618d547beeab15a0995406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_3.asset using Guid(69842b181d618d547beeab15a0995406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04cbc014505550cf8ca427f95a03d20b') in 0.009088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4 2.asset
+  artifactKey: Guid(68a22f62f6b424c4680790eb2b4083c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4 2.asset using Guid(68a22f62f6b424c4680790eb2b4083c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897ea079210ed92dd5061d71dad96852') in 0.004239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_7.asset
+  artifactKey: Guid(8dd45ef76d5d03446a41a48ff89b8881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_7.asset using Guid(8dd45ef76d5d03446a41a48ff89b8881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0d54170967431696d82d6b66741d75') in 0.008855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1 1.asset
+  artifactKey: Guid(eb3f47c8ffcc45a48a1fa7adb29cd143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1 1.asset using Guid(eb3f47c8ffcc45a48a1fa7adb29cd143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3442b5b1f4f0556c77ed3b826f4c25') in 0.004143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_0.asset
+  artifactKey: Guid(f9eaf0e938b293b40b3db386f3624d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_0.asset using Guid(f9eaf0e938b293b40b3db386f3624d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23460be6930013e57f3419ed28b9c186') in 0.010593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_18.asset
+  artifactKey: Guid(68091908d9350894883908f985394126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_18.asset using Guid(68091908d9350894883908f985394126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0cc1d6409d2734ff3f76f0a2d16bd3a') in 0.007532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_6 1.asset
+  artifactKey: Guid(0ad6e23dfb077d74088d16d32db68839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_6 1.asset using Guid(0ad6e23dfb077d74088d16d32db68839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a336b91921055de9aa13c9ada441f9b3') in 0.004439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_5 2.asset
+  artifactKey: Guid(b73f64d7727ce414ca0ebdb2209572cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_5 2.asset using Guid(b73f64d7727ce414ca0ebdb2209572cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe884c746e6be3005479668dad53728') in 0.004052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4.asset
+  artifactKey: Guid(922043eaf6a973143af176b6ac9c8bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4.asset using Guid(922043eaf6a973143af176b6ac9c8bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedcb16b731f307557fefdf249d10fea') in 0.003865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/plants free_6.asset
+  artifactKey: Guid(e27f069f81365194eb95232d12f8eacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/plants free_6.asset using Guid(e27f069f81365194eb95232d12f8eacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31c1ad5ed158e22a503968b6c1cce06') in 0.007477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 326.299322 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free.png
+  artifactKey: Guid(1e2cedcda98731548823265d4e79fdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free.png using Guid(1e2cedcda98731548823265d4e79fdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0bcbf8ee7b9a5b662b9934aac9578f') in 0.043926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4 1.asset
+  artifactKey: Guid(316e5d968ccf4954e91bcb51ffb540a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4 1.asset using Guid(316e5d968ccf4954e91bcb51ffb540a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a61390da1ec606eea5a9aa4be066ff6') in 0.004543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_2 1.asset
+  artifactKey: Guid(0e9a5af64c89a4340b24be74fa88476c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_2 1.asset using Guid(0e9a5af64c89a4340b24be74fa88476c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300e36f927918c1a33baf25d09d2bc47') in 0.004472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1.asset
+  artifactKey: Guid(2e12c217a72167046a8d5730aca26b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1.asset using Guid(2e12c217a72167046a8d5730aca26b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97853f1d3ba0ca373919af9501742491') in 0.004029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_5.asset
+  artifactKey: Guid(4d808b07b0a706c41b29b60b7c5d1827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_5.asset using Guid(4d808b07b0a706c41b29b60b7c5d1827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b413e107db9644c5dcb1eb806ef649d') in 0.004532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3.asset
+  artifactKey: Guid(5b1fe3cd68695174f88953b83710697b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_3.asset using Guid(5b1fe3cd68695174f88953b83710697b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8baff13e8d45cd719dd834613510b65') in 0.004417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_0 1.asset
+  artifactKey: Guid(11ff1b7a1ac75664898e14cc7b066a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_0 1.asset using Guid(11ff1b7a1ac75664898e14cc7b066a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b45dadaed991c53914d11550116b0d') in 0.003881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_7.asset
+  artifactKey: Guid(8dd45ef76d5d03446a41a48ff89b8881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_7.asset using Guid(8dd45ef76d5d03446a41a48ff89b8881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0463ad7fea95c061e3ebed137e6020') in 0.004579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1 1.asset
+  artifactKey: Guid(eb3f47c8ffcc45a48a1fa7adb29cd143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_1 1.asset using Guid(eb3f47c8ffcc45a48a1fa7adb29cd143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062cda0cc346cc7efe52a9eb046af595') in 0.004586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4.asset
+  artifactKey: Guid(922043eaf6a973143af176b6ac9c8bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Wonder Farm Free/objects&items/farm objects free_4.asset using Guid(922043eaf6a973143af176b6ac9c8bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4de89e48760983148ccd9184d7aead42') in 0.004512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

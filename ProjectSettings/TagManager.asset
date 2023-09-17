@@ -59,9 +59,6 @@ TagManager:
   - name: Plants
     uniqueID: 3936175117
     locked: 0
-  - name: fences
-    uniqueID: 1481196477
-    locked: 0
   - name: Characters
     uniqueID: 3998913625
     locked: 0
