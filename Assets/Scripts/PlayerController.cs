@@ -132,4 +132,9 @@ public class Player : MonoBehaviour
             collider.GetComponent<Interactable>()?.Interact();
         }
     }
+     private void OnTriggerEnter2D(Collider2D collision) {
+            if (collision.gameObject.layer == 9) {
+            Destroy(collision.gameObject);
+            }
+        }
 }
