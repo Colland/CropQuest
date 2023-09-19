@@ -1394,7 +1394,7 @@ GameObject:
   - component: {fileID: 442744303}
   - component: {fileID: 442744302}
   - component: {fileID: 442744304}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: plants free_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1475,7 +1475,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442744300}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -146844,7 +146844,7 @@ MonoBehaviour:
   growObj: {fileID: 1136264114}
   collisionLayers:
     serializedVersion: 2
-    m_Bits: 2688
+    m_Bits: 19072
   growDelay: 4
 --- !u!1 &2063789538
 GameObject:
