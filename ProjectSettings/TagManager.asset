@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Plants
   layers:
   - Default
   - TransparentFX
@@ -14,12 +15,12 @@ TagManager:
   - Building
   - SolidObjects
   - Interactable
-  - plantsCollision
+  - grownCollision
   - path
   - Fences
   - AnimalCollision
   - 
-  - 
+  - seedCollision
   - 
   - 
   - 

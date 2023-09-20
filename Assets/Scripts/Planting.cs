@@ -23,6 +23,13 @@ public class Planting : MonoBehaviour
             }
 
         }
+        
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("Press F");
+
+        }
+        
     }
 
     //instantiate the first phase plant and destroy it after set time
