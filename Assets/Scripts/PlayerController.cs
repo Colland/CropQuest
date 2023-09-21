@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -12,7 +13,14 @@ public class Player : MonoBehaviour
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
     public LayerMask animalLayer;
+
+    private int itemCounter = 0;
+
+    private int cash = 0;
+    public TMP_Text counterText;
     
+    public TMP_Text cashText;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -135,6 +143,11 @@ public class Player : MonoBehaviour
      private void OnTriggerEnter2D(Collider2D collision) {
             if (collision.gameObject.layer == 9) {
             Destroy(collision.gameObject);
+            cash += 1;
+            Debug.Log("Cash generated");
+            cashText.text = "" + cash;
+            itemCounter += 1;
+            counterText.text = "" + itemCounter;
             }
         }
 }
