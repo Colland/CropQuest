@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public TMP_Text cashText;
 
     //True = right, false = left
-    private bool directionFacing;
+    private bool directionFacing = false;
 
     private void Awake()
     {
@@ -94,12 +94,18 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q))
         {
             Harvest();
-            animator.SetBool("isHarvesting", true);
+            animator.SetTrigger("isHarvesting");
         }
         if(Input.GetKeyUp(KeyCode.Q))
         {
-            animator.SetBool("isHarvesting", false);
+            animator.ResetTrigger("isHarvesting");
         }
+    }
+
+    public void ResetHarvestTrigger()
+    {
+        animator.ResetTrigger("isHarvesting");
+        animator.SetTrigger("idle");
     }
 
     private bool isWalkable(ref Vector2 targetPos)
