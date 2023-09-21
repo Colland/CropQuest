@@ -144409,6 +144409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryDisplay: {fileID: 1395094521}
+  invItem1: {fileID: 0}
+  invItemNum1: {fileID: 0}
 --- !u!1 &1260086894
 GameObject:
   m_ObjectHideFlags: 0
@@ -145091,7 +145093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1395094522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -145868,6 +145870,7 @@ GameObject:
   - component: {fileID: 1595889238}
   - component: {fileID: 1595889240}
   - component: {fileID: 1595889239}
+  - component: {fileID: 1595889241}
   m_Layer: 5
   m_Name: Inv 1
   m_TagString: Untagged
@@ -145932,6 +145935,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595889237}
   m_CullTransparentMesh: 1
+--- !u!114 &1595889241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595889237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bf664c1ab0f0b42a978a6e0b73dbe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryDisplay: {fileID: 1395094521}
+  invItem1: {fileID: 1595889237}
+  invItemNum1: {fileID: 0}
 --- !u!1 &1625986141
 GameObject:
   m_ObjectHideFlags: 0
