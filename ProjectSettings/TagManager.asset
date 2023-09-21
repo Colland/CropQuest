@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Plants
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Building
+  - SolidObjects
+  - Interactable
+  - grownCollision
+  - path
+  - Fences
+  - AnimalCollision
+  - 
+  - seedCollision
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: ground
+    uniqueID: 4151474245
+    locked: 0
+  - name: ground details
+    uniqueID: 386593605
+    locked: 0
+  - name: Doors
+    uniqueID: 1696901637
+    locked: 0
+  - name: Building
+    uniqueID: 3795750803
+    locked: 0
+  - name: Path
+    uniqueID: 2976724093
+    locked: 0
+  - name: Plants
+    uniqueID: 3936175117
+    locked: 0
+  - name: Characters
+    uniqueID: 3998913625
+    locked: 0
