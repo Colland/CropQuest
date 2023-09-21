@@ -142,7 +142,12 @@ public class Player : MonoBehaviour
     }
      private void OnTriggerEnter2D(Collider2D collision) {
             if (collision.gameObject.layer == 9) {
+
+            Inventory inventory = FindObjectOfType<Inventory>();
+            inventory.addToInv(collision.gameObject);
+
             Destroy(collision.gameObject);
+
             cash += 1;
             Debug.Log("Cash generated");
             cashText.text = "" + cash;
