@@ -145,16 +145,9 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
             cash += 1;
             Debug.Log("Cash generated");
-            cashText.text = ": " + cash;
+            cashText.text = "" + cash;
             itemCounter += 1;
-            counterText.text = "x " + itemCounter;
+            counterText.text = "" + itemCounter;
             }
         }
-
-    private void colMoney() {
-
-            cash += 1;
-            Debug.Log("Cash generated");
-            cashText.text = ": " + cash;
-    }
 }
