@@ -4157,9 +4157,11 @@ MonoBehaviour:
   animalLayer:
     serializedVersion: 2
     m_Bits: 0
+  grownCollision:
+    serializedVersion: 2
+    m_Bits: 512
   counterText: {fileID: 1446009495}
   cashText: {fileID: 698951990}
-  inventory: {fileID: 0}
 --- !u!212 &865947666
 SpriteRenderer:
   m_ObjectHideFlags: 0

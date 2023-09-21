@@ -3866,8 +3866,8 @@ MonoBehaviour:
   animalLayer:
     serializedVersion: 2
     m_Bits: 0
-  counterText: {fileID: 0}
-  cashText: {fileID: 0}
+  counterText: {fileID: 76146891}
+  cashText: {fileID: 2053275930}
 --- !u!212 &865947666
 SpriteRenderer:
   m_ObjectHideFlags: 0

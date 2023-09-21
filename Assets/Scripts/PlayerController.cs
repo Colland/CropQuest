@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
     public LayerMask animalLayer;
+    public LayerMask grownCollision;
 
     private int itemCounter = 0;
 
@@ -20,6 +21,9 @@ public class Player : MonoBehaviour
     public TMP_Text counterText;
     
     public TMP_Text cashText;
+
+    //True = right, false = left
+    private bool directionFacing;
 
     private void Awake()
     {
@@ -31,16 +35,41 @@ public class Player : MonoBehaviour
     {
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
+        
 
-        if(!(input.x == 0 && input.y == 0))
+        if(input.x == 0 && !(input.y == 0))
+        {
+            isMoving = true;
+            animator.SetFloat("moveY", input.y);
+        }
+
+        else if(!(input.x == 0 && input.y == 0))
         {
             isMoving = true;
             animator.SetFloat("moveX", input.x);
             animator.SetFloat("moveY", input.y);
+
+            if(input.x > 0)
+            {
+                directionFacing = true;
+            }
+            else
+            {
+                directionFacing = false;
+            }
         }
         else
         {
             isMoving = false;
+
+            if(input.x > 0)
+            {
+                directionFacing = true;
+            }
+            else
+            {
+                directionFacing = false;
+            }
         }
 
         Vector2 position = transform.position;
@@ -60,6 +89,16 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Interact();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            Harvest();
+            animator.SetBool("isHarvesting", true);
+        }
+        if(Input.GetKeyUp(KeyCode.Q))
+        {
+            animator.SetBool("isHarvesting", false);
         }
     }
 
@@ -140,19 +179,36 @@ public class Player : MonoBehaviour
             collider.GetComponent<Interactable>()?.Interact();
         }
     }
-     private void OnTriggerEnter2D(Collider2D collision) {
-            if (collision.gameObject.layer == 9) {
+     private void Harvest()
+      {
+            float directionFloat = 0;
 
-            Inventory inventory = FindObjectOfType<Inventory>();
-            inventory.addToInv(collision.gameObject);
+            if(directionFacing == true)
+            {
+                directionFloat = 1;
+            }
+            else
+            {
+                directionFloat = -1;
+            }
 
-            Destroy(collision.gameObject);
+            var interactPos = transform.position;
+            interactPos.x += directionFloat;
 
-            cash += 1;
-            Debug.Log("Cash generated");
-            cashText.text = "" + cash;
-            itemCounter += 1;
-            counterText.text = "" + itemCounter;
+            Collider2D collision = Physics2D.OverlapCircle(interactPos, 0.5f, grownCollision);
+
+            if(collision != null)
+            {
+                Inventory inventory = FindObjectOfType<Inventory>();
+                inventory.addToInv(collision.gameObject);
+
+                Destroy(collision.gameObject);
+
+                cash += 1;
+                Debug.Log("Cash generated");
+                cashText.text = "" + cash;
+                itemCounter += 1;
+                counterText.text = "" + itemCounter; 
             }
         }
 }
