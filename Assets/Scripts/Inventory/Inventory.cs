@@ -9,6 +9,8 @@ public class Inventory : MonoBehaviour
 
     public GameObject invItem1;
     public int invItemNum1;
+    public Sprite newSprite;
+    private SpriteRenderer invItem1Image;
 
     private void Start()
     {
@@ -19,12 +21,17 @@ public class Inventory : MonoBehaviour
     private void Update()
     {
         /*
-        Need to add code to fetch and store items here.
+        Need to add code to fetch and store items here for full and proper inventory.
         */
 
         if (Input.GetKeyDown(KeyCode.I))
         {
             ToggleInventoryVisibility();
+        }
+
+        if(invItem1 != null)
+        {   
+            invItem1Image.sprite = newSprite;
         }
     }
 
