@@ -2837,7 +2837,7 @@ Transform:
   m_GameObject: {fileID: 555989780}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -790.9689, y: 262.7707, z: -0.6942295}
+  m_LocalPosition: {x: -973, y: 434, z: -0.6942295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4552,9 +4552,10 @@ GameObject:
   - component: {fileID: 865947668}
   - component: {fileID: 865947670}
   - component: {fileID: 865947669}
+  - component: {fileID: 865947671}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4747,6 +4748,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.375}
   m_EdgeRadius: 0
+--- !u!114 &865947671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865947664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bf664c1ab0f0b42a978a6e0b73dbe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryDisplay: {fileID: 2108001855}
+  invItem1: {fileID: 0}
+  invItemNum1: 0
+  newSprite: {fileID: 0}
 --- !u!1 &868107391
 GameObject:
   m_ObjectHideFlags: 0
@@ -26819,7 +26836,7 @@ Transform:
   m_GameObject: {fileID: 1004899057}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -790.9689, y: 262.7707, z: -0.6942295}
+  m_LocalPosition: {x: -973, y: 442, z: -0.6942295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -145982,7 +145999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -176, y: 181}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1215437188
@@ -148227,6 +148244,7 @@ GameObject:
   - component: {fileID: 1517970710}
   - component: {fileID: 1517970709}
   - component: {fileID: 1517970708}
+  - component: {fileID: 1517970713}
   m_Layer: 8
   m_Name: npc_1
   m_TagString: Untagged
@@ -148254,6 +148272,7 @@ MonoBehaviour:
   - Make sure you edit that out before the presentation.
   wordSpeed: 0.03
   contButton: {fileID: 724502622}
+  npc: {fileID: 0}
 --- !u!61 &1517970709
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148387,6 +148406,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1517970713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517970707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3c2801fae3a9749879d05bf60f9123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToGive: {fileID: 1136264114}
 --- !u!1 &1520227289
 GameObject:
   m_ObjectHideFlags: 0
@@ -150681,6 +150713,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106961091}
   m_CullTransparentMesh: 1
+--- !u!1 &2108001855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6986663679187983964, guid: c6076e31308c65745bfe35d6dab3a1b9, type: 3}
+  m_PrefabInstance: {fileID: 7759935748527936544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132421637
 GameObject:
   m_ObjectHideFlags: 0
@@ -150965,6 +151002,10 @@ PrefabInstance:
       propertyPath: invItem1
       value: 
       objectReference: {fileID: 338479259}
+    - target: {fileID: 6986663679187983964, guid: c6076e31308c65745bfe35d6dab3a1b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7212831847923740566, guid: c6076e31308c65745bfe35d6dab3a1b9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -2
@@ -150991,9 +151032,9 @@ SceneRoots:
   - {fileID: 865947667}
   - {fileID: 1689987880}
   - {fileID: 2057209277}
-  - {fileID: 491701366}
   - {fileID: 7759935748527936544}
   - {fileID: 728936697}
   - {fileID: 1503339666}
   - {fileID: 1517970712}
   - {fileID: 1358080038}
+  - {fileID: 491701366}

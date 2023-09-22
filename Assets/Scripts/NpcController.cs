@@ -14,9 +14,12 @@ public class NpcController : MonoBehaviour, Interactable
     public float wordSpeed;
     public GameObject contButton;
     private Coroutine typingRoutine;
+    public GameObject item;
+
+    private Player player;
     public void Interact()
     {
-        if(dialoguePanel.activeInHierarchy)
+        if (dialoguePanel.activeInHierarchy)
         {
             zeroText();
         }
@@ -24,6 +27,7 @@ public class NpcController : MonoBehaviour, Interactable
         {
             dialoguePanel.SetActive(true);
             typingRoutine = StartCoroutine(Typing());
+            InteractWithPlayer();
         }
     }
 
@@ -31,7 +35,7 @@ public class NpcController : MonoBehaviour, Interactable
     {
         contButton.SetActive(false);
 
-        if(index < dialogue.Length - 1)
+        if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
@@ -53,15 +57,24 @@ public class NpcController : MonoBehaviour, Interactable
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
 
-        if(dialogueText.text == dialogue[index])
+        if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
         }
+    }
+
+    public void InteractWithPlayer()
+    {
+        // Check if the player's inventory is attached to the player GameObject
+        Inventory inventory = FindObjectOfType<Inventory>();
+        inventory.addToInv(item);
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player.updateInventory();
     }
 }

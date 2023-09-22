@@ -15,11 +15,11 @@ public class Player : MonoBehaviour
     public LayerMask animalLayer;
     public LayerMask grownCollision;
 
-    private int itemCounter = 0;
+    public int itemCounter = 0;
 
-    private int cash = 0;
+    public int cash = 0;
     public TMP_Text counterText;
-    
+
     public TMP_Text cashText;
 
     //True = right, false = left
@@ -35,21 +35,21 @@ public class Player : MonoBehaviour
     {
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
-        
 
-        if(input.x == 0 && !(input.y == 0))
+
+        if (input.x == 0 && !(input.y == 0))
         {
             isMoving = true;
             animator.SetFloat("moveY", input.y);
         }
 
-        else if(!(input.x == 0 && input.y == 0))
+        else if (!(input.x == 0 && input.y == 0))
         {
             isMoving = true;
             animator.SetFloat("moveX", input.x);
             animator.SetFloat("moveY", input.y);
 
-            if(input.x > 0)
+            if (input.x > 0)
             {
                 directionFacing = true;
             }
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
         {
             isMoving = false;
 
-            if(input.x > 0)
+            if (input.x > 0)
             {
                 directionFacing = true;
             }
@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
         targetPos.x = position.x + moveSpeed * input.x * Time.deltaTime;
         targetPos.y = position.y + moveSpeed * input.y * Time.deltaTime;
 
-        if(isWalkable(ref targetPos))
+        if (isWalkable(ref targetPos))
         {
             position.x = targetPos.x;
             position.y = targetPos.y;
@@ -86,17 +86,17 @@ public class Player : MonoBehaviour
 
         animator.SetBool("isMoving", isMoving);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Interact();
         }
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Harvest();
             animator.SetTrigger("isHarvesting");
         }
-        if(Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.Q))
         {
             animator.ResetTrigger("isHarvesting");
         }
@@ -114,15 +114,15 @@ public class Player : MonoBehaviour
         Collider2D collider = Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactablesLayer | animalLayer);
 
         //Checks if the player is colliding with something.
-        if(collider != null)
-        {   
+        if (collider != null)
+        {
             Vector3 newPos = transform.position;
-            newPos.y = newPos.y+0.1f;
+            newPos.y = newPos.y + 0.1f;
 
             //Checks if collision is north of player, cancels vertical player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
+            if (Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                if(targetPos.y > transform.position.y)
+                if (targetPos.y > transform.position.y)
                 {
                     targetPos.y = transform.position.y;
                 }
@@ -130,12 +130,12 @@ public class Player : MonoBehaviour
             }
 
             newPos = transform.position;
-            newPos.y = newPos.y-0.1f;
+            newPos.y = newPos.y - 0.1f;
 
             //Checks if collision is south of player, cancels vertical player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
+            if (Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                if(targetPos.y < transform.position.y)
+                if (targetPos.y < transform.position.y)
                 {
                     targetPos.y = transform.position.y;
                 }
@@ -143,24 +143,24 @@ public class Player : MonoBehaviour
             }
 
             newPos = transform.position;
-            newPos.x = newPos.x+0.1f;
-            
+            newPos.x = newPos.x + 0.1f;
+
             //Checks if collision is east of player, cancels horizontal player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
+            if (Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                if(targetPos.x > transform.position.x)
+                if (targetPos.x > transform.position.x)
                 {
                     targetPos.x = transform.position.x;
                 }
             }
 
             newPos = transform.position;
-            newPos.x = newPos.x-0.1f;
-            
+            newPos.x = newPos.x - 0.1f;
+
             //Checks if collision is west of player, cancels horizontal player movement if so.
-            if(Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
+            if (Physics2D.OverlapCircle(newPos, 0.1f, solidObjectsLayer | interactablesLayer | animalLayer) != null)
             {
-                if(targetPos.x < transform.position.x)
+                if (targetPos.x < transform.position.x)
                 {
                     targetPos.x = transform.position.x;
                 }
@@ -168,7 +168,7 @@ public class Player : MonoBehaviour
 
             return true;
         }
-        
+
         return true;
     }
 
@@ -180,41 +180,50 @@ public class Player : MonoBehaviour
         Debug.DrawLine(transform.position, interactPos, Color.red, 5f);
 
         var collider = Physics2D.OverlapCircle(interactPos, 0.2f, interactablesLayer);
-        if(collider != null)
+        if (collider != null)
         {
             collider.GetComponent<Interactable>()?.Interact();
         }
     }
-     private void Harvest()
-      {
-            float directionFloat = 0;
+    private void Harvest()
+    {
+        float directionFloat = 0;
 
-            if(directionFacing == true)
-            {
-                directionFloat = 1;
-            }
-            else
-            {
-                directionFloat = -1;
-            }
-
-            var interactPos = transform.position;
-            interactPos.x += directionFloat;
-
-            Collider2D collision = Physics2D.OverlapCircle(interactPos, 0.5f, grownCollision);
-
-            if(collision != null)
-            {
-                Inventory inventory = FindObjectOfType<Inventory>();
-                inventory.addToInv(collision.gameObject);
-
-                Destroy(collision.gameObject);
-
-                cash += 1;
-                Debug.Log("Cash generated");
-                cashText.text = "" + cash;
-                itemCounter += 1;
-                counterText.text = "" + itemCounter; 
-            }
+        if (directionFacing == true)
+        {
+            directionFloat = 1;
         }
+        else
+        {
+            directionFloat = -1;
+        }
+
+        var interactPos = transform.position;
+        interactPos.x += directionFloat;
+
+        Collider2D collision = Physics2D.OverlapCircle(interactPos, 0.5f, grownCollision);
+
+        if (collision != null)
+        {
+            Inventory inventory = FindObjectOfType<Inventory>();
+            inventory.addToInv(collision.gameObject);
+
+            Destroy(collision.gameObject);
+
+            cash += 1;
+            Debug.Log("Cash generated");
+            cashText.text = "" + cash;
+            itemCounter += 1;
+            counterText.text = "" + itemCounter;
+        }
+    }
+
+    public void updateInventory()
+    {
+        cash += 1;
+        Debug.Log("Cash generated");
+        cashText.text = "" + cash;
+        itemCounter += 1;
+        counterText.text = "" + itemCounter;
+    }
 }
