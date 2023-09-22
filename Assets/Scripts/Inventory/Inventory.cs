@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour
         Need to add code to fetch and store items here for full and proper inventory.
         */
 
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             ToggleInventoryVisibility();
@@ -48,6 +49,8 @@ public class Inventory : MonoBehaviour
             invItem1 = item;
             invItemNum1++;
             Destroy(item);
+
+
         }
         else if(item == invItem1)
         {
