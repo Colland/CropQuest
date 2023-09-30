@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDataPersistence
 {
     public float moveSpeed;
     private Vector2 input;
@@ -225,5 +225,17 @@ public class Player : MonoBehaviour
         cashText.text = "" + cash;
         itemCounter += 1;
         counterText.text = "" + itemCounter;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.cash = data.cash;
+        this.transform.position = data.playerPosition;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.cash = this.cash;
+        data.playerPosition = this.transform.position;
     }
 }
