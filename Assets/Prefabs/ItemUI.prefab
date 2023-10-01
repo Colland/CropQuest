@@ -111,7 +111,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 40, y: 30.3333}
+  m_SizeDelta: {x: 59.8106, y: 30.3333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4202436012479552230
 CanvasRenderer:
@@ -168,8 +168,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 441099065021549917}
   - component: {fileID: 1534717450972425502}
   - component: {fileID: 1289758637698725089}
+  - component: {fileID: 8455346843650952865}
   m_Layer: 5
   m_Name: ItemUI
   m_TagString: Untagged
@@ -286,6 +287,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 25
+--- !u!114 &8455346843650952865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064395792686167337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4564c4a6967784da6413d8bd3df081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7246120453689753529
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +325,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7246120453689753529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -322,8 +335,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.999987, y: -34.83342}
-  m_SizeDelta: {x: 40, y: 30.3333}
+  m_AnchoredPosition: {x: 21.7722, y: -37.70488}
+  m_SizeDelta: {x: 66.7443, y: 34.5431}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5518064002828813477
 CanvasRenderer:
