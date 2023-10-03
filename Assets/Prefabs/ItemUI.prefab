@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 1534717450972425502}
   - component: {fileID: 1289758637698725089}
   - component: {fileID: 8455346843650952865}
+  - component: {fileID: 8572190992421363703}
   m_Layer: 5
   m_Name: ItemUI
   m_TagString: Untagged
@@ -299,6 +300,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4564c4a6967784da6413d8bd3df081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemImage: {fileID: 5906426284870699388}
+  quantityTxt: {fileID: 1454075704116916445}
+  borderImage: {fileID: 310696425, guid: 7db00fb71008dc545a9c667faa1359be, type: 3}
+  SelectedBorderImage: {fileID: 1080966578, guid: 7db00fb71008dc545a9c667faa1359be, type: 3}
+--- !u!114 &8572190992421363703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064395792686167337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8455346843650952865}
+          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_MethodName: OnPointerClick
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 6
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8455346843650952865}
+          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_MethodName: OnDrop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 13
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8455346843650952865}
+          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_MethodName: OnBeginDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8455346843650952865}
+          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_MethodName: OnEndDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7246120453689753529
 GameObject:
   m_ObjectHideFlags: 0
