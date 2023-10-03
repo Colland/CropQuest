@@ -12,10 +12,33 @@ public class InventoryController : MonoBehaviour
     [SerializeField]
     private Inventory inventoryData;
 
+    public List<ModelInventoryItem> initialItems = new List<ModelInventoryItem>();
+
     private void Start()
     {
         PrepareUI();
-        //inventoryData.Initialize();
+        PrepareInventoryData();
+    }
+
+    private void PrepareInventoryData()
+    {
+        inventoryData.Initialize();
+        inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+        foreach(ModelInventoryItem item in initialItems)
+        {
+            if(item.IsEmpty)
+                continue;
+            inventoryData.AddItem(item);
+        }
+    }
+
+    private void UpdateInventoryUI(Dictionary<int, ModelInventoryItem> inventoryState)
+    {
+        inventoryUI.ResetAllItems();
+        foreach(var item in inventoryState)
+        {
+            inventoryUI.UpdateData(item.Key, item.Value.item.itemImage, item.Value.quantity);
+        }
     }
 
     private void PrepareUI()
@@ -34,12 +57,15 @@ public class InventoryController : MonoBehaviour
 
     private void HandleDragging(int itemIndex)
     {
-        
+        ModelInventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+        if(inventoryItem.IsEmpty)
+            return;
+        inventoryUI.CreateDraggedItem(inventoryItem.item.itemImage, inventoryItem.quantity);
     }
 
     private void HandleSwapitems(int itemIndex_1, int itemIndex_2)
     {
-        
+        inventoryData.SwapItems(itemIndex_1, itemIndex_2);
     }
 
     private void HandleDescriptionRequest(int itemIndex)

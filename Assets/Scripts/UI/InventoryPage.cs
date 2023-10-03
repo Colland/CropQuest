@@ -82,6 +82,7 @@ public class InventoryPage : MonoBehaviour
             return;
         }
         OnSwapItems?.Invoke(currentlyDraggedItemIndex, index);
+        HandleItemSelection(inventoryItem);
     }
 
     private void ResetDraggedItem()
@@ -138,5 +139,14 @@ public class InventoryPage : MonoBehaviour
         itemDescription.SetDescription(itemImage, name, description);
         DeselectAllItems();
         listOfItems[itemIndex].Select();
+    }
+
+    internal void ResetAllItems()
+    {
+        foreach(var item in listOfItems)
+        {
+            item.ResetData();
+            item.Deselect();
+        }
     }
 }
