@@ -9,13 +9,13 @@ public class ItemGiver : MonoBehaviour
     public void InteractWithPlayer()
     {
         // Check if the player's inventory is attached to the player GameObject
-        Inventory inventory = FindObjectOfType<Inventory>();
+       // Inventory inventory = FindObjectOfType<Inventory>();
 
-        if (inventory != null)
-        {
-            inventory.addToInv(itemToGive);
-            Debug.Log("Player's inventory is full.");
-        }
+        //if (inventory != null)
+       // {
+        //    inventory.addToInv(itemToGive);
+       //     Debug.Log("Player's inventory is full.");
+      //  }
     }
 }
 

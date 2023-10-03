@@ -71,10 +71,11 @@ public class NpcController : MonoBehaviour, Interactable
 
     public void InteractWithPlayer()
     {
+        //IM WORKING ON INVENTORY SO THIS GOTTA GO FOR A BIT - Tristan
         // Check if the player's inventory is attached to the player GameObject
-        Inventory inventory = FindObjectOfType<Inventory>();
-        inventory.addToInv(item);
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        player.updateInventory();
+       // Inventory inventory = FindObjectOfType<Inventory>();
+        //inventory.addToInv(item);
+        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        //player.updateInventory();
     }
 }

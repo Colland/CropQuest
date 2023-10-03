@@ -205,8 +205,8 @@ public class Player : MonoBehaviour
 
         if (collision != null)
         {
-            Inventory inventory = FindObjectOfType<Inventory>();
-            inventory.addToInv(collision.gameObject);
+            //Inventory inventory = FindObjectOfType<Inventory>();
+           // inventory.addToInv(collision.gameObject);
 
             Destroy(collision.gameObject);
 
