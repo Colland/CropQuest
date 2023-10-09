@@ -22,6 +22,8 @@ public class Player : MonoBehaviour, IDataPersistence
 
     public TMP_Text cashText;
 
+    public Quest quest;
+
     //True = right, false = left
     private bool directionFacing = false;
 
@@ -205,13 +207,20 @@ public class Player : MonoBehaviour, IDataPersistence
 
         if (collision != null)
         {
+            if (quest.isActive) {
+                quest.goal.Harvested();
+                if (quest.goal.IsReached()) {
+                    cash += quest.goldReward;
+                    quest.Complete();
+                }
+            }
             Inventory inventory = FindObjectOfType<Inventory>();
             inventory.addToInv(collision.gameObject);
 
             Destroy(collision.gameObject);
 
-            cash += 1;
-            Debug.Log("Cash generated");
+            // cash += 1;
+            // Debug.Log("Cash generated");
             cashText.text = "" + cash;
             itemCounter += 1;
             counterText.text = "" + itemCounter;
@@ -220,11 +229,11 @@ public class Player : MonoBehaviour, IDataPersistence
 
     public void updateInventory()
     {
-        cash += 1;
-        Debug.Log("Cash generated");
-        cashText.text = "" + cash;
-        itemCounter += 1;
-        counterText.text = "" + itemCounter;
+        // cash += 1;
+        // Debug.Log("Cash generated");
+        // cashText.text = "" + cash;
+        // itemCounter += 1;
+        // counterText.text = "" + itemCounter;
     }
 
     public void LoadData(GameData data)
@@ -238,4 +247,5 @@ public class Player : MonoBehaviour, IDataPersistence
         data.cash = this.cash;
         data.playerPosition = this.transform.position;
     }
+
 }
