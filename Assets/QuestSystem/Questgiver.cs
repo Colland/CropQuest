@@ -29,6 +29,6 @@ public class Questgiver : MonoBehaviour
     public void DeclineQuest() {
         questPopup.SetActive(false);
         quest.isActive = false;
-        player.quest = quest;
+        //player.quest = quest;
     }
 }

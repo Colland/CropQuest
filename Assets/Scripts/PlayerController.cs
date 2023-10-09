@@ -5,6 +5,8 @@ using TMPro;
 
 public class Player : MonoBehaviour, IDataPersistence
 {
+
+    public GameObject cropuiPanel;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
@@ -208,12 +210,16 @@ public class Player : MonoBehaviour, IDataPersistence
         if (collision != null)
         {
             if (quest.isActive) {
+                cropuiPanel.SetActive(true);
                 quest.goal.Harvested();
                 if (quest.goal.IsReached()) {
+                    
                     cash += quest.goldReward;
                     quest.Complete();
                 }
+                cropuiPanel.SetActive(false);
             }
+
             Inventory inventory = FindObjectOfType<Inventory>();
             inventory.addToInv(collision.gameObject);
 

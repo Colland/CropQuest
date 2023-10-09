@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class QuestGoal 
 {
-    public GoalType goalType;
+    public GoalType goalType;   
 
     public int requiredAmount;
     public int currentAmount;
@@ -28,5 +28,4 @@ public class QuestGoal
 public enum GoalType {
     Harvesting,
     Planting,
-
 }
