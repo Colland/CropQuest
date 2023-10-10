@@ -5,7 +5,7 @@ using TMPro;
 
 public class Player : MonoBehaviour, IDataPersistence
 {
-
+    public GameObject questcompletePopup;
     public GameObject cropuiPanel;
     public float moveSpeed;
     private Vector2 input;
@@ -18,13 +18,20 @@ public class Player : MonoBehaviour, IDataPersistence
     public LayerMask grownCollision;
 
     public int itemCounter = 0;
-
+    public int reqAmount = 0;
     public int cash = 0;
     public TMP_Text counterText;
 
     public TMP_Text cashText;
 
+    public TMP_Text goal;
+
     public Quest quest;
+
+    
+
+    public string name;
+    public TMP_Text textname;
 
     //True = right, false = left
     private bool directionFacing = false;
@@ -36,7 +43,12 @@ public class Player : MonoBehaviour, IDataPersistence
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        cashText.text = "" + cash;
+
+        reqAmount = quest.goal.requiredAmount;
+        goal.text = "" + reqAmount;
+
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -104,6 +116,8 @@ public class Player : MonoBehaviour, IDataPersistence
         {
             animator.ResetTrigger("isHarvesting");
         }
+
+        
     }
 
     public void ResetHarvestTrigger()
@@ -188,9 +202,12 @@ public class Player : MonoBehaviour, IDataPersistence
         {
             collider.GetComponent<Interactable>()?.Interact();
         }
+
+        
     }
     private void Harvest()
     {
+        
         float directionFloat = 0;
 
         if (directionFacing == true)
@@ -210,14 +227,13 @@ public class Player : MonoBehaviour, IDataPersistence
         if (collision != null)
         {
             if (quest.isActive) {
-                cropuiPanel.SetActive(true);
                 quest.goal.Harvested();
                 if (quest.goal.IsReached()) {
-                    
                     cash += quest.goldReward;
+                    questcompletePopup.SetActive(true);
+                    cropuiPanel.SetActive(false);
                     quest.Complete();
                 }
-                cropuiPanel.SetActive(false);
             }
 
             Inventory inventory = FindObjectOfType<Inventory>();
@@ -227,7 +243,6 @@ public class Player : MonoBehaviour, IDataPersistence
 
             // cash += 1;
             // Debug.Log("Cash generated");
-            cashText.text = "" + cash;
             itemCounter += 1;
             counterText.text = "" + itemCounter;
         }
@@ -253,5 +268,4 @@ public class Player : MonoBehaviour, IDataPersistence
         data.cash = this.cash;
         data.playerPosition = this.transform.position;
     }
-
 }

@@ -7,8 +7,10 @@ public class Questgiver : MonoBehaviour
 {
     public Quest quest;
     public Player player;
-
+    
     public GameObject questPopup;
+    public GameObject questcompPopup;
+    
     public Text titleText;
     public Text descriptionText;
     public Text goldText;
@@ -22,6 +24,7 @@ public class Questgiver : MonoBehaviour
 
     public void AcceptQuest() {
         questPopup.SetActive(false);
+        player.cropuiPanel.SetActive(true);
         quest.isActive = true;
         player.quest = quest;
     }
@@ -29,6 +32,9 @@ public class Questgiver : MonoBehaviour
     public void DeclineQuest() {
         questPopup.SetActive(false);
         quest.isActive = false;
-        //player.quest = quest;
+    }
+
+    public void HideUI() {
+        questcompPopup.SetActive(false);
     }
 }
