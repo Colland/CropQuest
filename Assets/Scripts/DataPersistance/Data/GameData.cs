@@ -8,11 +8,11 @@ public class GameData
 
     public int cash;
     public Vector2 playerPosition;
-    public Dictionary<string, bool> plantsSpawned;
+    public int questitemCounter;
     public GameData()
     {
         this.cash = 0;
         this.playerPosition = Vector2.zero;
-        plantsSpawned = new Dictionary<string, bool>();
+        this.questitemCounter = 0;
     }
 }

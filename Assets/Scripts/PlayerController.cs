@@ -264,11 +264,13 @@ public class Player : MonoBehaviour, IDataPersistence
     {
         this.cash = data.cash;
         this.transform.position = data.playerPosition;
+        this.questitemCounter = data.questitemCounter;
     }
 
     public void SaveData(ref GameData data)
     {
         data.cash = this.cash;
         data.playerPosition = this.transform.position;
+        data.questitemCounter = this.questitemCounter;
     }
 }
