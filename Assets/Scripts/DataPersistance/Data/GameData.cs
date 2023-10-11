@@ -9,10 +9,12 @@ public class GameData
     public int cash;
     public Vector2 playerPosition;
     public int questitemCounter;
+    public int itemCounter;
     public GameData()
     {
         this.cash = 0;
         this.playerPosition = Vector2.zero;
         this.questitemCounter = 0;
+        this.itemCounter = 0;
     }
 }
