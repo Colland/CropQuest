@@ -42,12 +42,12 @@ public class Player : MonoBehaviour, IDataPersistence
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         cropuiPanel.SetActive(true);
         cashText.text = "" + cash;
         reqAmount = quest.goal.requiredAmount;
         goal.text = "" + reqAmount;
-        
+
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -116,7 +116,7 @@ public class Player : MonoBehaviour, IDataPersistence
             animator.ResetTrigger("isHarvesting");
         }
 
-        
+
     }
 
     public void ResetHarvestTrigger()
@@ -202,11 +202,11 @@ public class Player : MonoBehaviour, IDataPersistence
             collider.GetComponent<Interactable>()?.Interact();
         }
 
-        
+
     }
     private void Harvest()
     {
-        
+
         float directionFloat = 0;
 
         if (directionFacing == true)
@@ -225,27 +225,32 @@ public class Player : MonoBehaviour, IDataPersistence
 
         if (collision != null)
         {
-            if (quest.isActive) {
+            if (quest.isActive || questitemCounter > 0)
+            {
                 Destroy(collision.gameObject);
                 questitemCounter++;
                 questcountText.text = "" + questitemCounter;
                 quest.goal.Harvested();
-                if (quest.goal.IsReached()) {
+                if (quest.goal.IsReached())
+                {
                     itemCounter += questitemCounter;//not working correctly
                     cash += quest.goldReward;
+                    questitemCounter = 0;
                     questcompletePopup.SetActive(true);
                     questcropuiPanel.SetActive(false);
                     cropuiPanel.SetActive(true);
                     quest.Complete();
                     quest.goal.Reset();
                 }
-            } else {
+            }
+            else
+            {
                 Destroy(collision.gameObject);
 
                 Inventory inventory = FindObjectOfType<Inventory>();
                 inventory.addToInv(collision.gameObject);
 
-                itemCounter ++;
+                itemCounter++;
                 counterText.text = "" + itemCounter;
             }
         }
