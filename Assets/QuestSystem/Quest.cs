@@ -16,4 +16,5 @@ public class Quest
         isActive = false;
         description = "Quest completed.";
     }
+    
 }

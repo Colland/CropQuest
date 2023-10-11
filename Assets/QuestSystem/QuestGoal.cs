@@ -23,6 +23,11 @@ public class QuestGoal
         if (goalType == GoalType.Planting)
         currentAmount++;
     }
+
+    public void Reset() {
+        currentAmount = 0;
+    }
+
 }
 
 public enum GoalType {

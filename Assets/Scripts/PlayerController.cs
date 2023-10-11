@@ -7,6 +7,7 @@ public class Player : MonoBehaviour, IDataPersistence
 {
     public GameObject questcompletePopup;
     public GameObject cropuiPanel;
+    public GameObject questcropuiPanel;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour, IDataPersistence
     public LayerMask grownCollision;
 
     public int itemCounter = 0;
+    public int questitemCounter = 0;
     public int reqAmount = 0;
     public int cash = 0;
     public TMP_Text counterText;
@@ -26,12 +28,9 @@ public class Player : MonoBehaviour, IDataPersistence
 
     public TMP_Text goal;
 
+    public TMP_Text questcountText;
+
     public Quest quest;
-
-    
-
-    public string name;
-    public TMP_Text textname;
 
     //True = right, false = left
     private bool directionFacing = false;
@@ -44,11 +43,11 @@ public class Player : MonoBehaviour, IDataPersistence
     // Update is called once per frame
     void Update()
     {   
+        cropuiPanel.SetActive(true);
         cashText.text = "" + cash;
-
         reqAmount = quest.goal.requiredAmount;
         goal.text = "" + reqAmount;
-
+        
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -227,24 +226,28 @@ public class Player : MonoBehaviour, IDataPersistence
         if (collision != null)
         {
             if (quest.isActive) {
+                Destroy(collision.gameObject);
+                questitemCounter++;
+                questcountText.text = "" + questitemCounter;
                 quest.goal.Harvested();
                 if (quest.goal.IsReached()) {
+                    itemCounter += questitemCounter;//not working correctly
                     cash += quest.goldReward;
                     questcompletePopup.SetActive(true);
-                    cropuiPanel.SetActive(false);
+                    questcropuiPanel.SetActive(false);
+                    cropuiPanel.SetActive(true);
                     quest.Complete();
+                    quest.goal.Reset();
                 }
+            } else {
+                Destroy(collision.gameObject);
+
+                Inventory inventory = FindObjectOfType<Inventory>();
+                inventory.addToInv(collision.gameObject);
+
+                itemCounter ++;
+                counterText.text = "" + itemCounter;
             }
-
-            Inventory inventory = FindObjectOfType<Inventory>();
-            inventory.addToInv(collision.gameObject);
-
-            Destroy(collision.gameObject);
-
-            // cash += 1;
-            // Debug.Log("Cash generated");
-            itemCounter += 1;
-            counterText.text = "" + itemCounter;
         }
     }
 
