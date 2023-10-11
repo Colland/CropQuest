@@ -47,6 +47,7 @@ public class Player : MonoBehaviour, IDataPersistence
         cashText.text = "" + cash;
         reqAmount = quest.goal.requiredAmount;
         goal.text = "" + reqAmount;
+        counterText.text = "" + itemCounter;
 
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
@@ -115,8 +116,6 @@ public class Player : MonoBehaviour, IDataPersistence
         {
             animator.ResetTrigger("isHarvesting");
         }
-
-
     }
 
     public void ResetHarvestTrigger()
@@ -225,13 +224,13 @@ public class Player : MonoBehaviour, IDataPersistence
 
         if (collision != null)
         {
-            if (quest.isActive || (questitemCounter > 0  && questitemCounter < quest.goal.requiredAmount))
+            if (quest.isActive || questitemCounter > 0)
             {
                 Destroy(collision.gameObject);
                 questitemCounter++;
                 questcountText.text = "" + questitemCounter;
                 quest.goal.Harvested();
-                
+
                 if (quest.goal.IsReached())
                 {
                     cash += quest.goldReward;
