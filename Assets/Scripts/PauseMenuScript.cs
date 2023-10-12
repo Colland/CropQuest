@@ -22,6 +22,12 @@ public class PauseMenuScript : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void saveScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("SavingScene");
+    }
+
     public void Home(int sceneID)
     {
         Time.timeScale = 1f;
