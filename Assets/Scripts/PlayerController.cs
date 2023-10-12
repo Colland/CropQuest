@@ -38,6 +38,10 @@ public class Player : MonoBehaviour, IDataPersistence
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        if(quest.isActive )
+        {
+            cropuiPanel.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -46,6 +50,8 @@ public class Player : MonoBehaviour, IDataPersistence
         cropuiPanel.SetActive(true);
         cashText.text = "" + cash;
         reqAmount = quest.goal.requiredAmount;
+        questcountText.text = "" + questitemCounter;
+
 
         goal.text = "" + reqAmount;
         counterText.text = "" + itemCounter;
@@ -233,7 +239,7 @@ public class Player : MonoBehaviour, IDataPersistence
                 quest.goal.Harvested();
                 if (quest.goal.IsReached())
                 {
-                    itemCounter += questitemCounter;                                    
+                    itemCounter += questitemCounter;
                     cash += quest.goldReward;
                     questitemCounter = 0;
                     questcompletePopup.SetActive(true);
