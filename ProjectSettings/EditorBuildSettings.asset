@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: e52606d33601120468b9f2d0b180f7fa
+  - enabled: 1
+    path: Assets/Scenes/SavingScene.unity
+    guid: ea9a3769b01340843a282c9ae17286a6
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 736b9ceab88c3f74e9f756c9fce5bc64, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c01def7714301664da47b2ebd76b2ef3, type: 2}

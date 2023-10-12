@@ -7,7 +7,17 @@ public class MainMenuScript : MonoBehaviour, IDataPersistence
 {
     public void playGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void loadingScene()
+    {
+        SceneManager.LoadScene("LoadingScene");
     }
 
     public void LoadData(GameData data)
