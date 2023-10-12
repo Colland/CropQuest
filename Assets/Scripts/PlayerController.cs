@@ -253,9 +253,6 @@ public class Player : MonoBehaviour, IDataPersistence
             {
                 Destroy(collision.gameObject);
 
-                Inventory inventory = FindObjectOfType<Inventory>();
-                inventory.addToInv(collision.gameObject);
-
                 itemCounter++;
                 counterText.text = "" + itemCounter;
             }

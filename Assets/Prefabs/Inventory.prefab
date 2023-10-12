@@ -450,8 +450,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2932882026441193060}
   m_HandleRect: {fileID: 3346714312611378590}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -576,7 +576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2346264755837402056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Carrots are pretty cool bro.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1246,9 +1246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Carrot
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f5e3c332e10a664583b07e5b7c08f3a, type: 2}
   m_sharedMaterial: {fileID: -3444571535854086517, guid: 6f5e3c332e10a664583b07e5b7c08f3a, type: 2}
@@ -1593,10 +1591,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 8455346843650952865, guid: ab7362443258a924584e372d737c8bba, type: 3}
   contentPanel: {fileID: 3993395050525756710}
   itemDescription: {fileID: 63450121752232531}
-  image: {fileID: 0}
-  quantity: 0
-  title: 
-  description: 
+  mouseFollower: {fileID: 0}
 --- !u!1001 &5437640425989754773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1703,19 +1698,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3905240930867797993, guid: ab7362443258a924584e372d737c8bba, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3905240930867797993, guid: ab7362443258a924584e372d737c8bba, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3905240930867797993, guid: ab7362443258a924584e372d737c8bba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 30.836
       objectReference: {fileID: 0}
     - target: {fileID: 3905240930867797993, guid: ab7362443258a924584e372d737c8bba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -14.836
       objectReference: {fileID: 0}
     - target: {fileID: 5608982042495773312, guid: ab7362443258a924584e372d737c8bba, type: 3}
       propertyPath: m_Enabled
