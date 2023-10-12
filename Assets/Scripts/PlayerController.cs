@@ -46,6 +46,7 @@ public class Player : MonoBehaviour, IDataPersistence
         cropuiPanel.SetActive(true);
         cashText.text = "" + cash;
         reqAmount = quest.goal.requiredAmount;
+
         goal.text = "" + reqAmount;
         counterText.text = "" + itemCounter;
 
@@ -224,7 +225,7 @@ public class Player : MonoBehaviour, IDataPersistence
 
         if (collision != null)
         {
-            if (quest.isActive || questitemCounter > 0)
+            if (quest.isActive)
             {
                 Destroy(collision.gameObject);
                 questitemCounter++;
@@ -234,7 +235,6 @@ public class Player : MonoBehaviour, IDataPersistence
                 if (quest.goal.IsReached())
                 {
                     cash += quest.goldReward;
-                    itemCounter = 0;
                     questitemCounter = 0;
                     questcompletePopup.SetActive(true);
                     questcropuiPanel.SetActive(false);
@@ -271,6 +271,7 @@ public class Player : MonoBehaviour, IDataPersistence
         this.itemCounter = data.itemCounter;
         this.transform.position = data.playerPosition;
         this.questitemCounter = data.questitemCounter;
+        this.quest.isActive = data.isQuestActive;
     }
 
     public void SaveData(ref GameData data)
@@ -279,5 +280,6 @@ public class Player : MonoBehaviour, IDataPersistence
         data.itemCounter = this.itemCounter;
         data.playerPosition = this.transform.position;
         data.questitemCounter = this.questitemCounter;
+        data.isQuestActive = quest.isActive;
     }
 }
