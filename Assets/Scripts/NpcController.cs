@@ -6,6 +6,8 @@ using TMPro;
 
 public class NpcController : MonoBehaviour, Interactable
 {
+    public GameObject playerguiPanel;
+    public Questgiver questGiver;
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
@@ -13,6 +15,7 @@ public class NpcController : MonoBehaviour, Interactable
 
     public float wordSpeed;
     public GameObject contButton;
+    public GameObject questButton;
     private Coroutine typingRoutine;
     public GameObject item;
 
@@ -26,6 +29,7 @@ public class NpcController : MonoBehaviour, Interactable
         else
         {
             dialoguePanel.SetActive(true);
+            playerguiPanel.SetActive(false);
             typingRoutine = StartCoroutine(Typing());
             InteractWithPlayer();
         }
@@ -34,6 +38,7 @@ public class NpcController : MonoBehaviour, Interactable
     public void NextLine()
     {
         contButton.SetActive(false);
+        questButton.SetActive(false);
 
         if (index < dialogue.Length - 1)
         {
@@ -53,6 +58,7 @@ public class NpcController : MonoBehaviour, Interactable
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+        playerguiPanel.SetActive(true);          
     }
 
     IEnumerator Typing()
@@ -66,6 +72,7 @@ public class NpcController : MonoBehaviour, Interactable
         if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
+            questButton.SetActive(true);
         }
     }
 
@@ -78,4 +85,5 @@ public class NpcController : MonoBehaviour, Interactable
         //player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         //player.updateInventory();
     }
+
 }

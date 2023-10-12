@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDataPersistence
 {
+    public GameObject questcompletePopup;
+    public GameObject cropuiPanel;
+    public GameObject questcropuiPanel;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
@@ -16,11 +19,18 @@ public class Player : MonoBehaviour
     public LayerMask grownCollision;
 
     public int itemCounter = 0;
-
+    public int questitemCounter = 0;
+    public int reqAmount = 0;
     public int cash = 0;
     public TMP_Text counterText;
 
     public TMP_Text cashText;
+
+    public TMP_Text goal;
+
+    public TMP_Text questcountText;
+
+    public Quest quest;
 
     //True = right, false = left
     private bool directionFacing = false;
@@ -28,11 +38,24 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        if(quest.isActive )
+        {
+            cropuiPanel.SetActive(true);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        cropuiPanel.SetActive(true);
+        cashText.text = "" + cash;
+        reqAmount = quest.goal.requiredAmount;
+        questcountText.text = "" + questitemCounter;
+
+
+        goal.text = "" + reqAmount;
+        counterText.text = "" + itemCounter;
+
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -184,9 +207,12 @@ public class Player : MonoBehaviour
         {
             collider.GetComponent<Interactable>()?.Interact();
         }
+
+
     }
     private void Harvest()
     {
+
         float directionFloat = 0;
 
         if (directionFacing == true)
@@ -205,25 +231,61 @@ public class Player : MonoBehaviour
 
         if (collision != null)
         {
-            //Inventory inventory = FindObjectOfType<Inventory>();
-           // inventory.addToInv(collision.gameObject);
+            if (quest.isActive)
+            {
+                Destroy(collision.gameObject);
+                questitemCounter++;
+                questcountText.text = "" + questitemCounter;
+                quest.goal.Harvested();
+                if (quest.goal.IsReached())
+                {
+                    itemCounter += questitemCounter;
+                    cash += quest.goldReward;
+                    questitemCounter = 0;
+                    questcompletePopup.SetActive(true);
+                    questcropuiPanel.SetActive(false);
+                    cropuiPanel.SetActive(true);
+                    quest.Complete();
+                    quest.goal.Reset();
+                }
+            }
+            else
+            {
+                Destroy(collision.gameObject);
 
-            Destroy(collision.gameObject);
+                Inventory inventory = FindObjectOfType<Inventory>();
+                inventory.addToInv(collision.gameObject);
 
-            cash += 1;
-            Debug.Log("Cash generated");
-            cashText.text = "" + cash;
-            itemCounter += 1;
-            counterText.text = "" + itemCounter;
+                itemCounter++;
+                counterText.text = "" + itemCounter;
+            }
         }
     }
 
     public void updateInventory()
     {
-        cash += 1;
-        Debug.Log("Cash generated");
-        cashText.text = "" + cash;
-        itemCounter += 1;
-        counterText.text = "" + itemCounter;
+        // cash += 1;
+        // Debug.Log("Cash generated");
+        // cashText.text = "" + cash;
+        // itemCounter += 1;
+        // counterText.text = "" + itemCounter;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.cash = data.cash;
+        this.itemCounter = data.itemCounter;
+        this.transform.position = data.playerPosition;
+        this.questitemCounter = data.questitemCounter;
+        this.quest.isActive = data.isQuestActive;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.cash = this.cash;
+        data.itemCounter = this.itemCounter;
+        data.playerPosition = this.transform.position;
+        data.questitemCounter = this.questitemCounter;
+        data.isQuestActive = quest.isActive;
     }
 }
