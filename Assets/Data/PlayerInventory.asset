@@ -15,12 +15,6 @@ MonoBehaviour:
   inventoryItems:
   - quantity: 0
     item: {fileID: 0}
-  - quantity: 5
-    item: {fileID: 11400000, guid: 76e184f2d7ba9934ea456afca038748e, type: 2}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 1
-    item: {fileID: 11400000, guid: 31628b4460f8b5f47b5a3132b2138019, type: 2}
   - quantity: 0
     item: {fileID: 0}
   - quantity: 0
@@ -33,4 +27,30 @@ MonoBehaviour:
     item: {fileID: 0}
   - quantity: 0
     item: {fileID: 0}
-  <Size>k__BackingField: 10
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  <Size>k__BackingField: 20
