@@ -231,9 +231,9 @@ public class Player : MonoBehaviour, IDataPersistence
                 questitemCounter++;
                 questcountText.text = "" + questitemCounter;
                 quest.goal.Harvested();
-
                 if (quest.goal.IsReached())
                 {
+                    itemCounter += questitemCounter;                                    
                     cash += quest.goldReward;
                     questitemCounter = 0;
                     questcompletePopup.SetActive(true);
