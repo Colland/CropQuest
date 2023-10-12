@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class QuestGoal 
+public class QuestGoal //: IDataPersistence
 {
     public GoalType goalType;   
 
@@ -28,6 +28,15 @@ public class QuestGoal
         currentAmount = 0;
     }
 
+    // public void LoadData(GameData data)
+    // {
+    //     this.currentAmount = data.currentQuestAmount;
+    // }
+
+    // public void SaveData(ref GameData data)
+    // {
+    //     data.currentQuestAmount = this.currentAmount;
+    // }
 }
 
 public enum GoalType {

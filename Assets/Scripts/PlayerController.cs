@@ -42,12 +42,14 @@ public class Player : MonoBehaviour, IDataPersistence
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         cropuiPanel.SetActive(true);
         cashText.text = "" + cash;
         reqAmount = quest.goal.requiredAmount;
+
         goal.text = "" + reqAmount;
-        
+        counterText.text = "" + itemCounter;
+
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -115,8 +117,6 @@ public class Player : MonoBehaviour, IDataPersistence
         {
             animator.ResetTrigger("isHarvesting");
         }
-
-        
     }
 
     public void ResetHarvestTrigger()
@@ -202,11 +202,11 @@ public class Player : MonoBehaviour, IDataPersistence
             collider.GetComponent<Interactable>()?.Interact();
         }
 
-        
+
     }
     private void Harvest()
     {
-        
+
         float directionFloat = 0;
 
         if (directionFacing == true)
@@ -225,27 +225,32 @@ public class Player : MonoBehaviour, IDataPersistence
 
         if (collision != null)
         {
-            if (quest.isActive) {
+            if (quest.isActive)
+            {
                 Destroy(collision.gameObject);
                 questitemCounter++;
                 questcountText.text = "" + questitemCounter;
                 quest.goal.Harvested();
-                if (quest.goal.IsReached()) {
-                    itemCounter += questitemCounter;//not working correctly
+
+                if (quest.goal.IsReached())
+                {
                     cash += quest.goldReward;
+                    questitemCounter = 0;
                     questcompletePopup.SetActive(true);
                     questcropuiPanel.SetActive(false);
                     cropuiPanel.SetActive(true);
                     quest.Complete();
                     quest.goal.Reset();
                 }
-            } else {
+            }
+            else
+            {
                 Destroy(collision.gameObject);
 
                 Inventory inventory = FindObjectOfType<Inventory>();
                 inventory.addToInv(collision.gameObject);
 
-                itemCounter ++;
+                itemCounter++;
                 counterText.text = "" + itemCounter;
             }
         }
@@ -263,12 +268,18 @@ public class Player : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         this.cash = data.cash;
+        this.itemCounter = data.itemCounter;
         this.transform.position = data.playerPosition;
+        this.questitemCounter = data.questitemCounter;
+        this.quest.isActive = data.isQuestActive;
     }
 
     public void SaveData(ref GameData data)
     {
         data.cash = this.cash;
+        data.itemCounter = this.itemCounter;
         data.playerPosition = this.transform.position;
+        data.questitemCounter = this.questitemCounter;
+        data.isQuestActive = quest.isActive;
     }
 }
