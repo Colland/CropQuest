@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 643, y: -354}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: 615, y: -354}
+  m_SizeDelta: {x: 460.44, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32763250
 MonoBehaviour:
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 61009124}
   - component: {fileID: 61009123}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: NewGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,8 +304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -528, y: -354}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: -507, y: -354}
+  m_SizeDelta: {x: 460.44, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &61009123
 MonoBehaviour:
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Load
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f5e3c332e10a664583b07e5b7c08f3a, type: 2}
   m_sharedMaterial: {fileID: -3444571535854086517, guid: 6f5e3c332e10a664583b07e5b7c08f3a, type: 2}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 307080382}
   - component: {fileID: 307080381}
   m_Layer: 5
-  m_Name: 'LoadButton '
+  m_Name: 'ContinueButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -782,8 +782,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63, y: -354}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: 32, y: -354}
+  m_SizeDelta: {x: 449.0005, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &307080381
 MonoBehaviour:
@@ -960,7 +960,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: new game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f5e3c332e10a664583b07e5b7c08f3a, type: 2}
   m_sharedMaterial: {fileID: -3444571535854086517, guid: 6f5e3c332e10a664583b07e5b7c08f3a, type: 2}
