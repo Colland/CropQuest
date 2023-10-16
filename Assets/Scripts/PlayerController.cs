@@ -239,8 +239,10 @@ public class Player : MonoBehaviour, IDataPersistence
                 quest.goal.Harvested();
                 if (quest.goal.IsReached())
                 {
+
                     itemCounter += questitemCounter;
                     cash += quest.goldReward;
+                    ExpController.instance.currentExp += 25;
                     questitemCounter = 0;
                     questcompletePopup.SetActive(true);
                     questcropuiPanel.SetActive(false);
