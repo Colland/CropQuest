@@ -9,7 +9,7 @@ public class Quest
     public string title;
     public string description;
     public int goldReward;
-
+    public float expReward;
     public QuestGoal goal;
 
     public void Complete() {

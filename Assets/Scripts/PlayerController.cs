@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Player : MonoBehaviour, IDataPersistence
+public class Player : MonoBehaviour//, IDataPersistence
 {
     public GameObject questcompletePopup;
     public GameObject cropuiPanel;
@@ -21,10 +21,7 @@ public class Player : MonoBehaviour, IDataPersistence
     public int itemCounter = 0;
     public int questitemCounter = 0;
     public int reqAmount = 0;
-    public int cash = 0;
     public TMP_Text counterText;
-
-    public TMP_Text cashText;
 
     public TMP_Text goal;
 
@@ -48,7 +45,6 @@ public class Player : MonoBehaviour, IDataPersistence
     void Update()
     {
         cropuiPanel.SetActive(true);
-        cashText.text = "" + cash;
         reqAmount = quest.goal.requiredAmount;
         questcountText.text = "" + questitemCounter;
 
@@ -241,8 +237,11 @@ public class Player : MonoBehaviour, IDataPersistence
                 {
 
                     itemCounter += questitemCounter;
-                    cash += quest.goldReward;
-                    ExpController.instance.currentExp += 25;
+                    //increase gold
+                    Rewards.instance.gold += quest.goldReward; 
+                    Rewards.instance.increaseGold();
+                    //increase xp
+                    ExpController.instance.currentExp += quest.expReward;
                     questitemCounter = 0;
                     questcompletePopup.SetActive(true);
                     questcropuiPanel.SetActive(false);
@@ -270,21 +269,21 @@ public class Player : MonoBehaviour, IDataPersistence
         // counterText.text = "" + itemCounter;
     }
 
-    public void LoadData(GameData data)
-    {
-        this.cash = data.cash;
-        this.itemCounter = data.itemCounter;
-        this.transform.position = data.playerPosition;
-        this.questitemCounter = data.questitemCounter;
-        this.quest.isActive = data.isQuestActive;
-    }
+    // public void LoadData(GameData data)
+    // {
+    //     this.Player.Rewards.instance.gold = data.Rewards.instance.gold;
+    //     this.itemCounter = data.itemCounter;
+    //     this.transform.position = data.playerPosition;
+    //     this.questitemCounter = data.questitemCounter;
+    //     this.quest.isActive = data.isQuestActive;
+    // }
 
-    public void SaveData(ref GameData data)
-    {
-        data.cash = this.cash;
-        data.itemCounter = this.itemCounter;
-        data.playerPosition = this.transform.position;
-        data.questitemCounter = this.questitemCounter;
-        data.isQuestActive = quest.isActive;
-    }
+    // public void SaveData(ref GameData data)
+    // {
+    //     data.Rewards.instance.gold = this.Rewards.instance.gold;
+    //     data.itemCounter = this.itemCounter;
+    //     data.playerPosition = this.transform.position;
+    //     data.questitemCounter = this.questitemCounter;
+    //     data.isQuestActive = quest.isActive;
+    // }
 }

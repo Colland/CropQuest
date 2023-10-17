@@ -14,12 +14,14 @@ public class Questgiver : MonoBehaviour
     public Text titleText;
     public Text descriptionText;
     public Text goldText;
+    public Text expText;
 
     public void OpenQuestPopup() {
         questPopup.SetActive(true);
         titleText.text = quest.title;
         descriptionText.text = quest.description;
         goldText.text = quest.goldReward.ToString();
+        expText.text = "EXP: " + quest.expReward.ToString();
     }
 
     public void AcceptQuest() {
