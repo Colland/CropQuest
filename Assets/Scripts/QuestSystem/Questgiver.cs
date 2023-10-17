@@ -26,8 +26,6 @@ public class Questgiver : MonoBehaviour
 
     public void AcceptQuest() {
         questPopup.SetActive(false);
-        player.questcropuiPanel.SetActive(true);
-        player.cropuiPanel.SetActive(true);
         quest.isActive = true;
         player.quest = quest;
     }

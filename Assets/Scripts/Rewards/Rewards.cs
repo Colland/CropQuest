@@ -10,8 +10,6 @@ public class Rewards : MonoBehaviour
     public Quest quest;
     public int gold;
     public Text goldCounter;
-    // public float experience;
-    // public Text experienceCounter;
 
     void Awake() 
     {
@@ -28,8 +26,4 @@ public class Rewards : MonoBehaviour
         gold += quest.goldReward;
         goldCounter.text = "" + gold;
     }
-
-    // public void increaseEXP() {
-    //     experience += quest.expReward;
-    // }
 }
