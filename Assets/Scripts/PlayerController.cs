@@ -100,6 +100,16 @@ public class Player : MonoBehaviour//, IDataPersistence
         {
             animator.ResetTrigger("isHarvesting");
         }
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = 6;
+            animator.SetBool("isSprinting", true);
+        }
+        if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            moveSpeed = 3;
+            animator.SetBool("isSprinting", false);
+        }
     }
 
     public void ResetHarvestTrigger()
