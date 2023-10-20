@@ -10,6 +10,7 @@ public class Player : MonoBehaviour//, IDataPersistence
     private Vector2 input;
     private bool isMoving;
     private Animator animator;
+    public Inventory playerInventory;
 
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
@@ -220,6 +221,11 @@ public class Player : MonoBehaviour//, IDataPersistence
             if (quest.isActive)
             {   
                 Destroy(collision.gameObject);
+
+                //Loads pumpkin into inventory.
+                Item item = Resources.Load<Item>("ItemData/Pumpkin");
+                playerInventory.AddItem(item, 1);
+
                 ItemCounter.instance.increasequestCount();
                 quest.goal.Harvested();
                 if (quest.goal.IsReached())
@@ -240,7 +246,11 @@ public class Player : MonoBehaviour//, IDataPersistence
             else
             {
                 Destroy(collision.gameObject);
-
+                
+                //Loads pumpkin into inventory.
+                Item item = Resources.Load<Item>("ItemData/Pumpkin");
+                playerInventory.AddItem(item, 1);
+                
                 ItemCounter.instance.increasenormalCount();
             }
         }
