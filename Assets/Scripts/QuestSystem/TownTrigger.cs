@@ -18,6 +18,7 @@ public class QuestTrigger : MonoBehaviour
         
         if (quest.isActive)
         {
+            quest.goal.HasBeenVisited();
             if(other.gameObject.CompareTag("Player"))
             {
                 quest.goal.isCompleted = true;
