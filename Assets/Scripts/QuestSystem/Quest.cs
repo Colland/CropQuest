@@ -14,7 +14,7 @@ public class Quest
 
     public void Complete() {
         isActive = false;
-        description = "Quest completed.";
+        description = "Completed";
     }
     
 }

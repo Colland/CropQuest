@@ -6,6 +6,8 @@ using TMPro;
 
 public class NpcController : MonoBehaviour, Interactable
 {
+    public GameObject Gold;
+    public GameObject XPSystem;
     public GameObject playerguiPanel;
     public Questgiver questGiver;
     public GameObject dialoguePanel;
@@ -15,11 +17,11 @@ public class NpcController : MonoBehaviour, Interactable
 
     public float wordSpeed;
     public GameObject contButton;
-    public GameObject questButton;
     private Coroutine typingRoutine;
     public GameObject item;
 
     private Player player;
+
     public void Interact()
     {
         if (dialoguePanel.activeInHierarchy)
@@ -30,6 +32,8 @@ public class NpcController : MonoBehaviour, Interactable
         {
             dialoguePanel.SetActive(true);
             playerguiPanel.SetActive(false);
+            Gold.SetActive(false);
+            XPSystem.SetActive(false);
             typingRoutine = StartCoroutine(Typing());
             InteractWithPlayer();
         }
@@ -38,7 +42,6 @@ public class NpcController : MonoBehaviour, Interactable
     public void NextLine()
     {
         contButton.SetActive(false);
-        questButton.SetActive(false);
 
         if (index < dialogue.Length - 1)
         {
@@ -49,6 +52,7 @@ public class NpcController : MonoBehaviour, Interactable
         else
         {
             zeroText();
+            questGiver.OpenQuestPopup();
         }
     }
 
@@ -58,7 +62,9 @@ public class NpcController : MonoBehaviour, Interactable
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-        playerguiPanel.SetActive(true);          
+        playerguiPanel.SetActive(true);
+        Gold.SetActive(true);   
+        XPSystem.SetActive(true);       
     }
 
     IEnumerator Typing()
@@ -72,7 +78,6 @@ public class NpcController : MonoBehaviour, Interactable
         if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
-            questButton.SetActive(true);
         }
     }
 
