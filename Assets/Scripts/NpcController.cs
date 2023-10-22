@@ -15,7 +15,6 @@ public class NpcController : MonoBehaviour, Interactable
 
     public float wordSpeed;
     public GameObject contButton;
-    public GameObject questButton;
     private Coroutine typingRoutine;
     public GameObject item;
 
@@ -38,7 +37,6 @@ public class NpcController : MonoBehaviour, Interactable
     public void NextLine()
     {
         contButton.SetActive(false);
-        questButton.SetActive(false);
 
         if (index < dialogue.Length - 1)
         {
@@ -49,6 +47,7 @@ public class NpcController : MonoBehaviour, Interactable
         else
         {
             zeroText();
+            questGiver.OpenQuestPopup();
         }
     }
 
@@ -72,7 +71,6 @@ public class NpcController : MonoBehaviour, Interactable
         if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
-            questButton.SetActive(true);
         }
     }
 

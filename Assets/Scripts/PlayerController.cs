@@ -5,7 +5,6 @@ using TMPro;
 
 public class Player : MonoBehaviour//, IDataPersistence
 {
-    public GameObject questcompletePopup;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
