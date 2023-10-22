@@ -6,6 +6,8 @@ using TMPro;
 
 public class NpcController : MonoBehaviour, Interactable
 {
+    public GameObject Gold;
+    public GameObject XPSystem;
     public GameObject playerguiPanel;
     public Questgiver questGiver;
     public GameObject dialoguePanel;
@@ -30,6 +32,8 @@ public class NpcController : MonoBehaviour, Interactable
         {
             dialoguePanel.SetActive(true);
             playerguiPanel.SetActive(false);
+            Gold.SetActive(false);
+            XPSystem.SetActive(false);
             typingRoutine = StartCoroutine(Typing());
             InteractWithPlayer();
         }
@@ -58,7 +62,9 @@ public class NpcController : MonoBehaviour, Interactable
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-        playerguiPanel.SetActive(true);          
+        playerguiPanel.SetActive(true);
+        Gold.SetActive(true);   
+        XPSystem.SetActive(true);       
     }
 
     IEnumerator Typing()
