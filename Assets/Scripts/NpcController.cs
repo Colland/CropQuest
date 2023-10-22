@@ -19,6 +19,7 @@ public class NpcController : MonoBehaviour, Interactable
     public GameObject item;
 
     private Player player;
+
     public void Interact()
     {
         if (dialoguePanel.activeInHierarchy)

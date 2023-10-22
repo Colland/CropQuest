@@ -5,6 +5,8 @@ using TMPro;
 
 public class Player : MonoBehaviour//, IDataPersistence
 {
+
+    public GameObject itemCounter;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
@@ -32,6 +34,7 @@ public class Player : MonoBehaviour//, IDataPersistence
     // Update is called once per frame
     void Update()
     {
+        this.quest = quest;
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -218,6 +221,7 @@ public class Player : MonoBehaviour//, IDataPersistence
         {
             if (quest.isActive)
             {   
+                itemCounter.SetActive(true);;
                 Destroy(collision.gameObject);
                 ItemCounter.instance.increasequestCount();
                 quest.goal.Harvested();
