@@ -7,7 +7,6 @@ using TMPro;
 public class DialogueController : MonoBehaviour
 {
     public GameObject playerguiPanel;
-    public Questgiver questGiver;
     public TextMeshProUGUI dialogueText;
     public GameObject Gold;
     public GameObject XPSystem;
@@ -80,5 +79,10 @@ public class DialogueController : MonoBehaviour
         {
             contButton.SetActive(true);
         }
+    }
+
+    public void AcceptQuest()
+    {
+        this.quest.AcceptQuest();
     }
 }
