@@ -7,20 +7,27 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-
     public int cash;
-    public Vector2 playerPosition;
+    public Vector3 playerPosition;
     public int questitemCounter;
-    public int itemCounter;
+    public bool itemCounter;
     public int currentQuestAmount;
     public Boolean isQuestActive;
+    public float currentExp;
+    public float level;
+    public int normalharvestCounter;
+    public int questharvestCounter;
+
     public GameData()
     {
         this.cash = 0;
-        this.playerPosition = Vector2.zero;
         this.questitemCounter = 0;
-        this.itemCounter = 0;
+        this.itemCounter = false;
         this.isQuestActive = false;
-        // this.currentQuestAmount = 0;
+        this.normalharvestCounter = 0;
+        this.questharvestCounter = 0;
+        this.currentExp = 0;
+        this.level = 0;
+        this.playerPosition = Vector3.zero;
     }
 }
