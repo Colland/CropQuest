@@ -9,6 +9,7 @@ public class Planting : MonoBehaviour
     public GameObject growObj;
     public LayerMask collisionLayers;
     public int growDelay;
+    AudioManager audioManager;
 
     // Update is called once per frame
     void Update()
@@ -20,16 +21,22 @@ public class Planting : MonoBehaviour
             if (Physics2D.OverlapCircle(location, 0.2f, collisionLayers) == null)
             {
                 SpawnPlant(location);
+                audioManager.playSFX(audioManager.plant);
             }
 
         }
-        
+
         if (Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Press F");
 
         }
-        
+
+    }
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     //instantiate the first phase plant and destroy it after set time

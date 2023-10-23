@@ -19,6 +19,8 @@ public class Player : MonoBehaviour//, IDataPersistence
 
     public Quest quest;
 
+    AudioManager audioManager;
+
     //True = right, false = left
     private bool directionFacing = false;
 
@@ -29,6 +31,8 @@ public class Player : MonoBehaviour//, IDataPersistence
         // {
         //     cropuiPanel.SetActive(true);
         // }
+
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -95,6 +99,7 @@ public class Player : MonoBehaviour//, IDataPersistence
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            audioManager.playSFX(audioManager.harvest);
             Harvest();
             animator.SetTrigger("isHarvesting");
         }
@@ -102,12 +107,12 @@ public class Player : MonoBehaviour//, IDataPersistence
         {
             animator.ResetTrigger("isHarvesting");
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             moveSpeed = 6;
             animator.SetBool("isSprinting", true);
         }
-        if(Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             moveSpeed = 3;
             animator.SetBool("isSprinting", false);
@@ -220,8 +225,8 @@ public class Player : MonoBehaviour//, IDataPersistence
         if (collision != null)
         {
             if (quest.isActive)
-            {   
-                itemCounter.SetActive(true);;
+            {
+                itemCounter.SetActive(true); ;
                 Destroy(collision.gameObject);
                 ItemCounter.instance.increasequestCount();
                 quest.goal.Harvested();
@@ -230,7 +235,7 @@ public class Player : MonoBehaviour//, IDataPersistence
                     //give player the quest amount they were gathering
                     ItemCounter.instance.normalharvestCounter += quest.goal.requiredAmount;
                     //increase gold
-                    Rewards.instance.gold += quest.goldReward; 
+                    Rewards.instance.gold += quest.goldReward;
                     Rewards.instance.increaseGold();
                     //increase xp
                     ExpController.instance.currentExp += quest.expReward;
