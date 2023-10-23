@@ -15,9 +15,12 @@ public class InventoryController : MonoBehaviour
 
     [SerializeField]
     private GameObject hotBar1;
+    [SerializeField]
+    private GameObject hotBar2;
+    [SerializeField]
+    private GameObject hotBar3;
 
     public List<ModelInventoryItem> initialItems = new List<ModelInventoryItem>();
-    public ModelInventoryItem hotbarItem1;
 
     private void Start()
     {
@@ -35,6 +38,8 @@ public class InventoryController : MonoBehaviour
                 continue;
             inventoryData.AddItem(item);
         }
+
+        UpdateHotbarItems();
     }
 
     private void UpdateInventoryUI(Dictionary<int, ModelInventoryItem> inventoryState)
@@ -85,19 +90,49 @@ public class InventoryController : MonoBehaviour
         inventoryUI.UpdateDescription(itemIndex, item.itemImage, item.name, item.Description);
     }
 
+    //this some dirtyyyy last minute code
     private void UpdateHotbarItems()
     {
+        ModelInventoryItem hotbarItem1 = inventoryData.GetItemAt(0);
+        Image hotBarSprite1 = hotBar1.transform.Find("Hotbar1Image").GetComponent<Image>();
+
+        ModelInventoryItem hotbarItem2 = inventoryData.GetItemAt(1);
+        Image hotBarSprite2 = hotBar2.transform.Find("Hotbar2Image").GetComponent<Image>();
+
+        ModelInventoryItem hotbarItem3 = inventoryData.GetItemAt(2);
+        Image hotBarSprite3 = hotBar3.transform.Find("Hotbar3Image").GetComponent<Image>();
         
-        var sprite1 = hotbarItem1.item.itemImage;
-        hotbarItem1 = inventoryData.GetItemAt(0);
-        Image hotBarSprite = hotBar1.transform.Find("Hotbar1Image").GetComponent<Image>();
         try
         {
-            hotBarSprite.sprite = sprite1;
+            var sprite1 = hotbarItem1.item.itemImage;
+            hotBarSprite1.sprite = sprite1;
+            hotBarSprite1.enabled = true;
         }
         catch(NullReferenceException e)
         {
-            hotBarSprite.sprite = null;
+            hotBarSprite1.enabled = false;
+        }
+
+        try
+        {
+            var sprite2 = hotbarItem2.item.itemImage;
+            hotBarSprite2.sprite = sprite2;
+            hotBarSprite2.enabled = true;
+        }
+        catch(NullReferenceException e)
+        {
+            hotBarSprite2.enabled = false;
+        }
+
+        try
+        {
+            var sprite3 = hotbarItem3.item.itemImage;
+            hotBarSprite3.sprite = sprite3;
+            hotBarSprite3.enabled = true;
+        }
+        catch(NullReferenceException e)
+        {
+            hotBarSprite3.enabled = false;
         }
     }
 
@@ -114,10 +149,13 @@ public class InventoryController : MonoBehaviour
                         item.Value.item.itemImage,
                         item.Value.quantity);
                 }
+
+                hotBar1.transform.parent.gameObject.SetActive(false);
             }
             else
             {
                 inventoryUI.Hide();
+                hotBar1.transform.parent.gameObject.SetActive(true);
                 UpdateHotbarItems();
             }
         }
