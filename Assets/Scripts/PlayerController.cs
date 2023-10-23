@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Player : MonoBehaviour//, IDataPersistence
+public class Player : MonoBehaviour, IDataPersistence
 {
 
     public GameObject itemCounter;
@@ -254,25 +254,19 @@ public class Player : MonoBehaviour//, IDataPersistence
         // cash += 1;
         // Debug.Log("Cash generated");
         // cashText.text = "" + cash;
-        // itemCounter += 1;
+        // itemCounter += 1;1
         // counterText.text = "" + itemCounter;
     }
 
-    // public void LoadData(GameData data)
-    // {
-    //     this.Player.Rewards.instance.gold = data.Rewards.instance.gold;
-    //     this.itemCounter = data.itemCounter;
-    //     this.transform.position = data.playerPosition;
-    //     this.questitemCounter = data.questitemCounter;
-    //     this.quest.isActive = data.isQuestActive;
-    // }
+    public void LoadData(GameData data)
+    {
+        this.itemCounter.SetActive(data.itemCounter);
+        this.transform.position = data.playerPosition;
+    }
 
-    // public void SaveData(ref GameData data)
-    // {
-    //     data.Rewards.instance.gold = this.Rewards.instance.gold;
-    //     data.itemCounter = this.itemCounter;
-    //     data.playerPosition = this.transform.position;
-    //     data.questitemCounter = this.questitemCounter;
-    //     data.isQuestActive = quest.isActive;
-    // }
+    public void SaveData(ref GameData data)
+    {
+        data.itemCounter = this.itemCounter;
+        data.playerPosition = this.transform.position;
+    }
 }
