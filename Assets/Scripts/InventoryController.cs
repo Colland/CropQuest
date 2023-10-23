@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class InventoryController : MonoBehaviour
@@ -12,7 +13,11 @@ public class InventoryController : MonoBehaviour
     [SerializeField]
     private Inventory inventoryData;
 
+    [SerializeField]
+    private GameObject hotBar1;
+
     public List<ModelInventoryItem> initialItems = new List<ModelInventoryItem>();
+    public ModelInventoryItem hotbarItem1;
 
     private void Start()
     {
@@ -80,6 +85,22 @@ public class InventoryController : MonoBehaviour
         inventoryUI.UpdateDescription(itemIndex, item.itemImage, item.name, item.Description);
     }
 
+    private void UpdateHotbarItems()
+    {
+        
+        var sprite1 = hotbarItem1.item.itemImage;
+        hotbarItem1 = inventoryData.GetItemAt(0);
+        Image hotBarSprite = hotBar1.transform.Find("Hotbar1Image").GetComponent<Image>();
+        try
+        {
+            hotBarSprite.sprite = sprite1;
+        }
+        catch(NullReferenceException e)
+        {
+            hotBarSprite.sprite = null;
+        }
+    }
+
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.I))
@@ -97,6 +118,7 @@ public class InventoryController : MonoBehaviour
             else
             {
                 inventoryUI.Hide();
+                UpdateHotbarItems();
             }
         }
     }
