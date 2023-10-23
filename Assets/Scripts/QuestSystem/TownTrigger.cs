@@ -14,12 +14,11 @@ public class QuestTrigger : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other)
-    {
-        
+    { 
         if (quest.isActive)
         {
             quest.goal.HasBeenVisited();
-            if(other.gameObject.CompareTag("Player"))
+            if(other.CompareTag("Player"))
             {
                 quest.goal.isCompleted = true;
                 Debug.Log("Town visited");
