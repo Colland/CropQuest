@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemCounter : MonoBehaviour
+public class ItemCounter : MonoBehaviour, IDataPersistence
 {
     public static ItemCounter instance;
     public Quest quest;
@@ -12,8 +12,9 @@ public class ItemCounter : MonoBehaviour
     public Text questharvestCount;
     public int questharvestCounter;
     public Text questharvestAmountrequired;
-    
-    void Awake() {
+
+    void Awake()
+    {
         instance = this;
     }
 
@@ -27,16 +28,30 @@ public class ItemCounter : MonoBehaviour
         //is the static amount required to finish the quest
         questharvestAmountrequired.text = "Required Amount : " + quest.goal.requiredAmount;
     }
-    
+
     //updates the counter after pickup outside of quest
-    public void increasenormalCount() {
+    public void increasenormalCount()
+    {
         normalharvestCounter++;
         normalharvestCount.text = "In Bag : " + normalharvestCounter;
     }
 
     //updates the counter during the quest
-    public void increasequestCount() {
+    public void increasequestCount()
+    {
         questharvestCounter++;
         questharvestCount.text = "Collected : " + questharvestCounter;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.normalharvestCounter = data.normalharvestCounter;
+        this.questharvestCounter = data.questharvestCounter;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.normalharvestCounter = this.normalharvestCounter;
+        data.questharvestCounter = this.questharvestCounter;
     }
 }

@@ -7,9 +7,21 @@ public class QuestGoal //: IDataPersistence
 {
     public GoalType goalType;   
 
+    public bool isCompleted;
+
     public int requiredAmount;
     public int currentAmount;
 
+    public void PlayerRan()
+    {
+        
+    }
+   
+    public void HasBeenVisited()
+    {
+        if (goalType == GoalType.Location)
+        isCompleted = true;
+    }
     public bool IsReached() {
         return (currentAmount >= requiredAmount);
     }
@@ -42,4 +54,6 @@ public class QuestGoal //: IDataPersistence
 public enum GoalType {
     Harvesting,
     Planting,
+    Location,
+    Running,
 }
