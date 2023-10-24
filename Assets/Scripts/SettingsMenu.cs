@@ -7,9 +7,23 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
+    [SerializeField] private Slider MusicSlider;
+    [SerializeField] private Slider SFXSlider;
 
-    public void setVolume(float volume)
+    private void start()
     {
-        audioMixer.SetFloat("Volume", volume);
+        setMusicVolume();
+        setSFXVolume();
+    }
+    public void setMusicVolume()
+    {
+        float volume = MusicSlider.value;
+        audioMixer.SetFloat("Music", volume);
+    }
+
+    public void setSFXVolume()
+    {
+        float volume = SFXSlider.value;
+        audioMixer.SetFloat("SFX", volume);
     }
 }
