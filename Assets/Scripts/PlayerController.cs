@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Player : MonoBehaviour//, IDataPersistence
+public class Player : MonoBehaviour, IDataPersistence
 {
-    public GameObject questcompletePopup;
+    public GameObject itemCounter;
     public float moveSpeed;
     private Vector2 input;
     private bool isMoving;
@@ -18,6 +18,8 @@ public class Player : MonoBehaviour//, IDataPersistence
 
     public Quest quest;
 
+    AudioManager audioManager;
+
     //True = right, false = left
     private bool directionFacing = false;
 
@@ -28,11 +30,14 @@ public class Player : MonoBehaviour//, IDataPersistence
         // {
         //     cropuiPanel.SetActive(true);
         // }
+
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //this.quest = quest;
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -93,6 +98,7 @@ public class Player : MonoBehaviour//, IDataPersistence
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            audioManager.playSFX(audioManager.harvest);
             Harvest();
             animator.SetTrigger("isHarvesting");
         }
@@ -100,12 +106,12 @@ public class Player : MonoBehaviour//, IDataPersistence
         {
             animator.ResetTrigger("isHarvesting");
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             moveSpeed = 6;
             animator.SetBool("isSprinting", true);
         }
-        if(Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             moveSpeed = 3;
             animator.SetBool("isSprinting", false);
@@ -218,23 +224,26 @@ public class Player : MonoBehaviour//, IDataPersistence
         if (collision != null)
         {
             if (quest.isActive)
-            {   
+            {
+                itemCounter.SetActive(true); ;
                 Destroy(collision.gameObject);
                 ItemCounter.instance.increasequestCount();
                 quest.goal.Harvested();
                 if (quest.goal.IsReached())
                 {
+                    quest.goal.isCompleted = true;
                     //give player the quest amount they were gathering
+                    quest.Complete();
+                    ItemCounter.instance.questharvestCounter = 0;
+                    quest.questgiver.hideObjective();
+                    quest.questgiver.QuestCompletePopup();
                     ItemCounter.instance.normalharvestCounter += quest.goal.requiredAmount;
                     //increase gold
-                    Rewards.instance.gold += quest.goldReward; 
+                    Rewards.instance.gold += quest.goldReward;
                     Rewards.instance.increaseGold();
                     //increase xp
                     ExpController.instance.currentExp += quest.expReward;
-                    //reset quest amount required to 0 at quest completion, this is so we can replay the quest again
-                    quest.goal.requiredAmount = 0;
-                    quest.Complete();
-                    quest.goal.Reset();
+                    //reset quest amount required to 0 at quest completion, this is so we can replay the quest again 
                 }
             }
             else
@@ -251,25 +260,19 @@ public class Player : MonoBehaviour//, IDataPersistence
         // cash += 1;
         // Debug.Log("Cash generated");
         // cashText.text = "" + cash;
-        // itemCounter += 1;
+        // itemCounter += 1;1
         // counterText.text = "" + itemCounter;
     }
 
-    // public void LoadData(GameData data)
-    // {
-    //     this.Player.Rewards.instance.gold = data.Rewards.instance.gold;
-    //     this.itemCounter = data.itemCounter;
-    //     this.transform.position = data.playerPosition;
-    //     this.questitemCounter = data.questitemCounter;
-    //     this.quest.isActive = data.isQuestActive;
-    // }
+    public void LoadData(GameData data)
+    {
+        this.itemCounter.SetActive(data.itemCounter);
+        this.transform.position = data.playerPosition;
+    }
 
-    // public void SaveData(ref GameData data)
-    // {
-    //     data.Rewards.instance.gold = this.Rewards.instance.gold;
-    //     data.itemCounter = this.itemCounter;
-    //     data.playerPosition = this.transform.position;
-    //     data.questitemCounter = this.questitemCounter;
-    //     data.isQuestActive = quest.isActive;
-    // }
+    public void SaveData(ref GameData data)
+    {
+        data.itemCounter = this.itemCounter;
+        data.playerPosition = this.transform.position;
+    }
 }

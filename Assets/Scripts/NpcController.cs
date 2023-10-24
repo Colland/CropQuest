@@ -6,74 +6,13 @@ using TMPro;
 
 public class NpcController : MonoBehaviour, Interactable
 {
-    public GameObject playerguiPanel;
-    public Questgiver questGiver;
-    public GameObject dialoguePanel;
-    public TextMeshProUGUI dialogueText;
+    public DialogueController dialogueController;
     public string[] dialogue;
-    private int index;
+    public Questgiver quest;
 
-    public float wordSpeed;
-    public GameObject contButton;
-    public GameObject questButton;
-    private Coroutine typingRoutine;
-    public GameObject item;
-
-    private Player player;
     public void Interact()
     {
-        if (dialoguePanel.activeInHierarchy)
-        {
-            zeroText();
-        }
-        else
-        {
-            dialoguePanel.SetActive(true);
-            playerguiPanel.SetActive(false);
-            typingRoutine = StartCoroutine(Typing());
-            InteractWithPlayer();
-        }
-    }
-
-    public void NextLine()
-    {
-        contButton.SetActive(false);
-        questButton.SetActive(false);
-
-        if (index < dialogue.Length - 1)
-        {
-            index++;
-            dialogueText.text = "";
-            typingRoutine = StartCoroutine(Typing());
-        }
-        else
-        {
-            zeroText();
-        }
-    }
-
-    public void zeroText()
-    {
-        StopCoroutine(typingRoutine);
-        dialogueText.text = "";
-        index = 0;
-        dialoguePanel.SetActive(false);
-        playerguiPanel.SetActive(true);          
-    }
-
-    IEnumerator Typing()
-    {
-        foreach (char letter in dialogue[index].ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(wordSpeed);
-        }
-
-        if (dialogueText.text == dialogue[index])
-        {
-            contButton.SetActive(true);
-            questButton.SetActive(true);
-        }
+        dialogueController.startInteraction(dialogue, quest);
     }
 
     public void InteractWithPlayer()

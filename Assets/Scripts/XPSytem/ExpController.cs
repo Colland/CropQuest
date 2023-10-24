@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ExpController : MonoBehaviour
+public class ExpController : MonoBehaviour, IDataPersistence
 {
     public static ExpController instance;
 
@@ -33,5 +33,17 @@ public class ExpController : MonoBehaviour
             level++;
             targetExp += 50;
         }
-    } 
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.currentExp = data.currentExp;
+        this.level = data.level;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.currentExp = this.currentExp;
+        data.level = this.level;
+    }
 }

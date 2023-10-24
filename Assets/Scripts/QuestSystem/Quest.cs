@@ -11,10 +11,11 @@ public class Quest
     public int goldReward;
     public float expReward;
     public QuestGoal goal;
+    public Questgiver questgiver;
 
     public void Complete() {
         isActive = false;
-        description = "Quest completed.";
+        description = "Completed";
     }
     
 }
