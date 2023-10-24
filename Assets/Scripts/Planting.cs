@@ -11,6 +11,7 @@ public class Planting : MonoBehaviour
     public int growDelay;
     AudioManager audioManager;
     public PumpkinPlant pumpkinPlant;
+    public BerriesPlant berriesPlant;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +23,16 @@ public class Planting : MonoBehaviour
             if (Physics2D.OverlapCircle(location, 0.2f, collisionLayers) == null)
             {
                 pumpkinPlant.SpawnPlant(location);
+                audioManager.playSFX(audioManager.plant);
+            }
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (Physics2D.OverlapCircle(location, 0.2f, collisionLayers) == null)
+            {
+                berriesPlant.SpawnPlant(location);
                 audioManager.playSFX(audioManager.plant);
             }
 
