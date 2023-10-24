@@ -69,10 +69,10 @@ public class DataPersistenceManager : MonoBehaviour
         dataHandler.Save(gameData);
     }
 
-    // public void OnApplicationQuit()
-    // {
-    //     SaveGame();
-    // }
+    public void OnApplicationQuit()
+    {
+        SaveGame();
+    }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {

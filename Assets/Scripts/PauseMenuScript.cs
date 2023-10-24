@@ -10,7 +10,6 @@ public class PauseMenuScript : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     public AudioMixer audioMixer;
     public AudioSource BGMusic;
-
     public void pause()
     {
         pauseMenu.SetActive(true);
