@@ -57,6 +57,8 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void SaveGame()
     {
+        dataPersistenceObjects = FindAllDataPersistenceObjects();
+
         //pass the data to other scripts so they can update it
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
@@ -67,10 +69,10 @@ public class DataPersistenceManager : MonoBehaviour
         dataHandler.Save(gameData);
     }
 
-    public void OnApplicationQuit()
-    {
-        SaveGame();
-    }
+    // public void OnApplicationQuit()
+    // {
+    //     SaveGame();
+    // }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {
