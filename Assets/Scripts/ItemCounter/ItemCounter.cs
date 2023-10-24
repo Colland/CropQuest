@@ -39,6 +39,7 @@ public class ItemCounter : MonoBehaviour, IDataPersistence
     //updates the counter during the quest
     public void increasequestCount()
     {
+        //quest.goal.currentAmount = questharvestCounter; 
         questharvestCounter++;
         questharvestCount.text = "Collected : " + questharvestCounter;
     }

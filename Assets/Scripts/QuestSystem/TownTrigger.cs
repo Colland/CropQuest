@@ -10,7 +10,7 @@ public class QuestTrigger : MonoBehaviour
 
     void Update()
     {
-        this.quest = player.quest;
+        //this.quest = player.quest;
     }
 
     void OnTriggerEnter2D(Collider2D other)

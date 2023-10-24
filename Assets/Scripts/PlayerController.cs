@@ -5,7 +5,6 @@ using TMPro;
 
 public class Player : MonoBehaviour, IDataPersistence
 {
-
     public GameObject itemCounter;
     public float moveSpeed;
     private Vector2 input;
@@ -38,7 +37,7 @@ public class Player : MonoBehaviour, IDataPersistence
     // Update is called once per frame
     void Update()
     {
-        this.quest = quest;
+        //this.quest = quest;
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
@@ -232,17 +231,18 @@ public class Player : MonoBehaviour, IDataPersistence
                 quest.goal.Harvested();
                 if (quest.goal.IsReached())
                 {
+                    quest.goal.isCompleted = true;
                     //give player the quest amount they were gathering
+                    quest.Complete();
+                    quest.questgiver.hideObjective();
+                    quest.questgiver.QuestCompletePopup();
                     ItemCounter.instance.normalharvestCounter += quest.goal.requiredAmount;
                     //increase gold
                     Rewards.instance.gold += quest.goldReward;
                     Rewards.instance.increaseGold();
                     //increase xp
                     ExpController.instance.currentExp += quest.expReward;
-                    //reset quest amount required to 0 at quest completion, this is so we can replay the quest again
-                    quest.goal.requiredAmount = 0;
-                    quest.Complete();
-                    quest.goal.Reset();
+                    //reset quest amount required to 0 at quest completion, this is so we can replay the quest again 
                 }
             }
             else
