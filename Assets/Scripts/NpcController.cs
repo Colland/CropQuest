@@ -14,7 +14,7 @@ public class NpcController : MonoBehaviour, Interactable
     {
         dialogueController.startInteraction(dialogue, quest);
     }
-
+    
     public void InteractWithPlayer()
     {
         //IM WORKING ON INVENTORY SO THIS GOTTA GO FOR A BIT - Tristan

@@ -22,8 +22,15 @@ public class Rewards : MonoBehaviour, IDataPersistence
 
     }
 
-    public void increaseGold() {
+    public void increaseGold() 
+    {
         gold += quest.goldReward;
+        goldCounter.text = "" + gold;
+    }
+
+    public void DecreaseGold(int amount)
+    {
+        gold = gold - amount;
         goldCounter.text = "" + gold;
     }
 

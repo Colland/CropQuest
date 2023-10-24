@@ -31,6 +31,14 @@ public class QuestGoal //: IDataPersistence
         currentAmount++;
     }
 
+    public void Traded()
+    {
+        if (goalType == GoalType.Trading)
+        {
+            currentAmount = currentAmount - requiredAmount;
+        }
+    }
+
     public void Reset() {
         currentAmount = 0;
     }
@@ -51,4 +59,5 @@ public enum GoalType {
     Planting,
     Location,
     Running,
+    Trading,
 }
