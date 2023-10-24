@@ -27,6 +27,15 @@ public class Inventory : ScriptableObject
     {
        for(int i = 0; i < inventoryItems.Count; i++)
         {
+            if(inventoryItems[i].item == item && (inventoryItems[i].quantity + quantity) <= 99)
+            {
+                inventoryItems[i] = new ModelInventoryItem
+                {
+                    item = item,
+                    quantity = quantity + inventoryItems[i].quantity,
+                };
+                return;
+            }
             if(inventoryItems[i].IsEmpty)
             {
                 inventoryItems[i] = new ModelInventoryItem
