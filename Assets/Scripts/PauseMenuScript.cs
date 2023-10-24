@@ -35,30 +35,33 @@ public class PauseMenuScript : MonoBehaviour
         SceneManager.LoadScene(sceneID);
     }
 
-    public void muteVolume()
+    public void muteMusicVolume()
     {
         float value;
-        audioMixer.GetFloat("Volume", out value);
+        audioMixer.GetFloat("Music", out value);
         if (value == 0f)
         {
-            audioMixer.SetFloat("Volume", -80.0f);
+            audioMixer.SetFloat("Music", -80.0f);
         }
         else
         {
-            audioMixer.SetFloat("Volume", 0f);
+            audioMixer.SetFloat("Music", 0f);
         }
 
     }
 
-    public void muteBGMusic(bool mute)
+    public void muteSFXVolume()
     {
-        if (mute)
+        float value;
+        audioMixer.GetFloat("SFX", out value);
+        if (value == 0f)
         {
-            BGMusic.volume = 0;
+            audioMixer.SetFloat("SFX", -80.0f);
         }
         else
         {
-            BGMusic.volume = 1;
+            audioMixer.SetFloat("SFX", 0f);
         }
+
     }
 }
