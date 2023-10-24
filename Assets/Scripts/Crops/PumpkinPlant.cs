@@ -5,16 +5,20 @@ using System;
 
 public class PumpkinPlant : MonoBehaviour
 {
-    public GameObject plantObj;
+    public GameObject plantStage1;
+    public GameObject plantStage2;
+    public GameObject plantStage3;
     public GameObject growObj;
     public LayerMask collisionLayers;
     public int growDelay;
+    public Vector3 plantLoc;
 
     // Start is called before the first frame update
     public void SpawnPlant(Vector3 loc)
     {
-        Destroy(Instantiate(plantObj, loc, Quaternion.identity), growDelay);
+        Destroy(Instantiate(plantStage1, loc, Quaternion.identity), growDelay);
         StartCoroutine(Grow(loc));
+        plantLoc = loc;
     }
     private IEnumerator Grow(Vector3 loc)
     {
@@ -25,6 +29,6 @@ public class PumpkinPlant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
