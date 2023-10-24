@@ -234,6 +234,7 @@ public class Player : MonoBehaviour, IDataPersistence
                     quest.goal.isCompleted = true;
                     //give player the quest amount they were gathering
                     quest.Complete();
+                    ItemCounter.instance.questharvestCounter = 0;
                     quest.questgiver.hideObjective();
                     quest.questgiver.QuestCompletePopup();
                     ItemCounter.instance.normalharvestCounter += quest.goal.requiredAmount;
