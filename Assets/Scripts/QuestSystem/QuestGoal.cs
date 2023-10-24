@@ -12,11 +12,6 @@ public class QuestGoal //: IDataPersistence
     public int requiredAmount;
     public int currentAmount;
 
-    public void PlayerRan()
-    {
-        
-    }
-   
     public void HasBeenVisited()
     {
         if (goalType == GoalType.Location)
