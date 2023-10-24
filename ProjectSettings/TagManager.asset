@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Plants
   - AudioManager
+  - NPC
   layers:
   - Default
   - TransparentFX
