@@ -9,7 +9,7 @@ public class PauseMenuScript : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     public AudioMixer audioMixer;
-
+    public AudioSource BGMusic;
     public void pause()
     {
         pauseMenu.SetActive(true);
@@ -34,17 +34,32 @@ public class PauseMenuScript : MonoBehaviour
         SceneManager.LoadScene(sceneID);
     }
 
-    public void muteVolume()
+    public void muteMusicVolume()
     {
         float value;
-        audioMixer.GetFloat("Volume", out value);
+        audioMixer.GetFloat("Music", out value);
         if (value == 0f)
         {
-            audioMixer.SetFloat("Volume", -80.0f);
+            audioMixer.SetFloat("Music", -80.0f);
         }
         else
         {
-            audioMixer.SetFloat("Volume", 0f);
+            audioMixer.SetFloat("Music", 0f);
+        }
+
+    }
+
+    public void muteSFXVolume()
+    {
+        float value;
+        audioMixer.GetFloat("SFX", out value);
+        if (value == 0f)
+        {
+            audioMixer.SetFloat("SFX", -80.0f);
+        }
+        else
+        {
+            audioMixer.SetFloat("SFX", 0f);
         }
 
     }

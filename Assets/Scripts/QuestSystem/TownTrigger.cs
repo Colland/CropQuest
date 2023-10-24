@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class QuestTrigger : MonoBehaviour
 {
+    public GameObject TownTrigger;
     public Questgiver questGiver;
     public Player player;
     public Quest quest;
+
+    void Awake()
+    {
+        
+    }
 
     void Update()
     {
@@ -22,6 +28,7 @@ public class QuestTrigger : MonoBehaviour
             {
                 quest.goal.isCompleted = true;
                 Debug.Log("Town visited");
+                TownTrigger.SetActive(false);
                 quest.Complete();
                 questGiver.hideObjective();
                 questGiver.QuestCompletePopup();
@@ -29,6 +36,7 @@ public class QuestTrigger : MonoBehaviour
                 Rewards.instance.increaseGold();
                 //increase xp
                 ExpController.instance.currentExp += player.quest.expReward;
+
             }
         }
     }
