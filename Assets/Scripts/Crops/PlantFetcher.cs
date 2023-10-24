@@ -14,8 +14,8 @@ public class PlantFetcher : MonoBehaviour
     }
 
     // Update is called once per frame
-    public GameObject fetchGrow()
+    public GameObject fetchPlant()
     {
-        
+        return null;
     }
 }
